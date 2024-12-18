@@ -30,7 +30,7 @@ function BookingForm({ price }) {
     }
 
     try {
-      const response = await fetch('https://china-main-api.vercel.app/api/submit-booking', {
+      const response = await fetch('https://sinomad-backend.vercel.app/api/submit-booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
