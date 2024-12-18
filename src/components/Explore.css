@@ -1,0 +1,91 @@
+/* Explore cards container */
+.explore-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    width: 80%;
+    margin: 0 auto;  /* 让容器居中 */
+}
+
+/* Individual card styling */
+.explore-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+}
+
+.explore-card:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-description h4 {
+    font-size: 1em;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.card-description p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* 小屏幕（如手机）的样式 */
+@media (max-width: 768px) {
+/* Individual card styling */
+.explore-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-description p {
+    font-size: 0.7em;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+    
+}

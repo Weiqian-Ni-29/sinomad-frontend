@@ -1,0 +1,81 @@
+/* review */
+.review {
+    width: 70%; /* 占据页面宽度的 70% */
+    height: 70%; /* 组件高度设置为页面高度的 70% */
+    max-height: 700px;
+    max-width: 1200px; /* 设置最大宽度（可选，避免过于宽） */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-self: center; /* 水平居中，适配 grid 布局 */
+    align-self: center; /* 垂直居中 */
+}
+
+.review-header {
+    padding: 1em;
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.review-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5em; /* 内边距优化 */
+    gap: 1em; /* 列表间距 */
+}
+
+/* comment card styles */
+.comment-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative; /* 使评分部分可以绝对定位 */
+}
+
+/* user info styles */
+.comment-card .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info .user-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* comment content styles */
+.comment-content {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+/* rating styles */
+.comment-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFD700;
+}

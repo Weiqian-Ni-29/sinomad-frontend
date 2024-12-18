@@ -1,0 +1,26 @@
+.outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.itinerary {
+    text-align: left;
+    width: 80%;
+}
+
+.dot-before {
+    position: relative;
+    padding-left: 20px; /* 为小圆点腾出空间 */
+  }
+  
+.dot-before::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px; /* 小圆点的宽度 */
+  height: 8px; /* 小圆点的高度 */
+  background-color: black; /* 小圆点的颜色 */
+  border-radius: 50%; /* 使其成为圆形 */
+}

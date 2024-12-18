@@ -1,0 +1,48 @@
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    width: 100%; /* 占据屏幕的全部宽度 */
+    box-sizing: border-box; /* 确保 padding 不会影响宽度 */
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* social media icons */
+.social-media-container {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #555;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #000;
+}
+
+.social-logo-image {
+    width: 1em;
+    height: 1em;
+    border-radius: 5px;
+}
+
+i {
+    cursor: pointer;
+}

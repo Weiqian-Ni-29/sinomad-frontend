@@ -1,0 +1,17 @@
+.world {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.outer-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Payment {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}

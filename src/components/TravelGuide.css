@@ -1,0 +1,99 @@
+.travel-guide {
+    text-align: center;
+    padding: 2em 0;
+    background-color: bisque;
+}
+
+.travel-guide p {
+    font-size: 1.5em;
+    color: #666;
+    font-style: oblique;
+}
+
+/* 桌面设备 (宽度大于 768px) */
+@media (min-width: 768px) {
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        overflow-x: auto;
+    }
+    .circle-link {
+        padding: 2em;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .circle {
+        width: 80%;
+        max-width: 150px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+}
+
+/* 移动设备 (宽度小于等于 768px) */
+@media (max-width: 768px) {
+    .circle-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 明确每行两个项目 */
+        gap: 1em;
+        overflow-x: hidden; /* 防止内容水平滚动 */
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    .circle-link {
+        width: 100%; /* 确保项目宽度适应网格单元 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .circle {
+        width: 150px;
+        max-width: 150px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+}
+
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
+.saying {
+    padding-top: 2em;
+    font-weight: 300;
+}
+
+.ford {
+    text-align: right;
+    padding-right: 25%;
+    font-weight: 300;
+}
