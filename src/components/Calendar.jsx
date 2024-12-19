@@ -11,7 +11,7 @@ function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setSelectedNu
   useEffect(() => {
     const fetchAvailableDatesNSlots = async () => {
       try {
-        const response = await axios.get('https://sinomad-backend.vercel.app/api/available-dates-n-vacancies');
+        const response = await axios.get('https://sinomad-backend.vercel.app/api/available-dates-n-vacancies', { params: { route } });
         const { departureTimes, vacantSlots } = response.data;
         const dayjsDepartureTimes = departureTimes.map(time => dayjs(time));
         setAvailableDates(dayjsDepartureTimes);
