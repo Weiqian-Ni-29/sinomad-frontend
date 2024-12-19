@@ -46,3 +46,11 @@ footer a {
 i {
     cursor: pointer;
 }
+
+.others {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
