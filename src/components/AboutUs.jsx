@@ -1,8 +1,8 @@
 import "./AboutUs.css";
-import teen1 from "../assets/imgs/teen1.webp";
-import teen2 from "../assets/imgs/teen2.webp";
-import teen3 from "../assets/imgs/teen3.webp";
-import teen4 from "../assets/imgs/teen4.webp";
+// import teen1 from "../assets/imgs/teen1.webp";
+// import teen2 from "../assets/imgs/teen2.webp";
+// import teen3 from "../assets/imgs/teen3.webp";
+// import teen4 from "../assets/imgs/teen4.webp";
 function AboutUs() {
   return (
     <section id="aboutus" className="about-us">
@@ -37,7 +37,7 @@ function AboutUs() {
           memories on this ancient yet vibrant land.
         </p>
       </div>
-      <div className="cards-container">
+      {/* <div className="cards-container">
         <div className="card">
           <div className="icon">
             <img src={teen1} alt="Shopping Icon" />
@@ -84,7 +84,7 @@ function AboutUs() {
             connections, ensuring everyone feels welcome and included.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

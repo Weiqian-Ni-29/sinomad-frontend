@@ -4,7 +4,7 @@ import Calendar from './Calendar';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
-function BookingForm({ price }) {
+function BookingForm({ price, route }) {
   const navigate = useNavigate();
   const [selectedNumber, setSelectedNumber] = useState('');
   const [selectedDate, setSelectedDate] = useState(null);
@@ -12,11 +12,11 @@ function BookingForm({ price }) {
 
   // 日期和剩余人数检查通过后跳转到付款页面
   const handleJumpPaymentPage = (event) => {
-    if (selectedDate === null || selectedNumber === null || selectedNumber === 0 || selectedNumber > 6) {
+    if (selectedDate === null || selectedNumber === null) {
       alert('date or number of people not selected properly, please try again');
       return;
     }
-    navigate('/Payment', { state: { selectedNumber, price, selectedDate } });
+    navigate('/Payment', { state: { selectedNumber, price, selectedDate, route } });
   };
 
   const handleSubmit = async () => {
@@ -24,7 +24,7 @@ function BookingForm({ price }) {
       alert('Please choose a date before submission');
       return;
     }
-    if (!selectedNumber || selectedNumber > 6 || selectedNumber <= 0) {
+    if (!selectedNumber || selectedNumber <= 0) {
       alert('Please select the number of travelers before submission');
       return;
     }
@@ -38,6 +38,7 @@ function BookingForm({ price }) {
         body: JSON.stringify({
           date: selectedDate.format('YYYY-MM-DD'),
           numberOfTravelers: selectedNumber,
+          route: route
         }),
       });
 
@@ -61,6 +62,7 @@ function BookingForm({ price }) {
         setSelectedDate={setSelectedDate}
         setCurrentSlot={setCurrentSlot}
         setSelectedNumber={setSelectedNumber}
+        route={route}
       />
       <ClientNumberPicker
         selectedNumber={selectedNumber}

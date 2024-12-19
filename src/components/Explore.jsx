@@ -10,9 +10,9 @@ function Explore() {
     navigate('/XujiahuiJingan'); // 跳转到 XujiahuiJingan 页面
   };
   return (
-    <section id="discover">
+    <section id="experience">
       <div>
-        <h2 className="explore-h2">Explore</h2>
+        <h2 className="explore-h2">Experience</h2>
         <div className="explore-cards">
           <div
             className="explore-card" onClick={handleClick}

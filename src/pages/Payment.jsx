@@ -22,15 +22,28 @@ function validPhoneNumber(phoneNumber) {
     return isNumeric;
 }
 
+function isValidRegion(areaCode) {
+    // 匹配以 "+" 开头，后跟1到2个数字，或者直接1到2个数字
+    const regex = /^(?:\+\d{1,2}|\d{1,2})$/;
+    return regex.test(areaCode);
+}
+
+function generateOrderId() {
+    const timestamp = Date.now().toString(36); 
+    const randomChars = Math.random().toString(36).substring(2, 6);
+    return (timestamp.slice(-2) + randomChars).toUpperCase(); 
+}
+  
 function Payment() {
     const location = useLocation();
-    const { selectedNumber, price, selectedDate } = location.state || {};
+    const { selectedNumber, price, selectedDate, route } = location.state || {};
     const navigate = useNavigate();
 
     const [inputs, setInputs] = useState({
         name: '',
         email: '',
         phone: '',
+        region:'',
       });
 
     const handleChange = (e) => {
@@ -41,16 +54,21 @@ function Payment() {
     // triggers when payment is successful
     const handleSubmit = async (e) => {
         e.preventDefault();  // Prevent form submission by default
-        if(!inputs.name || !inputs.email || !inputs.phone || !selectedDate || !dayjs.isDayjs(selectedDate)) {
+        if(!inputs.name || !inputs.email || !inputs.phone || !inputs.region || !selectedDate || !dayjs.isDayjs(selectedDate)) {
             alert('Please make sure all the fields in the form are correctly filled.');
             return;
         }
-        if (!validateEmail(inputs.email) || !validPhoneNumber(inputs.phone)) {
+        if(!isValidRegion(inputs)) {
+            console.log('wow')
+        }
+
+        if (!validateEmail(inputs.email) || !validPhoneNumber(inputs.phone) || !isValidRegion(inputs.region)) {
             alert('The format of email or phone is incorrect, please try again.');
             return;
         }
 
         // 提交表单数据
+        const order_number = generateOrderId();
         try {
             const response = await fetch('http://localhost:5000/api/submit-userinfo', {
               method: 'POST',
@@ -58,19 +76,29 @@ function Payment() {
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify({
+                order_number: order_number,
                 name: inputs.name,
                 email: inputs.email,
                 phone: inputs.phone,
+                region_code: inputs.region.replace("+",""), 
                 amount_paid: selectedNumber * price,
                 travelers: selectedNumber,
                 travel_date: selectedDate,
+                route: route,
               }),
             });
       
             if (response.ok) {
                 const data = await response.json();
                 console.log(`Server response: ${data.message}`);
-                navigate('/PaymentSuccess');
+                navigate('/PaymentSuccess', { state: { 
+                    order_number: order_number, 
+                    name: inputs.name,
+                    email: inputs.email,
+                    phone: inputs.phone, 
+                    region_code: inputs.region.replace("+",""),
+                    travelers: selectedNumber,
+                    travel_date: selectedDate } });
               } else {
                 const errorData = await response.json();
                 alert(`Payment not successful: ${errorData.message}`);
@@ -103,13 +131,24 @@ function Payment() {
                             value={inputs.email}
                             onChange={handleChange}
                         />
-                        <TextField
-                            label="Phone"
-                            variant="outlined"
-                            name="phone"
-                            value={inputs.phone}
-                            onChange={handleChange}
-                        />
+                        <div style={{ display: 'flex', gap: '10px' }}>
+                            <TextField
+                                label="region"
+                                variant="outlined"
+                                name="region"
+                                value={inputs.region}
+                                onChange={handleChange}
+                                style={{width:'80px'}}
+                            />
+                            <TextField
+                                label="Phone"
+                                variant="outlined"
+                                name="phone"
+                                value={inputs.phone}
+                                onChange={handleChange}
+                                style={{flex: '1'}}
+                            />
+                        </div>
                         </Box>
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />

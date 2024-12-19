@@ -4,15 +4,14 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import axios from 'axios';
 import dayjs from 'dayjs';
 
-function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setSelectedNumber }) {
+function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setSelectedNumber, route }) {
   const [availableDates, setAvailableDates] = useState([]);
   const [availableSlots, setAvailableSlots] = useState([]);
-  // const [currentSlot, setCurrentSlot] = useState(null);
 
   useEffect(() => {
     const fetchAvailableDatesNSlots = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/available-dates-n-vacancies');
+        const response = await axios.get('http://localhost:5000/api/available-dates-n-vacancies', { params: { route } });
         const { departureTimes, vacantSlots } = response.data;
         const dayjsDepartureTimes = departureTimes.map(time => dayjs(time));
         setAvailableDates(dayjsDepartureTimes);
@@ -23,7 +22,7 @@ function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setSelectedNu
     };
 
     fetchAvailableDatesNSlots();
-  }, []);
+  }, [route]);
 
   const handleDateChange = (newValue) => {
     setSelectedDate(newValue);
