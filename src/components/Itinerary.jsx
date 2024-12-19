@@ -8,7 +8,7 @@ function Itinerary() {
                 <p className="dot-before"> Xujiahui Origin : some where near St.Ignatius Cathedral(to be updated)</p>
                 <p className="dot-before">Start at: 12:50 St.Ignatius Cathedral</p>
                 <p className="dot-before">End at: 6:30 Jingan Temple</p>
-                <h3>Roadmap</h3>
+                <h3>Schedule</h3>
                 <p className="dot-before">St.Ignatius Cathedral</p>
                 <p className="dot-before">Xujiahui scenic area</p>
                 <p className="dot-before">boba tea break</p>

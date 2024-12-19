@@ -8,7 +8,7 @@ function NavBar() {
                 <span>SiNomad</span>
             </div>
             <nav>
-                <a href="#discover">Discover</a>
+                <a href="#experience">Experience</a>
                 <a href="#guide">Guide</a>
                 <a href="#review">Review</a>
                 <a href="#aboutus">About Us</a>
