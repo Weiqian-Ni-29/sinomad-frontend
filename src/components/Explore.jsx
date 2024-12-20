@@ -21,10 +21,9 @@ function Explore() {
               <img src={dummypic} alt="jingan-temple" />
             </div>
             <div className="card-description">
-              <h4>A City Walk Through the Former French Concession</h4>
+              <h4>Strolling Through Shanghai" French Concession: A Cultural Journey</h4>
               <p>
-                Explore XuHui-Jing'an, where modern vibes meet historic charm.
-                Discover vibrant streets, local culture, and iconic landmarks
+                Embark on an exclusive city walk tour through the former French Concession, discovering historical buildings, lesser-known stories, regional culture, and culminating in a local culinary experience.
               </p>
             </div>
           </div>

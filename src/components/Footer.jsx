@@ -8,6 +8,7 @@ import whatappLogo from '../assets/imgs/whatsapp-logo.webp'
 import ctripLogo from '../assets/imgs/ctrip-logo.png'
 import { useNavigate } from 'react-router-dom';
 import whatsappQRcode from '../assets/imgs/whatsapp-qrcode.png'
+import wechatQRcode from '../assets/imgs/wechat-qrcode.png'
 import React, { useState } from 'react';
 
 function Footer() {
@@ -145,7 +146,7 @@ function Footer() {
                             }}
                             >
                             <img 
-                                src={whatsappQRcode}  // 替换为二维码图片的路径
+                                src={wechatQRcode}  // 替换为二维码图片的路径
                                 alt="WeChat QR Code"
                                 style={{ width: '200px', height: '200px' }}
                             />
