@@ -6,6 +6,7 @@ import XujiaHuiJingan from './pages/XujiahuiJingan';
 import TermsNConditions from './pages/TermsNConditions';
 import Payment from './pages/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/TermsNConditions" element={<TermsNConditions/>}/>
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>
+          <Route path='/AboutUs' element={<AboutUs/>}/>
         </Routes>
       </Router>
     </div>

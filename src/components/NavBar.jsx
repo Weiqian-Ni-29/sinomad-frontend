@@ -1,5 +1,6 @@
 import './NavBar.css';
 import logo from '../assets/imgs/sinomad-logo.webp';
+import { Link } from 'react-router-dom';
 function NavBar() {
     return(
         <header>
@@ -8,10 +9,10 @@ function NavBar() {
                 <span>SiNomad</span>
             </div>
             <nav>
-                <a href="#experience">Experience</a>
-                <a href="#guide">Guide</a>
-                <a href="#review">Review</a>
-                <a href="#aboutus">About Us</a>
+                <Link to="#experience">Experience</Link>
+                <Link to="#guide">Guide</Link>
+                <Link to="#review">Review</Link>
+                <Link to="/AboutUs">About Us</Link>
             </nav>
         </header>
     );
