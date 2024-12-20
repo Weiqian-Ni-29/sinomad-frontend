@@ -5,9 +5,9 @@ function Itinerary() {
             <div className='itinerary'>
                 <h2>Itinerary</h2>
                 <h3>Meeting Point</h3>
-                <p className="dot-before"> Xujiahui Origin : some where near St.Ignatius Cathedral(to be updated)</p>
-                <p className="dot-before">Start at: 12:50 St.Ignatius Cathedral</p>
-                <p className="dot-before">End at: 6:30 Jingan Temple</p>
+                <p className="dot-before"><b>Xujiahui Origin</b>: some where near St.Ignatius Cathedral(to be updated)</p>
+                <p className="dot-before"><b>Start at</b>: 12:50 St.Ignatius Cathedral</p>
+                <p className="dot-before"><b>End at</b>: 6:30 Jingan Temple</p>
                 <h3>Schedule</h3>
                 <p className="dot-before">St.Ignatius Cathedral</p>
                 <p className="dot-before">Xujiahui scenic area</p>
