@@ -7,6 +7,7 @@ import TermsNConditions from './pages/TermsNConditions';
 import Payment from './pages/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
 import AboutUs from './pages/AboutUs';
+import Bund from './pages/Bund';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/XujiaHuiJingan" element={<XujiaHuiJingan price='90' />} />
+          <Route path="/Bund" element={<Bund price='95' />} />
           <Route path="/TermsNConditions" element={<TermsNConditions/>}/>
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>

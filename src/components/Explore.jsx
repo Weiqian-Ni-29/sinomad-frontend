@@ -5,9 +5,13 @@ import dummypic from "../assets/imgs/chenghuangtempo-nightview-generated.webp";
 function Explore() {
   const navigate = useNavigate();
   // 点击时执行的跳转函数
-  const handleClick = (event) => {
-    event.stopPropagation();  // 阻止事件冒泡
-    navigate('/XujiahuiJingan'); // 跳转到 XujiahuiJingan 页面
+  const handleClickXjh = (event) => {
+    event.stopPropagation();
+    navigate('/XujiahuiJingan');
+  };
+  const handleClickBund = (event) => {
+    event.stopPropagation();
+    navigate('/Bund');
   };
   return (
     <section id="experience">
@@ -15,7 +19,7 @@ function Explore() {
         <h2 className="explore-h2">Experience</h2>
         <div className="explore-cards">
           <div
-            className="explore-card" onClick={handleClick}
+            className="explore-card" onClick={handleClickXjh}
           >
             <div className="image-container">
               <img src={dummypic} alt="jingan-temple" />
@@ -27,7 +31,7 @@ function Explore() {
               </p>
             </div>
           </div>
-          <div className="explore-card">
+          <div className="explore-card" onClick={handleClickBund}>
             <div className="image-container">
               <img
                 src="https://via.placeholder.com/300x200"
@@ -35,8 +39,8 @@ function Explore() {
               />
             </div>
             <div className="card-description">
-            <h4>Place holder</h4>
-              <p>A first-timer's guide to Christmas market cruises</p>
+            <h4>Discover the Hidden Charms: A Photography Walk from Suzhou Creek to the Bund</h4>
+              <p>Embark on an exclusive small-group photography walk from Suzhou Creek to the Bund, capturing hidden gems and history with an expericed local guide and a professional photographer, culminating in a traditional Shanghai hotpot.</p>
             </div>
           </div>
           <div className="explore-card">

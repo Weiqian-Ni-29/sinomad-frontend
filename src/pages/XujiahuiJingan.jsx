@@ -1,7 +1,7 @@
 import SimpleImageSlider from "react-simple-image-slider";
 import NavBarCustom from "../components/NavBarCustom";
 import Footer from "../components/Footer";
-import './XujiahuiJingan.css';
+import './TripDetail.css';
 import img1 from '../assets/imgs/lib1.jpg';
 import img2 from '../assets/imgs/lib2.jpg';
 import img3 from '../assets/imgs/church.jpg';
@@ -15,13 +15,13 @@ import clockLogo from '../assets/imgs/clock.png';
 import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import XjhTripOverview from "../components/XjhTripOverview";
-import Itinerary from "../components/Itinerary";
+import XjhItinerary from "../components/XjhItinerary";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 function XujiaHuiJingan(props) {
     return (
-        <div className="XujiahuiJingan">
+        <div className="Title">
             <NavBarCustom title="A City Walk Through the Former French Concession" />
                 <div className="content-container">
                     <div className="img-slider">
@@ -53,7 +53,7 @@ function XujiaHuiJingan(props) {
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Divider style={{ width: '80%' }} />
                 </div>
-                <Itinerary/>
+                <XjhItinerary/>
             <Footer />
         </div>
     );
