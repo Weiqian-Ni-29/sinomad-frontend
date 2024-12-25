@@ -29,10 +29,9 @@ function AboutUs() {
             experience the depth of Chinese culture.
           </p>
           <p>
-            At SiNomad, we're dedicated to transforming every journey into a
-            cultural feast, taking you through the corridors of history and the
-            heartbeat of modernity. With each departure, we embark on a new
-            adventure, and with each return, we harvest stories to cherish.
+            We focus on delivering immersive experiences into the Chinese culture, 
+            providing genuine encounters that transcend mere sightseeing, 
+            allowing you to truly connect with the soul of China's rich heritage.
           </p>
           <p>
             Join us as we unveil the mysteries of China, leaving your mark and
