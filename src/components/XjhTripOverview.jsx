@@ -1,4 +1,4 @@
-import './XjhTripOverview.css';
+import './TripOverview.css';
 
 function XjhTripOverview() {
     return(
