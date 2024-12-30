@@ -9,7 +9,7 @@
 
 /* Individual card styling */
 .explore-card {
-    width: 30%;
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
 .image-container {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     padding: 1em;

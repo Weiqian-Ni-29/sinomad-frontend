@@ -5,6 +5,8 @@ function BundTripOverview() {
         <div className='outer-container'>
             <div className='overview'>
                 <h2>Overview</h2>
+                <p>Embark on an exclusive small-group photography walk from Suzhou Creek to the Bund, capturing hidden gems and history with an expericed local guide and a professional photographer, culminating in a traditional Shanghai hotpot.</p>
+                <h2>Description</h2>
                 <p className="dot-before"><b>Intimate Photography Experience</b>: Limited to 6 participants for a personalized shooting experience.</p>
                 <p className="dot-before"><b>Day to Night Exploration</b>: Capture the essence of Shanghai from dawn to twilight, experiencing the fusion of history and modernity.</p>
                 <p className="dot-before"><b>Stunning Shoot Locations</b>: Discover off-the-beaten-path spots that are perfect for creating Instagram-worthy photos.</p>
