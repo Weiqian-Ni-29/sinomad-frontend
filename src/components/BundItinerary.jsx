@@ -5,9 +5,9 @@ function BundItinerary() {
             <div className='itinerary'>
                 <h2>Itinerary</h2>
                 <h3>Meeting Point</h3>
-                <p className="dot-before"><b>Sihang Warehouse</b>: some where near Sihang Warehouse(to be updated)</p>
-                <p className="dot-before"><b>Start at</b>: 3:00 Sihang Warehouse</p>
-                <p className="dot-before"><b>End at</b>: 6:30 The Bund</p>
+                <p className="dot-before"><b>Meet at</b>: 2:45pm some where near Sihang Warehouse(to be updated)</p>
+                <p className="dot-before"><b>Start at</b>: 3:00pm Sihang Warehouse</p>
+                <p className="dot-before"><b>End at</b>: 6:30pm The Bund</p>
                 <h3>Schedule</h3>
                 <p className="dot-before">Suzhou Creek</p>
                 <p className="dot-before">Coffee Break</p>

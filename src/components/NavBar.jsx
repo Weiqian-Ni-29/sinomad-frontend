@@ -9,9 +9,8 @@ function NavBar() {
                 <span>SiNomad</span>
             </div>
             <nav>
-                <Link to="#experience">Experience</Link>
-                <Link to="#guide">Guide</Link>
-                <Link to="#review">Review</Link>
+                <a href="#experience">Experience</a>
+                <a href="#guide">Guide</a>
                 <Link to="/AboutUs">About Us</Link>
             </nav>
         </header>

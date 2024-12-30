@@ -5,6 +5,8 @@ function XjhTripOverview() {
         <div className='outer-container'>
             <div className='overview'>
                 <h2>Overview</h2>
+                <p>Embark on an exclusive city walk tour through the former French Concession, discovering historical buildings, lesser-known stories, regional culture, and culminating in a local culinary experience.</p>
+                <h2>Description</h2>
                 <p className="dot-before"><b>Cultural Collision</b>: Immerse in the fusion of Chinese and Western cultures in Shanghai's former French Concession.</p>
                 <p className="dot-before"><b>Historical Landmarks</b>: Journey past the former Far East's largest cathedral and one of China's most expensive Buddhist temples.</p>
                 <p className="dot-before"><b>Architectural Tales</b>: Discover dozens of protected historical buildings with intriguing, lesser-known stories.</p>

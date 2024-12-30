@@ -8,6 +8,7 @@ import Payment from './pages/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
 import AboutUs from './pages/AboutUs';
 import Bund from './pages/Bund';
+import Jingze from './pages/Jingze';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/XujiaHuiJingan" element={<XujiaHuiJingan price='90' />} />
           <Route path="/Bund" element={<Bund price='95' />} />
+          <Route path="/Jingze" element={<Jingze price='120' />} />
           <Route path="/TermsNConditions" element={<TermsNConditions/>}/>
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>
