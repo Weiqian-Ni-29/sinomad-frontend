@@ -29,7 +29,7 @@ function Explore() {
               <img src={jingze_img} onClick={handleClickJingze} alt="jingze" />
             </div>
             <div className="card-description">
-              <h4>Chinese Painting Experience by local master in</h4>
+              <h4>Chinese Painting Experience by local master in Jiangnan Water Town</h4>
             </div>
           </div>
           <div
