@@ -1,7 +1,6 @@
 .why-choose-us {
     text-align: center;
     padding: 0 20px;
-    background-color: #f9f9f9;
   }
   
   .why-choose-us h2 {
@@ -20,7 +19,6 @@
   .feature {
     max-width: 250px;
     text-align: center;
-    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
