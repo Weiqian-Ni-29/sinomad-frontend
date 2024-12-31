@@ -11,8 +11,8 @@ function PortalImg() {
                             width={'100%'}
                             height={500}
                             images={imgs}
-                            showBullets={false}
-                            showNavs={true}
+                            showBullets={true}
+                            showNavs={false}
                             bgColor="#ffffff"
                             loop={true}
                             autoPlay={true}

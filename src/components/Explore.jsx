@@ -24,6 +24,14 @@ function Explore() {
       <div>
         <h2 className="explore-h2">Experience</h2>
         <div className="explore-cards">
+        <div className="explore-card">
+            <div className="image-container">
+              <img src={jingze_img} onClick={handleClickJingze} alt="jingze" />
+            </div>
+            <div className="card-description">
+              <h4>Chinese Painting Experience by local master in</h4>
+            </div>
+          </div>
           <div
             className="explore-card" onClick={handleClickXjh}
           >
@@ -31,7 +39,7 @@ function Explore() {
               <img src={xujiahui_jingan_img} alt="xujiahui-jingan" />
             </div>
             <div className="card-description">
-              <h4>Strolling Through Shanghai Former French Concession: A Cultural Journey</h4>
+              <h4>Strolling Through Shanghai Former French Concession</h4>
             </div>
           </div>
           <div className="explore-card" onClick={handleClickBund}>
@@ -42,15 +50,7 @@ function Explore() {
               />
             </div>
             <div className="card-description">
-            <h4>Discover the Hidden Charms: A Photography Walk from Suzhou Creek to the Bund</h4>
-            </div>
-          </div>
-          <div className="explore-card">
-            <div className="image-container">
-              <img src={jingze_img} onClick={handleClickJingze} alt="jingze" />
-            </div>
-            <div className="card-description">
-            <h4>Chinese Painting Experience by local master in Jiangnan Water Town</h4>
+            <h4>A Photography Walk from Suzhou Creek to the Bund</h4>
             </div>
           </div>
         </div>
