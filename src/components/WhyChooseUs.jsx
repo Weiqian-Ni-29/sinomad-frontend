@@ -1,29 +1,29 @@
 import React from "react";
-import "./WhyChooseUs.css"; // Custom CSS for styling
+import "./WhyChooseUs.css";
 
 const WhyChooseUs = () => {
   const features = [
     {
-      icon: "📞", // Example placeholder for an icon
-      title: "24/7 customer support",
-      description: "No matter the time zone, we're here to help.",
+      icon: "📞", 
+      title: "Licensed agency",
+      description: "We are a licensed travel agency, always adhering to industry standards to ensure compliant operations.",
     },
     {
-      icon: "💎", // Example placeholder for an icon
-      title: "Earn rewards",
-      description: "Explore, earn, redeem, and repeat with our loyalty program.",
+      icon: "💎",
+      title: "Deep cultural experience",
+      description: "Create lasting memories with our locally-vetted, expertly-curated experiences",
     },
     {
-      icon: "⭐", // Example placeholder for an icon
-      title: "Millions of reviews",
+      icon: "⭐",
+      title: "Guaranteed Uniqueness",
       description:
-        "Plan and book with confidence using reviews from fellow travelers.",
+        "Unlock exclusive places and activities that are inaccessible or unexperienced by the general public.",
     },
     {
-      icon: "🗓️", // Example placeholder for an icon
-      title: "Plan your way",
+      icon: "🗓️",
+      title: "Stay planned or spontaneous",
       description:
-        "Stay flexible with free cancellation and the option to reserve now and pay later at no additional cost.",
+        "Stay flexible with free cancellation* at no additional cost.",
     },
   ];
 
