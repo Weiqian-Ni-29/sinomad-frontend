@@ -8,8 +8,10 @@
     display: flex;
     flex-direction: column; /* 如果有多个子元素，可以设置垂直排列 */
     background-color: bisque;
-    padding: 4em 34em;
-    margin-top: 0;
+    padding: 4em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .aboutus-intro p {
