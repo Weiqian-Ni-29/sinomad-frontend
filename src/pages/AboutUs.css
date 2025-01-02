@@ -8,108 +8,18 @@
     display: flex;
     flex-direction: column; /* 如果有多个子元素，可以设置垂直排列 */
     background-color: bisque;
-    padding: 4em;
+    padding: 4em 34em;
+    margin-top: 0;
 }
 
 .aboutus-intro p {
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-weight:600;
     font-size: 1.1em;
 }
 
-/* Card description styling */
-.card-description {
-    padding: 1em;
-    text-align: center;
-    color: #333;
-    font-size: 1em;
-    line-height: 1.5;
-    font-weight: normal;
-    font-weight: bold;
-}
-
-/* 桌面设备 (宽度大于 1024px) */
-@media (min-width: 1024px) {
-    .cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2em;
-        padding: 1em;
-        justify-content: center;
-    }
-    
-    .card {
-        position: relative;
-        width: 15%;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        background-color: white;
-        transition: transform 0.2s;
-        padding-bottom: 1em;
-    }
-}
-
-/* 平板设备 (宽度大于 768px 小于 1024px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-        padding: 1em;
-        justify-content: center;
-    }
-    
-    .card {
-        position: relative;
-        width: 30%;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        background-color: white;
-        transition: transform 0.2s;
-        padding-bottom: 1em;
-    }
-}
-
-/* 移动设备 (宽度小于等于 768px) */
-@media (max-width: 768px) {
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 两列均匀分布 */
-        gap: 1em;
-        padding: 1em;
-    }
-
-    .card {
-        position: relative;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        background-color: white;
-        cursor: pointer;
-        transition: transform 0.2s;
-        padding-bottom: 1em;
-        height: auto;
-    }
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.card p {
-    padding: 0 20px;
-    font-weight: 600;
-    line-height: 1.8em;
+.aboutus-intro h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
 }

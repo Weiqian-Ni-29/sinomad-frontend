@@ -1,7 +1,9 @@
 import './PortalImg.css';
-import entranceImg from '../assets/imgs/intro-banner.jpg'
+// import entranceImg from '../assets/imgs/intro-banner.jpg'
 import SimpleImageSlider from "react-simple-image-slider";
-const imgs = [entranceImg, entranceImg, entranceImg];
+import introBannerImg1 from "../assets/imgs/intro_banner_1.jpg";
+import introBannerImg2 from "../assets/imgs/intro_banner_2.png";
+const imgs = [introBannerImg1, introBannerImg2];
 
 function PortalImg() {
     return (
