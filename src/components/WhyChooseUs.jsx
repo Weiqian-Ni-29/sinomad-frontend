@@ -4,14 +4,14 @@ import "./WhyChooseUs.css";
 const WhyChooseUs = () => {
   const features = [
     {
-      icon: "📞", 
+      icon: "🏷️", 
       title: "Licensed agency",
       description: "We are a licensed travel agency, always adhering to industry standards to ensure compliant operations.",
     },
     {
-      icon: "💎",
+      icon: "🎨",
       title: "Deep cultural experience",
-      description: "Create lasting memories with our locally-vetted, expertly-curated experiences",
+      description: "Create lasting memories with our locally-vetted, expertly-curated experiences.",
     },
     {
       icon: "⭐",
