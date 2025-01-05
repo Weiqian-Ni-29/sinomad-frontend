@@ -14,7 +14,6 @@ function JingzeItinerary() {
                 <p className="dot-before">Lunch</p>
                 <p className="dot-before">Chinese painting experience</p>
                 <p className="dot-before">Hotel drop off</p>
-                <p>* Notice: Due to the physically demanding nature of the city walk, we strongly recommend that participants be at least 10 and 70 years of age. Additionally, bringing infants is not advised.</p>
             </div>
         </div>
     );
