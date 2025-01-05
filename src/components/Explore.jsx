@@ -1,7 +1,7 @@
 import "./Explore.css";
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import xujiahui_jingan_img from '../assets/imgs/jingantempo.jpg';
+import xujiahui_jingan_img from '../assets/imgs/xjh9.jpg';
 import bund_img from '../assets/imgs/bund1.jpg';
 import jingze_img from '../assets/imgs/jingze1.jpg';
 import xlb_img from '../assets/imgs/xlb1.jpg';
