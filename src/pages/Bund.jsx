@@ -21,7 +21,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8];
 function Bund(props) {
     return (
         <div className="Title">
-            <NavBarCustom title="Discover the Hidden Charms: A Photography Walk from Suzhou Creek to the Bund" />
+            <NavBarCustom title="A Photography Walk from Suzhou Creek to the Bund" />
             <div className="content-container">
                 <div className="img-slider">
                     <SimpleImageSlider
