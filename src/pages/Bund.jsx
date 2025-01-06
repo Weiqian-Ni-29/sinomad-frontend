@@ -1,4 +1,3 @@
-import SimpleImageSlider from "react-simple-image-slider";
 import NavBarCustom from "../components/NavBarCustom";
 import Footer from "../components/Footer";
 import './TripDetail.css';
@@ -15,6 +14,7 @@ import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import BundTripOverview from "../components/BundTripOverview";
 import BundItinerary from "../components/BundItinerary";
+import Gallery from "../components/Gallery";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8];
 
@@ -24,14 +24,7 @@ function Bund(props) {
             <NavBarCustom title="A Photography Walk from Suzhou Creek to the Bund" />
             <div className="content-container">
                 <div className="img-slider">
-                    <SimpleImageSlider
-                        width={600}
-                        height={800}
-                        images={imgs}
-                        showBullets={false}
-                        showNavs={true}
-                        bgColor="#ffffff"
-                    />
+                    <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
                     <h3>From ${props.price} per person</h3>

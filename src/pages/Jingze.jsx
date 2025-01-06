@@ -1,4 +1,4 @@
-import SimpleImageSlider from "react-simple-image-slider";
+import Gallery from "../components/Gallery";
 import NavBarCustom from "../components/NavBarCustom";
 import Footer from "../components/Footer";
 import './TripDetail.css';
@@ -28,14 +28,7 @@ function Jingze(props) {
             <NavBarCustom title="Chinese Painting Experience by local master in Jiangnan Water Town" />
             <div className="content-container">
                 <div className="img-slider">
-                    <SimpleImageSlider
-                        width={600}
-                        height={800}
-                        images={imgs}
-                        showBullets={false}
-                        showNavs={true}
-                        bgColor="#ffffff"
-                    />
+                    <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
                     <h3>From ${props.price} per person</h3>
