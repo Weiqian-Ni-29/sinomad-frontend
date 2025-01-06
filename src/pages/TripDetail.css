@@ -17,6 +17,7 @@
 
 .img-slider {
   margin-left: 300px;
+  max-width: 40%;
   flex-grow: 1;
 }
 
