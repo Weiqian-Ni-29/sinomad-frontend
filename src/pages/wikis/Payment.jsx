@@ -5,7 +5,7 @@ function Payment() {
     return (
         <div>
             <NavBarCustom title="Payment in China"/>
-            <div className='world'>
+            <div className='world-x'>
                 <h1>Comprehensive China Payment Methods Guide 2024</h1>
                 <div className='word-wrapper'>
                     <p>
