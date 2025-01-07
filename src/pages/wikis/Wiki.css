@@ -24,6 +24,7 @@
 
 .world a {
     text-decoration: none;
+    color: black;
 }
 
 .world a:hover {

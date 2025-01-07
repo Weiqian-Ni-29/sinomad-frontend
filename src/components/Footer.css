@@ -3,7 +3,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    margin-top: 2em;
     width: 100%; /* 占据屏幕的全部宽度 */
     box-sizing: border-box; /* 确保 padding 不会影响宽度 */
 }
