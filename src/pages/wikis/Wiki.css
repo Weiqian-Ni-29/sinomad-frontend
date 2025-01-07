@@ -1,18 +1,18 @@
-.world {
+.world-x {
     max-width: 45%; /* 设置最大宽度 */
     margin: 0 auto; /* 居中对齐 */
 }
 
-.world p{
+.world-x p{
     text-align: left;
     line-height: 1.8em;
 }
 
-.world h2{
+.world-x h2{
     text-align: left;
 }
 
-.world li{
+.world-x li{
     text-align: left;
 }
 
@@ -22,11 +22,11 @@
     border-radius: 20px;
 }
 
-.world a {
+.world-x a {
     text-decoration: none;
     color: black;
 }
 
-.world a:hover {
+.world-x a:hover {
     text-decoration: underline;
 }
