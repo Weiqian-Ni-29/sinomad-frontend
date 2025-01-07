@@ -4,6 +4,7 @@ import visas from '../assets/imgs/visas.webp'
 import weather from '../assets/imgs/weather.webp'
 import food from '../assets/imgs/food.jpg'
 import culture from '../assets/imgs/culture.webp'
+import { Link } from "react-router-dom";
 function TravelGuide() {
   return (
     <section id="guide" className="travel-guide">
@@ -11,12 +12,12 @@ function TravelGuide() {
       <h3 className="saying">Before everything else, getting ready is the Secret of Success.</h3>
       <h3 className="ford">-- Henry Ford</h3>
       <div className="circle-container">
-        <a href="things.html" className="circle-link">
+        <Link to='/Wiki-Payment' className="circle-link">
           <div className="circle">
-            <img src={things} alt="Places" />
+            <img src={things} alt="payment" />
           </div>
-          <p>Places</p>
-        </a>
+          <p>Payment</p>
+        </Link>
         <a href="visas.html" className="circle-link">
           <div className="circle">
             <img src={visas} alt="Visas" />

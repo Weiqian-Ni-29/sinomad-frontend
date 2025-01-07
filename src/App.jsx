@@ -10,6 +10,7 @@ import AboutUs from './pages/AboutUs';
 import Bund from './pages/Bund';
 import Jingze from './pages/Jingze';
 import Xlb from './pages/Xlb';
+import WikiPayment from './pages/wikis/Payment';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>
           <Route path='/AboutUs' element={<AboutUs/>}/>
+          <Route path='/Wiki-Payment' element={<WikiPayment/>}/>
         </Routes>
       </Router>
     </div>
