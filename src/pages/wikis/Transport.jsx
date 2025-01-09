@@ -50,24 +50,24 @@ function Transport() {
                 </div>
                 <h2 id='intra-city-travel'>Intra-city Travel</h2>
                 <div className='word-img-container'>
-                    <img className="img1" src={img1} alt="transport1" />
+                    <img className="timg1" src={img1} alt="transport1" />
                     <div className='word-wrapper'>
                         <p>When traveling within Chinese cities, using a reliable navigation app is crucial for efficient travel between neighborhoods. With a clear route plan, exploration becomes simple. Major cities have well-developed subway systems with bilingual signage, making them efficient and economical. Taxis offer additional convenience but are more expensive than public transportation. Below are detailed descriptions of various intra-city transportation options.</p>
                     </div>
                 </div>
                 <h2 id='navigation-apps'>Using Navigation Apps - Suitable for users with basic Chinese knowledge</h2>
                 <h3>Amap</h3>
-                <img className="img2" src={img2} alt="transport2" />
+                <img className="timg2" src={img2} alt="transport2" />
                 <div className='word-wrapper'>
                     <p>Amap is one of China's most popular navigation apps, offering seamless navigation features. However, it only supports Chinese. If you can read or understand some Chinese, Amap is a good choice and is available on Android and iOS platforms.</p>
                 </div>
                 <h3>Apple Maps - Suitable for iPhone users</h3>
-                <img className="img3" src={img3} alt="transport3" />
+                <img className="timg3" src={img3} alt="transport3" />
                 <div className='word-wrapper'>
                     <p>Apple Maps is the preferred navigation app for iPhone users traveling in China. It integrates local transportation and geographic data, providing navigation options for driving, walking, cycling, and public transit. Users can enjoy real-time traffic updates and comprehensive route planning.</p>
                 </div>
                 <h3>Petal Maps - Suitable for Android users</h3>
-                <img className="img4" src={img4} alt="transport4" />
+                <img className="timg4" src={img4} alt="transport4" />
                 <div className='word-wrapper'>
                     <p>Due to restrictions on many Google services, including Google Maps, in China, Petal Maps is the recommended alternative. Although the installation process may be slightly complex, Petal Maps offers reliable navigation features such as real-time traffic updates and detailed maps, making it a practical tool for navigating Chinese cities.</p>
                 </div>
@@ -75,7 +75,7 @@ function Transport() {
                 <div className='word-wrapper'>
                     <p>Major Chinese cities such as Beijing, Shanghai, and Chongqing have extensive subway systems that provide fast, convenient, and economical transportation options, with fares as low as 2 RMB. All subway stations have bilingual signs displaying station names and directions, facilitating navigation for non-Chinese speakers.</p>
                 </div>
-                <img className="img5" src={img5} alt="transport5" />
+                <img className="timg5" src={img5} alt="transport5" />
                 <div className='word-wrapper'>
                     <p>Local buses are the most economical transportation option in Chinese cities. However, since bus stop signs typically lack English translations, non-Chinese speakers may have difficulty determining when to disembark, making them less user-friendly.</p>
                 </div>
@@ -85,33 +85,33 @@ function Transport() {
                     1. Open Alipay and tap "Transportation." <br/>
                     - If you have set up a bus/subway card, you will automatically be redirected to step 3. If not, you will proceed to step 2
                 </p>
-                <img className="img6" src={img6} alt="transport6" />
+                <img className="timg6" src={img6} alt="transport6" />
                 <p>
                     2. Set up a bus/subway card. <br/>
                     - Tap "Get Now," follow the instructions to register and activate your bus/subway card.
                 </p>
-                <img className="img7" src={img7} alt="transport7" />
+                <img className="timg7" src={img7} alt="transport7" />
                 <p>
                     Use your bus/subway card.<br/>
                     Once set up, simply scan the QR code at the bus door or subway gate to board.
                 </p>
-                <img className="img8" src={img8} alt="transport8" />
+                <img className="timg8" src={img8} alt="transport8" />
                 <h3>WeChat for Taking Buses and Subways </h3>
                 <p>
                     1. Scan the QR code.<br/>
                     - If you have set up a bus/subway card, you can access it directly through the "Ride Code" mini-program and skip to step 3. If not, the app will guide you to step 2 for setup.
                 </p>
-                <img className="img9" src={img9} alt="transport9" />
+                <img className="timg9" src={img9} alt="transport9" />
                 <p>
                     2. Set up a bus/subway card.<br/>
                     - Tap "Activate," and follow the on-screen instructions to activate the bus and subway QR code card.
                 </p>
-                <img className="img10" src={img10} alt="transport10" />
+                <img className="timg10" src={img10} alt="transport10" />
                 <p>
                     Use your bus/subway card.<br/>
                     After activation, access the "Ride Code" mini-program through WeChat's search function or WeChat Pay. Once inside, simply scan the QR code at the bus or subway gate to board.
                 </p>
-                <img className="img11" src={img11} alt="transport11" />
+                <img className="timg11" src={img11} alt="transport11" />
                 <p>
                     You can also purchase single-use subway tickets using Alipay, WeChat Pay, or cash at the station's ticket vending machines. These machines usually offer English options, and you will receive a single-use ticket that must be returned at the exit gate.
                 </p>
@@ -127,23 +127,23 @@ function Transport() {
                     1. Open Alipay and tap "DiDi Travel."<br/>
                     - Launch the Alipay app, then select "DiDi Travel" from the service menu or search within the app.
                 </p>
-                <img className="img12" src={img12} alt="transport12" />
+                <img className="timg12" src={img12} alt="transport12" />
                 <p>
                     2. Enter the pickup and destination.<br/>
                     - Input your current location and destination in the respective fields.
                 </p>
-                <img className="img13" src={img13} alt="transport13" />
+                <img className="timg13" src={img13} alt="transport13" />
                 <p>
                     Choose the car type and confirm.<br/>
                     - Select the car type that suits your needs (e.g., economy, luxury), and tap "Confirm" to complete the booking.
                 </p>
-                <img className="img14" src={img14} alt="transport14" />
+                <img className="timg14" src={img14} alt="transport14" />
                 <h3>WeChat for Taking Taxis</h3>
                 <p>
                     1. Open WeChat and access the Didi mini-program.<br/>
                     - Go to the "Me"section, tap "Payments and Services," and then select "DiDi" under the transportation options to access the mini-program. Alternatively, you can directly search for "DiDi" using the search bar at the top of the WeChat home screen.
                 </p>
-                <img className="img15" src={img15} alt="transport15" />
+                <img className="timg15" src={img15} alt="transport15" />
                 <p>
                     2. Follow the steps for Alipay.<br/>
                     - Once you access the Didi mini-program through WeChat, the process of entering the pickup and destination, selecting the car type, and confirming the trip is the same as described for Alipay.
@@ -154,7 +154,7 @@ function Transport() {
                     For travel between multiple cities, utilizing China's extensive aviation and high-speed rail networks is the most comfortable, safe, and efficient way to travel. These transportation options ensure a smooth and enjoyable journey across the country.
                     </p>
                 </div>
-                <img className="img16" src={img16} alt="transport16" />
+                <img className="timg16" src={img16} alt="transport16" />
                 <h2 id='fly'>Flying</h2>
                 <div className='word-wrapper'>
                     <p>
@@ -178,27 +178,27 @@ function Transport() {
                     1. Open the Trip.com App and select "Trains."<br/>
                     - Launch the Trip.com App on your mobile device. Tap the "Trains" tab from the home screen to start searching for available train routes in China.
                 </p>
-                <img className="img17" src={img17} alt="transport17" />
+                <img className="timg17" src={img17} alt="transport17" />
                 <p>
                     2. Enter the departure and arrival locations.<br/>
                     - Use the search bar to input your departure city and destination. You can also select the travel date and (if needed) a specific time window. Tap "Search" to view available trains.
                 </p>
-                <img className="img18" src={img18} alt="transport18" />
+                <img className="timg18" src={img18} alt="transport18" />
                 <p>
                     3. Choose the train and ticket type.<br/>
                     - Review the list of available trains and select one that fits your schedule. After choosing a train, select your preferred seat class (e.g., second-class seat, soft sleeper) from the options provided.
                 </p>
-                <img className="img19" src={img19} alt="transport19" />
+                <img className="timg19" src={img19} alt="transport19" />
                 <p>
                     4. Enter passenger information.<br/>
                     - Input the passenger's detailed information, ensuring it matches the information on the passport, including full name and passport number. If purchasing tickets for multiple people, you can add the details for each passenger here.
                 </p>
-                <img className="img20" src={img20} alt="transport20" />
+                <img className="timg20" src={img20} alt="transport20" />
                 <p>
                     5. Review booking information and make payment.<br/>
                     - Carefully check all information, including the selected train, departure time, seat type, and passenger details, to ensure everything is correct. After reviewing, choose your payment method. Trip.com supports various options, including international credit/debit cards and PayPal. Confirm and make the payment to secure your ticket.
                 </p>
-                <img className="img21" src={img21} alt="transport21" />
+                <img className="timg21" src={img21} alt="transport21" />
                 <p>
                     6. Receive electronic ticket confirmation.<br/>
                     - After payment, you will receive an electronic ticket confirmation in the app. You can access this ticket under the "Bookings" tab and use the provided QR code to collect a physical ticket at the train station or directly scan it at the gate (if electronic tickets are supported).<br/>
@@ -214,7 +214,7 @@ function Transport() {
                     1. Register a New Account<br/>
                     - Open the Railway 12306 App, go to the "My" section in the bottom menu, and then click "Register." Fill in your information, including your passport number, full name (as it appears on your passport), and email address. Follow the on-screen prompts to verify your email and complete your account setup.
                 </p>
-                <img className="img22" src={img22} alt="transport22" />
+                <img className="timg22" src={img22} alt="transport22" />
                 <p>
                     2. Complete Identity Verification<br/>
                     - After registration, go to "My," select "Identity Verification." Submit your passport details and follow further instructions, such as uploading a passport photo. Once the verification is complete, you will be able to book tickets.
@@ -223,12 +223,12 @@ function Transport() {
                     3. Search for Trains<br/>
                     - After your account is set up, use the search bar to enter your departure city, destination, and travel date. Click "Search" to view all available trains on that route.
                 </p>
-                <img className="img23" src={img23} alt="transport23" />
+                <img className="timg23" src={img23} alt="transport23" />
                 <p>
                     4. Select the Train and Ticket Type<br/>
                     - Browse the available trains and select your preferred time and train type (e.g., high-speed train or regular train). Then, choose the seat or sleeper class (second-class seat, soft sleeper, etc.).
                 </p>
-                <img className="img24" src={img24} alt="transport24" />
+                <img className="timg24" src={img24} alt="transport24" />
                 <p>
                     5. Enter Passenger Information<br/>
                     - Input the required passenger information, including full name and passport details. If booking for multiple people, repeat this process to add each passenger.

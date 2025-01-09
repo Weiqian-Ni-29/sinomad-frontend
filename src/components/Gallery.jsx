@@ -19,7 +19,7 @@ const Gallery = (props) => {
       >
         {props.imgs.map((img, index) => (
           <SwiperSlide key={index}>
-            <img src={img} alt={`Slide ${index}`} style={{ width: "450px", height: "600px" }} />
+            <img src={img} alt={`Slide ${index}`} style={{ width: "450px", height: "600px", borderRadius:"15px" }} />
           </SwiperSlide>
         ))}
       </Swiper>
