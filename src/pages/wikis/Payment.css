@@ -1,50 +1,50 @@
-.img1 {
-    flex: 0 0 30%; /* 图片宽度占30% */
-    max-width: 20%; /* 确保图片不会超出30% */
-    height: auto; /* 保持图片宽高比 */
+.pimg1 {
+    flex: 0 0 30%;
+    max-width: 20%;
+    height: auto;
     margin-right: 2em;
 }
 
-.img2 {
+.pimg2 {
     width: 50%;
 }
 
-.img3 {
+.pimg3 {
     width: 50%;
 }
 
-.img4 {
+.pimg4 {
     width:80%;
 }
 
-.img5 {
+.pimg5 {
     width:60%;
 }
 
-.img6 {
+.pimg6 {
     width:60%;
 }
 
-.img7 {
+.pimg7 {
     width:60%;
 }
 
-.img8 {
+.pimg8 {
     width:60%;
 }
 
-.img9 {
+.pimg9 {
     width:60%;
 }
 
-.img10 {
+.pimg10 {
     width:80%;
 }
 
-.img11 {
+.pimg11 {
     width:40%;
 }
 
-.img12 {
+.pimg12 {
     width:40%;
 }

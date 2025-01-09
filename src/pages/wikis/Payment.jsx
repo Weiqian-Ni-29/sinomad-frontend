@@ -1,7 +1,5 @@
 import Footer from '../../components/Footer';
 import NavBarCustom from '../../components/NavBarCustom';
-import './Wiki.css';
-import './Payment.css';
 import img1 from '../../assets/imgs/wikis/payment/payment-wiki1.png';
 import img2 from '../../assets/imgs/wikis/payment/payment-wiki2.png';
 import img3 from '../../assets/imgs/wikis/payment/payment-wiki3.png';
@@ -15,6 +13,8 @@ import img10 from '../../assets/imgs/wikis/payment/payment-wiki10.png';
 import img11 from '../../assets/imgs/wikis/payment/payment-wiki11.png';
 import img12 from '../../assets/imgs/wikis/payment/payment-wiki12.png';
 import ToTopButton from '../../components/ToTopButton';
+import './Wiki.css';
+import './Payment.css';
 function Payment() {
     return (
         <div>
@@ -40,34 +40,34 @@ function Payment() {
                     </div>
                     <h3>Alipay</h3>
                     <p>(1)Search for Alipay in the app store or on its official website, and download the app.</p>
-                    <img className="img2" src={img2} alt="payment2" />
+                    <img className="pimg2" src={img2} alt="payment2" />
                     <p>(2)Open the app, and register with your phone number or just sign in if you have already registered.</p>
-                    <img className="img3" src={img3} alt="payment3" />
+                    <img className="pimg3" src={img3} alt="payment3" />
                     <p>(3) Add bank cards as shown below.</p>
                     <p>Tip: Visa, Mastercard, JCB, Diners Club, and Discover cards can all be added to Alipay.<br/>
                         Tap "Add Now" and follow on-page prompts to complete the process.</p>
-                    <img className="img4" src={img4} alt="payment4" />
+                    <img className="pimg4" src={img4} alt="payment4" />
                     <p>(4)Pay by scanning QR code.</p>
                     <p>Method 1: Tap "Scan" and scan the merchant-presented QR code.</p>
-                    <img className="img5" src={img5} alt="payment5" />
+                    <img className="pimg5" src={img5} alt="payment5" />
                     <p>Method 2: Tap "Pay/Receive", and present your QR code to the merchant.</p>
-                    <img className="img6" src={img6} alt="payment6" />
+                    <img className="pimg6" src={img6} alt="payment6" />
                     <h4>WeChat Pay</h4>
                     <p>(1) Search for WeChat in the app store, and download it.</p>
-                    <img className="img7" src={img7} alt="payment7" />
+                    <img className="pimg7" src={img7} alt="payment7" />
                     <p>(2) Open the WeChat app, and register with your phone number or just sign in if you have already registered.</p>
-                    <img className="img8" src={img8} alt="payment8" />
+                    <img className="pimg8" src={img8} alt="payment8" />
                     <p>(3) Add bank cards as shown below.</p>
-                    <img className="img9" src={img9} alt="payment9" />
-                    <img className="img10" src={img10} alt="payment10" />
+                    <img className="pimg9" src={img9} alt="payment9" />
+                    <img className="pimg10" src={img10} alt="payment10" />
                     <p>Note: Visa, Mastercard, American Express, JCB, Diners Club, and Discover cards can all be added to Weixin Pay.<br/>
                         Tap "Add a card" and follow on-page prompts to complete the process.</p>
                     <p>(4) Pay by scanning QR code.<br/>
                         You can pay by scanning a merchant's QR code (method 1) or by having a merchant scan yours (method 2).</p>
                     <p>Method 1: Tap the "+" sign at the upper right corner and then the "Scan" icon, and scan the merchant-presented QR code.</p>
-                    <img className="img11" src={img11} alt="payment11" />
+                    <img className="pimg11" src={img11} alt="payment11" />
                     <p>Method 2: Tap the "+" sign at the upper right corner and then the "Money" icon, and present your QR code to the merchant.</p>
-                    <img className="img12" src={img12} alt="payment12" />
+                    <img className="pimg12" src={img12} alt="payment12" />
                     <p>Follow the instructions in the app to complete payment process.</p>
                 </div>
                 <div id="card">
