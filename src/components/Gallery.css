@@ -1,17 +1,6 @@
-/* 限制缩略图容器的高度和启用滚动条 */
-.image-gallery-thumbnails-wrapper {
-    max-height: 400px; /* 设置缩略图容器最大高度 */
-    overflow-y: auto; /* 启用垂直滚动条 */
-  }
-  
-  /* 左侧缩略图样式 */
-  .image-gallery-thumbnails-wrapper.left {
-    max-width: 120px; /* 设置缩略图容器最大宽度 */
-    overflow-y: auto; /* 启用垂直滚动条 */
-  }
-  
-  /* 缩略图之间的间距 */
-  .image-gallery-thumbnail {
-    margin: 5px 0;
-  }
-  
+/* 缩略图样式 */
+.swiper-slide-thumb-active img {
+  border: 5px solid bisque; /* 给选中的缩略图添加黑色边框 */
+  border-radius: 5px; /* 你也可以设置圆角 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+}
