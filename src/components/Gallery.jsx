@@ -4,6 +4,7 @@ import { Navigation, Thumbs } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import "./Gallery.css";
 
 const Gallery = (props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
