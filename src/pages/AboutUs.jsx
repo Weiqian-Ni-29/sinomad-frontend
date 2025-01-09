@@ -1,6 +1,6 @@
 import NavBarCustom from "../components/NavBarCustom";
 import "./AboutUs.css";
-import banner from '../assets/imgs/intro-banner.jpg';
+import banner from '../assets/imgs/common/intro-banner.jpg';
 function AboutUs() {
   return (
     <section id="aboutus" className="about-us">

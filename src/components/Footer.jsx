@@ -1,14 +1,14 @@
 import './Footer.css';
-import inslogo from '../assets/imgs/Instagram_logo_2016.svg.png'
-import xiaohongshulogo from '../assets/imgs/XiaohongshuLOGO.png'
-import Tiktoklogo from '../assets/imgs/tiktok.jpg'
-import youtubeLogo from '../assets/imgs/youtube-logo.webp'
-import wechatLogo from '../assets/imgs/wechat-logo.png'
-import whatappLogo from '../assets/imgs/whatsapp-logo.webp'
-import ctripLogo from '../assets/imgs/ctrip-logo.png'
+import inslogo from '../assets/imgs/common/Instagram_logo_2016.svg.png'
+import xiaohongshulogo from '../assets/imgs/common/XiaohongshuLOGO.png'
+import Tiktoklogo from '../assets/imgs/common/tiktok.jpg'
+import youtubeLogo from '../assets/imgs/common/youtube-logo.webp'
+import wechatLogo from '../assets/imgs/common/wechat-logo.png'
+import whatappLogo from '../assets/imgs/common/whatsapp-logo.webp'
+import ctripLogo from '../assets/imgs/common/ctrip-logo.png'
 import { useNavigate } from 'react-router-dom';
-import whatsappQRcode from '../assets/imgs/whatsapp-qrcode.png'
-import wechatQRcode from '../assets/imgs/wechat-qrcode.png'
+import whatsappQRcode from '../assets/imgs/common/whatsapp-qrcode.png'
+import wechatQRcode from '../assets/imgs/common/wechat-qrcode.png'
 import React, { useState } from 'react';
 
 function Footer() {

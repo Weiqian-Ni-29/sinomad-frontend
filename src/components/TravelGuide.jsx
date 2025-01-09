@@ -1,9 +1,9 @@
 import "./TravelGuide.css";
-import things from '../assets/imgs/places.jpg'
-import visas from '../assets/imgs/visas.webp'
-import weather from '../assets/imgs/weather.webp'
-import food from '../assets/imgs/food.jpg'
-import culture from '../assets/imgs/culture.webp'
+import payment from "../assets/imgs/common/payment-logo.webp";
+import transport from "../assets/imgs/common/transportation-logo.webp";
+import weather from '../assets/imgs/common/weather.webp'
+import food from '../assets/imgs/common/food.jpg'
+import culture from '../assets/imgs/common/culture.webp'
 import { Link } from "react-router-dom";
 function TravelGuide() {
   return (
@@ -14,16 +14,16 @@ function TravelGuide() {
       <div className="circle-container">
         <Link to='/Wiki-Payment' className="circle-link">
           <div className="circle">
-            <img src={things} alt="payment" />
+            <img src={payment} alt="payment" />
           </div>
           <p>Payment</p>
         </Link>
-        <a href="visas.html" className="circle-link">
+        <Link to="/Wiki-Transport" className="circle-link">
           <div className="circle">
-            <img src={visas} alt="Visas" />
+            <img src={transport} alt="Transport" />
           </div>
-          <p>Visas</p>
-        </a>
+          <p>Transport</p>
+        </Link>
         <a href="weather.html" className="circle-link">
           <div className="circle">
             <img src={weather} alt="Weather" />
