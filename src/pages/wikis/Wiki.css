@@ -3,12 +3,20 @@
     margin: 0 auto; /* 居中对齐 */
 }
 
+.world-x img {
+    border-radius: 15px;
+}
+
 .world-x p{
     text-align: left;
     line-height: 1.8em;
 }
 
 .world-x h2{
+    text-align: left;
+}
+
+.world-x h3{
     text-align: left;
 }
 
@@ -29,4 +37,26 @@
 
 .world-x a:hover {
     text-decoration: underline;
+}
+
+.dot-before {
+    position: relative;
+    padding-left: 20px; /* 为小圆点腾出空间 */
+}
+
+.indent {
+    padding-left: 20px; /* 设置缩进 */
+    color: white; /* 可选：为缩进的项设置灰色文字 */
+}
+
+.highlight {
+    font-weight: bold; /* 突出显示加粗 */
+    font-size: 1.1em; /* 可选：字体略大 */
+    color: black; /* 可选：设置突出显示的颜色 */
+    padding-left: 0; /* 确保没有缩进 */
+}
+
+.word-img-container {
+    display: flex;
+    align-items: center;
 }

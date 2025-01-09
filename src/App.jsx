@@ -11,6 +11,7 @@ import Bund from './pages/Bund';
 import Jingze from './pages/Jingze';
 import Xlb from './pages/Xlb';
 import WikiPayment from './pages/wikis/Payment';
+import WikiTransport from './pages/wikis/Transport';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>
           <Route path='/AboutUs' element={<AboutUs/>}/>
           <Route path='/Wiki-Payment' element={<WikiPayment/>}/>
+          <Route path='/Wiki-Transport' element={<WikiTransport/>}/>
         </Routes>
       </Router>
     </div>
