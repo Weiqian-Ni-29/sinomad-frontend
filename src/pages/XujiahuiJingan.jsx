@@ -16,6 +16,7 @@ import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import XjhTripOverview from "../components/XjhTripOverview";
 import XjhItinerary from "../components/XjhItinerary";
+import FAQXjh from "../components/FAQXjh";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
@@ -47,6 +48,10 @@ function XujiaHuiJingan(props) {
                     <Divider style={{ width: '80%' }} />
                 </div>
                 <XjhItinerary/>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Divider style={{ width: '80%' }} />
+                </div>
+                <FAQXjh/>
             <Footer />
         </div>
     );

@@ -6,6 +6,8 @@ function XlbTripOverview() {
             <div className='overview'>
                 <h2>Overview</h2>
                 <p>This cultural journey offers a unique opportunity to engage with the culinary and artistic traditions of Jiangnan. Experience the joy of making and tasting Xiaolongbao in a stunning Jiangnan garden setting, where every bite tells a story of heritage and craftsmanship. It's an experience crafted for the true food connoisseur.</p>
+                <h2>Meet your Chief</h2>
+                <p>Master Chen Yong is a celebrated chef known for his exceptional skill in crafting traditional Chinese soup dumplings, or xiao long bao. With over 30 years of experience, he meticulously folds each dumpling with precision, ensuring the perfect balance of delicate skin, flavorful filling, and savory broth. Master Chen’s dedication to quality and tradition has earned him widespread acclaim, as diners flock to taste his creations. His unique recipes, combining time-honored techniques with subtle innovations, elevate the humble dumpling to an art form. Through his craft, Master Chen shares the rich heritage of Chinese culinary excellence with the world.</p>
                 <h2>Description</h2>
                 <p className="dot-before"><b>Authentic Experience</b>: Roll, fill, and steam your own Xiaolongbao with hands-on - instruction from skilled chefs guidance.</p>
                 <p className="dot-before"><b>Cultural Exploration</b>: Learn about the rich history and cultural significance of Xiaolongbao within a traditional Chinese garden.</p>

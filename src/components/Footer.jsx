@@ -23,7 +23,7 @@ function Footer() {
     return (
         <footer>
             <div className="social-media-container">
-                <h3>Follow us on social media</h3>
+                <h3>Follow/Contact us on social media</h3>
                 <div className="social-icons">
                     <a
                         href="https://www.instagram.com/si__nomad?igsh=NGc0NmNiNWg5OXQ1"
