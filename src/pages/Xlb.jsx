@@ -16,6 +16,7 @@ import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import XlbTripOverview from "../components/XlbTripOverview";
 import XlbItinerary from "../components/XlbItinerary";
+import FAQXlb from "../components/FAQXlb";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
@@ -47,6 +48,10 @@ function Xlb(props) {
                 <Divider style={{ width: '80%' }} />
             </div>
             <XlbItinerary/>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Divider style={{ width: '80%' }} />
+            </div>
+            <FAQXlb/>
             <Footer/>
         </div>
     );

@@ -6,6 +6,8 @@ function BundTripOverview() {
             <div className='overview'>
                 <h2>Overview</h2>
                 <p>Join a small-group photography walk from Suzhou Creek to the Bund, capturing hidden gems and landmarks like the Sihang Warehouse while exploring Shanghai's rich history. End the journey with a traditional Shanghai hotpot.</p>
+                <h2>Meet your Guide</h2>
+                <p>Emma Carter is an experienced and passionate tour guide known for her engaging storytelling and deep knowledge of local history and culture. With over a decade of experience, she has led countless travelers through iconic landmarks and hidden gems, creating unforgettable experiences. Emma’s warm personality and ability to adapt to diverse groups make her tours both educational and entertaining. She takes pride in connecting with her guests, answering their questions, and tailoring each journey to their interests. Whether exploring bustling cities or tranquil countryside, Emma ensures every traveler feels immersed in the destination's unique charm and spirit.</p>
                 <h2>Description</h2>
                 <p className="dot-before"><b>Intimate Photography Experience</b>: Limited to 6 participants for a personalized shooting experience.</p>
                 <p className="dot-before"><b>Day to Night Exploration</b>: Capture the essence of Shanghai from dawn to twilight, experiencing the fusion of history and modernity.</p>

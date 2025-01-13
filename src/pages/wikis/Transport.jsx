@@ -37,6 +37,7 @@ function Transport() {
                 <p>
                     This guide provides you with key information for traveling within and between cities in China. For intra-city transportation, the subway system offers a fast, economical, and efficient mode of travel, while taxis provide additional convenience for longer journeys, albeit at a higher cost. For inter-city travel, China's extensive aviation and high-speed rail networks offer comfortable and efficient travel options, ensuring a smooth experience across the country.
                 </p>
+                <h2>Table of Contents</h2>
                 <div className='word-wrapper'>
                     <ul>
                         <li class="highlight"><a href="#intra-city-travel">Intra-city Travel</a></li>

@@ -6,6 +6,8 @@ function JingzeTripOverview() {
             <div className='overview'>
                 <h2>Overview</h2>
                 <p>Set off on a journey to Jinze Ancient Water Town, where you'll explore its 1300-year-old history, ancient bridges, and serene waterways. Jinze offers an authentic Jiangnan experience and a unique opportunity to learn Chinese painting with a local master artist.                </p>
+                <h2>Meet your Tutor</h2>
+                <p>Master Yang WeiChang is a renowned Chinese painter celebrated for his exquisite traditional ink wash paintings. With over four decades of experience, he masterfully combines delicate brushstrokes with vivid imagery to capture the essence of nature. Yang's works often depict serene landscapes, majestic mountains, and flowing rivers, evoking a profound sense of tranquility. His innovative techniques blend classical styles with modern aesthetics, earning him numerous accolades and exhibitions worldwide. Through his art, Master Yang not only preserves the timeless beauty of Chinese culture but also inspires a global appreciation for the elegance of traditional painting.</p>
                 <h2>Description</h2>
                 <p className="dot-before"><b>Historic Significance</b>: Jinze Ancient Town, with a history of over 1300 years, is known for its rich cultural heritage dating back to the Song Dynasty.</p>
                 <p className="dot-before"><b>Bridge Heritage</b>: Referred to as the "First Bridge Town of Jiangnan," Jinze boasts seven ancient bridges spanning the Song, Yuan, Ming, and Qing dynasties, making it a "Museum of Ancient Bridges".</p>

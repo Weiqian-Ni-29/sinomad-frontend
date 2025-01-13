@@ -19,6 +19,7 @@ import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import JingzeTripOverview from "../components/JingzeTripOverview";
 import JingzeItinerary from "../components/JingzeItinerary";
+import FAQJingze from "../components/FAQJingze";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
 
@@ -50,6 +51,10 @@ function Jingze(props) {
                 <Divider style={{ width: '80%' }} />
             </div>
             <JingzeItinerary/>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Divider style={{ width: '80%' }} />
+            </div>
+            <FAQJingze/>
             <Footer/>
         </div>
     );
