@@ -154,7 +154,7 @@ function Payment() {
                         <Divider style={{ width: '80%' }} />
                     </div>
                     <h2>The total charge for {selectedNumber} person is ${selectedNumber * price}</h2>
-                    <h2>Please contact us via XiaoHongShu at the bottom of the screen to place the order</h2>
+                    <h2>Please contact us via RedNote at the bottom of the screen to place the order</h2>
                     {/* <h2>Choose your Payment method</h2>
                     <Button
                         variant="contained"
