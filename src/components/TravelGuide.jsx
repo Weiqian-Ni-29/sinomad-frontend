@@ -24,7 +24,7 @@ function TravelGuide() {
           </div>
           <p>Transport</p>
         </Link>
-        <a href="weather.html" className="circle-link">
+        {/* <a href="weather.html" className="circle-link">
           <div className="circle">
             <img src={weather} alt="Weather" />
           </div>
@@ -41,7 +41,7 @@ function TravelGuide() {
             <img src={culture} alt="Culture" />
           </div>
           <p>Culture</p>
-        </a>
+        </a> */}
       </div>
     </section>
   );

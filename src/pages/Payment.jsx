@@ -154,7 +154,8 @@ function Payment() {
                         <Divider style={{ width: '80%' }} />
                     </div>
                     <h2>The total charge for {selectedNumber} person is ${selectedNumber * price}</h2>
-                    <h2>Choose your Payment method</h2>
+                    <h2>Please contact us via XiaoHongShu at the bottom of the screen to place the order</h2>
+                    {/* <h2>Choose your Payment method</h2>
                     <Button
                         variant="contained"
                         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
@@ -182,7 +183,7 @@ function Payment() {
                         onClick={handleSubmit}
                     >
                         Pay by Wechat
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
