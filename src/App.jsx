@@ -21,8 +21,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/XujiaHuiJingan" element={<XujiaHuiJingan price='90' />} />
           <Route path="/Bund" element={<Bund price='95' />} />
-          <Route path="/Jingze" element={<Jingze price='120' />} />
-          <Route path="/Xlb" element={<Xlb price='175' />} />
+          <Route path="/Jingze" element={<Jingze price='220' />} />
+          <Route path="/Xlb" element={<Xlb price='220' />} />
           <Route path="/TermsNConditions" element={<TermsNConditions/>}/>
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>
