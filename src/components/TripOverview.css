@@ -24,6 +24,6 @@
   border-radius: 50%; /* 使其成为圆形 */
 }
 
-p {
+.overview p {
   text-align: justify;
 }
