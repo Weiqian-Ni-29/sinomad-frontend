@@ -6,7 +6,7 @@ function AboutUs() {
     <section id="aboutus" className="about-us">
       <div>
         <NavBarCustom title='About US'/>
-        <img src={banner} alt="banner" style={{width: '100%', height: '450px', margin: 0, padding: 0, display:'block'}}/>
+        <img className="aboutus-img" src={banner} alt="banner"/>
         <div style={{backgroundColor:'bisque'}}>
           <div className="aboutus-intro">
             <h3>

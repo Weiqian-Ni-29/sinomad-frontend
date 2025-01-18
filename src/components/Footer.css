@@ -20,6 +20,7 @@ footer a {
 
 .social-icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
     margin-top: 1em;
@@ -52,4 +53,8 @@ i {
     gap: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+
 }

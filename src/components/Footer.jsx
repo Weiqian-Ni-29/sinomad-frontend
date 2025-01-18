@@ -3,6 +3,7 @@ import inslogo from '../assets/imgs/common/Instagram_logo_2016.svg.png'
 import xiaohongshulogo from '../assets/imgs/common/XiaohongshuLOGO.png'
 import Tiktoklogo from '../assets/imgs/common/tiktok.jpg'
 import youtubeLogo from '../assets/imgs/common/youtube-logo.webp'
+import facebookLogo from '../assets/imgs/common/facebook_logo.png'
 import wechatLogo from '../assets/imgs/common/wechat-logo.png'
 import whatappLogo from '../assets/imgs/common/whatsapp-logo.webp'
 import ctripLogo from '../assets/imgs/common/ctrip-logo.png'
@@ -73,6 +74,18 @@ function Footer() {
                         alt="Youtube"
                         />
                     </a>
+                    <a
+                        href="https://www.facebook.com/share/18FXCg2eq9/?mibextid=qi2Omg"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="Youtube"
+                    >
+                        <img
+                        className="social-logo-image"
+                        src={facebookLogo}
+                        alt="Facebook"
+                        />
+                    </a>
                     <div style={{ position: 'relative', display: 'inline-block' }} // 包装容器，定位
                         onMouseEnter={() => setShowWhatsappQRCode(true)}   // 鼠标移入显示二维码
                         onMouseLeave={() => setShowWhatsappQRCode(false)}  // 鼠标移出隐藏二维码
@@ -108,7 +121,7 @@ function Footer() {
                             <img 
                                 src={whatsappQRcode}  // 替换为二维码图片的路径
                                 alt="WeChat QR Code"
-                                style={{ width: '200px', height: '200px' }}
+                                style={{ width: '150px', height: '150px' }}
                             />
                             </div>
                         )}
@@ -148,7 +161,7 @@ function Footer() {
                             <img 
                                 src={wechatQRcode}  // 替换为二维码图片的路径
                                 alt="WeChat QR Code"
-                                style={{ width: '200px', height: '200px' }}
+                                style={{ width: '150px', height: '150px' }}
                             />
                             </div>
                         )}
@@ -167,7 +180,7 @@ function Footer() {
                     </a>
                 </div>
                 <div className='others'>
-                    <i style={{cursor: 'default'}}>sinomad@info.com</i>
+                    <i style={{cursor: 'default'}}>info@si-nomad.com</i>
                     <i onClick={handleClickTermsNConditions}>Terms & Conditions</i>
                 </div>
             </div>
