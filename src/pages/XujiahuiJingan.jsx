@@ -32,7 +32,7 @@ function XujiaHuiJingan(props) {
                         <h3>From ${props.price} per person</h3>
                         <h3>Select number of travellers and date of departure.</h3>
                         <TravelInfo price={props.price} route="xujiahui-jingan"/>
-                        <div style={{ display: 'flex', alignItems: 'center', marginTop: '2em', marginLeft: '135px' }}>
+                        <div className="time-desc">
                             <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
                             <h3>5 hours (approx.)</h3>
                         </div>

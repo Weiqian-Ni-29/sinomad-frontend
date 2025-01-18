@@ -115,7 +115,9 @@ function Payment() {
             <div className='outer-container'>
                 <div className='Payment'>
                     <h2>Please fill in your contact info</h2>
-                    <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '30%', margin: 'auto' }}>
+                    <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '40%', margin: 'auto','@media (max-width: 768px)': {
+                        width: '90%', // 手机端宽度设置为 90%
+                        } }}>
                         <TextField
                             label="Name"
                             variant="outlined"

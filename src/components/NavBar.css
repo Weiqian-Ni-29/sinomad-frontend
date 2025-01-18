@@ -3,12 +3,12 @@ header {
     display: flex;
     justify-content: center; /* 水平居中对齐整个导航栏 */
     align-items: center; /* 垂直居中对齐内容 */
-    padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* padding: 20px 0; */
     top: 0;
     width: 100%; /* 占据整个页面宽度 */
     z-index: 1000;
-    height: 5em;
+    height: auto;
     flex-wrap: wrap; /* 支持换行 */
 }
 
@@ -51,44 +51,37 @@ nav a:hover {
     color: #000;
 }
 
-/* 小屏幕（如手机）的样式 */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* 让导航栏内容在垂直方向排列 */
-        height: auto; /* 适应内容的高度 */
-        padding: 10px; /* 减少左右的内边距 */
+        flex-direction: column; /* 将布局方向改为垂直方向 */
+        align-items: center; /* 垂直居中 */
+        padding-bottom: 20px;
     }
 
     .logo {
-        position: static; /* 不再固定 */
+        position: static; /* 不再绝对定位 */
         margin: 10px 0;
+        text-align: center;
     }
 
     .logo img {
-        height: 3em; /* 缩小 Logo */
+        height: 3em;
     }
 
     .logo span {
-        font-size: 1.5em; /* 缩小字体 */
+        font-size: 1.5em;
+    }
+
+    h2 {
+        margin-top: 10px; /* 给标题添加上边距 */
+        text-align: center; /* 居中对齐 */
     }
 
     nav {
-        flex-direction: column; /* 导航链接垂直排列 */
-        gap: 1em; /* 设置导航链接之间的间距 */
+        gap: 2em;
     }
 
     nav a {
-        font-size: 1.1em; /* 减小文字大小 */
-    }
-}
-
-/* 极小屏幕的样式（例如手机） */
-@media (max-width: 480px) {
-    .logo span {
-        font-size: 1.2em; /* 更小的字体 */
-    }
-
-    nav a {
-        font-size: 1em; /* 进一步缩小字体 */
+        font-size: 1.1em;
     }
 }

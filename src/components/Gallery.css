@@ -4,3 +4,29 @@
   border-radius: 5px; /* 你也可以设置圆角 */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
 }
+
+.gallery-img {
+  width: 450px;
+  height: 600px;
+  border-radius: 15px;
+}
+
+.gallery-thumbnail {
+  width: 90px;
+  height: 130px;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    width: auto !important;
+    max-width: 100%; 
+    height: auto !important;
+    max-height: 400px;
+  }
+}
