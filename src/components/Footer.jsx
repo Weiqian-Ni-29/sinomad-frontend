@@ -8,14 +8,9 @@ import wechatLogo from '../assets/imgs/common/wechat-logo.png'
 import whatappLogo from '../assets/imgs/common/whatsapp-logo.webp'
 import ctripLogo from '../assets/imgs/common/ctrip-logo.png'
 import { useNavigate } from 'react-router-dom';
-import whatsappQRcode from '../assets/imgs/common/whatsapp-qrcode.png'
-import wechatQRcode from '../assets/imgs/common/wechat-qrcode.png'
-import React, { useState } from 'react';
 
 function Footer() {
     const navigate = useNavigate();
-    const [showWechatQRCode, setShowWechatQRCode] = useState(false);
-    const [showWhatsappQRCode, setShowWhatsappQRCode] = useState(false);
     const handleClickTermsNConditions = (event) => {
       event.stopPropagation();  // 阻止事件冒泡
       navigate('/TermsNConditions'); // 跳转到 XujiahuiJingan 页面
@@ -98,83 +93,30 @@ function Footer() {
                         alt="ctrip"
                         />
                     </a>
-                    <div style={{ position: 'relative', display: 'inline-block' }} // 包装容器，定位
-                        onMouseEnter={() => setShowWhatsappQRCode(true)}   // 鼠标移入显示二维码
-                        onMouseLeave={() => setShowWhatsappQRCode(false)}  // 鼠标移出隐藏二维码
+                    <a
+                        href="https://wa.me/message/5TZ4WURMIGI7J1"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="whatsapp"
                     >
-                        <a
-                            href="https://wa.me/message/5TZ4WURMIGI7J1"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            title="whatsapp"
-                            style={{cursor: "default"}}
-                        >
-                            <img
-                            className="social-logo-image"
-                            src={whatappLogo}
-                            alt="whatsapp"
-                            />
-                        </a>
-                        {/* 当 hover 时显示二维码 */}
-                        {showWhatsappQRCode && (
-                            <div 
-                            style={{
-                                position: 'absolute',
-                                bottom: '50px',  // 可以调整二维码展示位置
-                                left: '50px',
-                                zIndex: 10,
-                                backgroundColor: 'white',
-                                border: '1px solid #ddd',
-                                padding: '10px',
-                                boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)'
-                            }}
-                            >
-                            <img 
-                                src={whatsappQRcode}  // 替换为二维码图片的路径
-                                alt="WeChat QR Code"
-                                style={{ width: '150px', height: '150px' }}
-                            />
-                            </div>
-                        )}
-                    </div>
-                    <div style={{ position: 'relative', display: 'inline-block' }} // 包装容器，定位
-                        onMouseEnter={() => setShowWechatQRCode(true)}   // 鼠标移入显示二维码
-                        onMouseLeave={() => setShowWechatQRCode(false)}  // 鼠标移出隐藏二维码
+                        <img
+                        className="social-logo-image"
+                        src={whatappLogo}
+                        alt="whatsapp"
+                        />
+                    </a>
+                    <a
+                        href="https://work.weixin.qq.com/kfid/xxxxxxxxx"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="wechat"
                     >
-                        <a
-                            href="https://work.weixin.qq.com/kfid/kfcb4c560709868eb99"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            title="wechat"
-                            style={{cursor: "default"}}
-                        >
-                            <img
-                            className="social-logo-image"
-                            src={wechatLogo}
-                            alt="wechat"
-                            />
-                        </a>
-                        {showWechatQRCode && (
-                            <div 
-                            style={{
-                                position: 'absolute',
-                                bottom: '50px',  // 可以调整二维码展示位置
-                                right: '50px',
-                                zIndex: 10,
-                                backgroundColor: 'white',
-                                border: '1px solid #ddd',
-                                padding: '10px',
-                                boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)'
-                            }}
-                            >
-                            <img 
-                                src={wechatQRcode}  // 替换为二维码图片的路径
-                                alt="WeChat QR Code"
-                                style={{ width: '150px', height: '150px' }}
-                            />
-                            </div>
-                        )}
-                    </div>
+                        <img
+                        className="social-logo-image"
+                        src={wechatLogo}
+                        alt="wechat"
+                        />
+                    </a>
                 </div>
                 <div className='others'>
                     <i style={{cursor: 'default'}}>info@si-nomad.com</i>
