@@ -86,6 +86,18 @@ function Footer() {
                         alt="Facebook"
                         />
                     </a>
+                    <a
+                        href="https://www.trip.com/travel-guide/personal-home/D0D859D9E755FAFADA9E59CA2AAD1637B33FE25397205A4285E31BA442B12CE4?locale=en-XX&curr=CNY"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        title="ctrip"
+                    >
+                        <img
+                        className="social-logo-image"
+                        src={ctripLogo}
+                        alt="ctrip"
+                        />
+                    </a>
                     <div style={{ position: 'relative', display: 'inline-block' }} // 包装容器，定位
                         onMouseEnter={() => setShowWhatsappQRCode(true)}   // 鼠标移入显示二维码
                         onMouseLeave={() => setShowWhatsappQRCode(false)}  // 鼠标移出隐藏二维码
@@ -131,8 +143,7 @@ function Footer() {
                         onMouseLeave={() => setShowWechatQRCode(false)}  // 鼠标移出隐藏二维码
                     >
                         <a
-                            href="www.wechat.com"
-                            onClick={(e) => e.preventDefault()}
+                            href="weixin://contacts/profile/Si_Nomad"
                             target="_blank"
                             rel="noreferrer noopener"
                             title="wechat"
@@ -144,13 +155,12 @@ function Footer() {
                             alt="wechat"
                             />
                         </a>
-                        {/* 当 hover 时显示二维码 */}
                         {showWechatQRCode && (
                             <div 
                             style={{
                                 position: 'absolute',
                                 bottom: '50px',  // 可以调整二维码展示位置
-                                left: '50px',
+                                right: '50px',
                                 zIndex: 10,
                                 backgroundColor: 'white',
                                 border: '1px solid #ddd',
@@ -166,18 +176,6 @@ function Footer() {
                             </div>
                         )}
                     </div>
-                    <a
-                        href="https://www.trip.com/travel-guide/personal-home/D0D859D9E755FAFADA9E59CA2AAD1637B33FE25397205A4285E31BA442B12CE4?locale=en-XX&curr=CNY"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        title="ctrip"
-                    >
-                        <img
-                        className="social-logo-image"
-                        src={ctripLogo}
-                        alt="ctrip"
-                        />
-                    </a>
                 </div>
                 <div className='others'>
                     <i style={{cursor: 'default'}}>info@si-nomad.com</i>
