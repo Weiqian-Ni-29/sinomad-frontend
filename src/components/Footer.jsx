@@ -103,8 +103,7 @@ function Footer() {
                         onMouseLeave={() => setShowWhatsappQRCode(false)}  // 鼠标移出隐藏二维码
                     >
                         <a
-                            href="www.whatsapp.com"
-                            onClick={(e) => e.preventDefault()}
+                            href="https://wa.me/message/5TZ4WURMIGI7J1"
                             target="_blank"
                             rel="noreferrer noopener"
                             title="whatsapp"
@@ -143,7 +142,7 @@ function Footer() {
                         onMouseLeave={() => setShowWechatQRCode(false)}  // 鼠标移出隐藏二维码
                     >
                         <a
-                            href="weixin://contacts/profile/Si_Nomad"
+                            href="https://work.weixin.qq.com/kfid/kfcb4c560709868eb99"
                             target="_blank"
                             rel="noreferrer noopener"
                             title="wechat"
