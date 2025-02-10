@@ -3,6 +3,7 @@ import ClientNumberPicker from './ClientNumberPicker';
 import Calendar from './Calendar';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import config from '../Constants';
 
 function BookingForm({ price, route }) {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ function BookingForm({ price, route }) {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/submit-booking', {
+      const response = await fetch(config.API_SERVER + 'submit-booking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

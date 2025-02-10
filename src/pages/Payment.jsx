@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Divider from '@mui/material/Divider';
 import dayjs from 'dayjs';
+import config from '../Constants';
 
 
 function validateEmail(email) {
@@ -70,7 +71,7 @@ function Payment() {
         // 提交表单数据
         const order_number = generateOrderId();
         try {
-            const response = await fetch('http://localhost:5000/api/submit-userinfo', {
+            const response = await fetch(config.API_SERVER + 'submit-userinfo', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

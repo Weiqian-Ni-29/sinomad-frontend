@@ -3,6 +3,7 @@ import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import axios from 'axios';
 import dayjs from 'dayjs';
+import config from '../Constants';
 
 function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setSelectedNumber, route }) {
   const [availableDates, setAvailableDates] = useState([]);
@@ -11,7 +12,7 @@ function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setSelectedNu
   useEffect(() => {
     const fetchAvailableDatesNSlots = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/available-dates-n-vacancies', { params: { route } });
+        const response = await axios.get(config.API_SERVER + 'available-dates-n-vacancies', { params: { route } });
         const { departureTimes, vacantSlots } = response.data;
         const dayjsDepartureTimes = departureTimes.map(time => dayjs(time));
         setAvailableDates(dayjsDepartureTimes);
