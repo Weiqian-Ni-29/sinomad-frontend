@@ -3,7 +3,8 @@ import './Wiki.css';
 import Footer from '../../components/Footer';
 import NavBarCustom from '../../components/NavBarCustom';
 import ToTopButton from '../../components/ToTopButton';
-import img1 from '../../assets/imgs/wikis/transport/transport-wiki1.png';
+import portalimg from '../../assets/imgs/wikis/transport/wiki-img-transport-op.jpg';
+import img1 from '../../assets/imgs/wikis/transport/transport-wiki1.jpg';
 import img2 from '../../assets/imgs/wikis/transport/transport-wiki2.png';
 import img3 from '../../assets/imgs/wikis/transport/transport-wiki3.png';
 import img4 from '../../assets/imgs/wikis/transport/transport-wiki4.png';
@@ -27,35 +28,46 @@ import img21 from '../../assets/imgs/wikis/transport/transport-wiki21.png';
 import img22 from '../../assets/imgs/wikis/transport/transport-wiki22.png';
 import img23 from '../../assets/imgs/wikis/transport/transport-wiki23.png';
 import img24 from '../../assets/imgs/wikis/transport/transport-wiki24.png';
+import StaticPortalImg from '../../components/StaticPortalImg';
+import TableOfContents from '../../components/TableOfContents';
 
 function Transport() {
     return (
         <div>
             <NavBarCustom title="Transport in China"/>
             <div className='world-x'>
-                <h1>2025 Comprehensive Transportation Guide for China</h1>
-                <p>
-                    This guide provides you with key information for traveling within and between cities in China. For intra-city transportation, the subway system offers a fast, economical, and efficient mode of travel, while taxis provide additional convenience for longer journeys, albeit at a higher cost. For inter-city travel, China's extensive aviation and high-speed rail networks offer comfortable and efficient travel options, ensuring a smooth experience across the country.
-                </p>
-                <h2>Table of Contents</h2>
-                <div className='word-wrapper'>
-                    <ul>
-                        <li class="highlight"><a href="#intra-city-travel">Intra-city Travel</a></li>
-                        <li class="indent"><a href="#navigation-apps">Using Navigation Apps</a></li>
-                        <li class="indent"><a href="#bus-subway">Taking Buses and Subways</a></li>
-                        <li class="indent"><a href="#taxis">Taking Taxis</a></li>
-                        <li class="highlight"><a href="#inter-city-travel">Inter-city Travel</a></li>
-                        <li class="indent"><a href="#fly">Flying</a></li>
-                        <li class="indent"><a href="#train">Taking Trains</a></li>
-                    </ul>
-                </div>
-                <h2 id='intra-city-travel'>Intra-city Travel</h2>
-                <div className='word-img-container'>
-                    <img className="timg1" src={img1} alt="transport1" />
-                    <div className='word-wrapper'>
-                        <p>When traveling within Chinese cities, using a reliable navigation app is crucial for efficient travel between neighborhoods. With a clear route plan, exploration becomes simple. Major cities have well-developed subway systems with bilingual signage, making them efficient and economical. Taxis offer additional convenience but are more expensive than public transportation. Below are detailed descriptions of various intra-city transportation options.</p>
-                    </div>
-                </div>
+                <StaticPortalImg img={portalimg} 
+                    title='2025 Comprehensive Transportation Guide for China'
+                    content="This guide provides you with key information for traveling within and between cities in China. For intra-city transportation, the subway system offers a fast, economical, and efficient mode of travel, while taxis provide additional convenience for longer journeys, albeit at a higher cost. For inter-city travel, China's extensive aviation and high-speed rail networks offer comfortable and efficient travel options, ensuring a smooth experience across the country."
+                    textColor='white'
+                    />
+                    <TableOfContents
+                        sections={[
+                            {
+                            title: { name: "Intra-city Travel", href: "#intra-city-travel" },
+                            items: [
+                                { name: "Using Navigation Apps", href: "#navigation-apps" },
+                                { name: "Taking Buses and Subways", href: "#bus-subway" },
+                                { name: "Taking Taxis", href: "#taxis" }
+                            ]
+                            },
+                            {
+                            title: { name: "Intra-city Travel", href: "#inter-city-travel" },
+                            items: [
+                                { name: "Flying", href: "#fly" },
+                                { name: "Taking Trains", href: "#train" }
+                            ]
+                            }
+                        ]}
+                        />
+                <StaticPortalImg img={img1} 
+                    title='intra-city-travel'
+                    content="When traveling within Chinese cities, using a reliable navigation app is crucial for efficient travel between neighborhoods. With a clear route plan, exploration becomes simple. Major cities have well-developed subway systems with bilingual signage, making them efficient and economical. Taxis offer additional convenience but are more expensive than public transportation. Below are detailed descriptions of various intra-city transportation options."
+                    textColor='black'
+                    />
+            </div>
+            
+            <div className='world-x'>
                 <h2 id='navigation-apps'>Using Navigation Apps - Suitable for users with basic Chinese knowledge</h2>
                 <h3>Amap</h3>
                 <img className="timg2" src={img2} alt="transport2" />

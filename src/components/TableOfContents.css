@@ -1,0 +1,105 @@
+.table-of-contents {
+    background-color: #ededed;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 50px;
+  }
+
+.toc-inner-container {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+}
+  
+.toc-header {
+    max-width: 23%;
+    background-color: #c09747;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+  
+  .toc-header h2 {
+    margin: 0;
+    color: white;
+  }
+  
+  .toc-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: stretch; /* 确保子项默认拉伸高度 */
+  }
+  
+  .toc-section {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers the inner section horizontally */
+    color: black;
+  }
+  
+  .toc-inner-section {
+    text-align: left; /* Aligns text inside the inner section to the left */
+  }
+  
+  .toc-section h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .toc-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .toc-section ul li {
+    margin: 5px 0;
+  }
+
+  .toc-divider {
+    border-left: 2px solid #ededed;
+    margin: 20px 0;
+  }
+
+.dot-before h3 {
+    position: relative;
+    padding-left: 20px; /* 为小圆点腾出空间 */
+}
+  
+.dot-before h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px; /* 小圆点的宽度 */
+  height: 8px; /* 小圆点的高度 */
+  background-color: black; /* 小圆点的颜色 */
+  border-radius: 50%; /* 使其成为圆形 */
+}
+  
+.dot-before li {
+    position: relative;
+    padding-left: 15px; /* 保持左侧间距 */
+    list-style: none; /* 清除原生列表符号 */
+  }
+  
+  li.dot-before::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border: 2px solid black; /* 正式颜色 */
+    border-radius: 50%;
+  }
+  
+  
