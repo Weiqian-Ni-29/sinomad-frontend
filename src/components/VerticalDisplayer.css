@@ -1,0 +1,82 @@
+.vertical-displayer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff5e7;
+    justify-content: center;
+}
+
+.vertical-displayer h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    text-align: center !important;
+    color: #c09747;
+}
+
+.vertical-displayer h6 {
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #a8a8a8;
+}
+
+.vertical-displayer .v-subtitle {
+    color: #c09747;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.v-cards-container {
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center; /* 修改这里 */
+    gap: 50px; /* 添加间距 */
+    margin: 0 auto; /* 容器自身居中 */
+    padding-bottom: 80px;
+}
+
+.v-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.v-card p {
+    white-space: pre-line;
+    margin-top: 0;
+}
+
+.v-card p:last-child {
+    flex-grow: 1; /* 让最后一个段落填充剩余空间 */
+    margin-bottom: 0;
+  }
+
+.v-card-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.v-card h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.v-card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 10px;
+}

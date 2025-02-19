@@ -2,7 +2,7 @@ import './StaticPortalImg.css';
 
 function StaticPortalImg(props) {
     return (
-        <div className='static-portal'>
+        <div id={props.id} className='static-portal'>
             <img src={props.img}/>
             <div className='static-text-overlay' style={{color:props.textColor}}>
                 <h2>{props.title}</h2>

@@ -30,6 +30,7 @@ import img23 from '../../assets/imgs/wikis/transport/transport-wiki23.png';
 import img24 from '../../assets/imgs/wikis/transport/transport-wiki24.png';
 import StaticPortalImg from '../../components/StaticPortalImg';
 import TableOfContents from '../../components/TableOfContents';
+import VerticalDisplayer from '../../components/VerticalDisplayer';
 
 function Transport() {
     return (
@@ -52,7 +53,7 @@ function Transport() {
                             ]
                             },
                             {
-                            title: { name: "Intra-city Travel", href: "#inter-city-travel" },
+                            title: { name: "Inter-city Travel", href: "#inter-city-travel" },
                             items: [
                                 { name: "Flying", href: "#fly" },
                                 { name: "Taking Trains", href: "#train" }
@@ -60,35 +61,51 @@ function Transport() {
                             }
                         ]}
                         />
-                <StaticPortalImg img={img1} 
-                    title='intra-city-travel'
+                <StaticPortalImg
+                    img={img1} 
+                    id='intra-city-travel'
+                    title='Intra-city travel'
                     content="When traveling within Chinese cities, using a reliable navigation app is crucial for efficient travel between neighborhoods. With a clear route plan, exploration becomes simple. Major cities have well-developed subway systems with bilingual signage, making them efficient and economical. Taxis offer additional convenience but are more expensive than public transportation. Below are detailed descriptions of various intra-city transportation options."
                     textColor='black'
                     />
+                <VerticalDisplayer
+                    id='navigation-apps'
+                    containsImg={true}
+                    title= "Using Navigation Apps"
+                    subtitle="Suitable for users with basic Chinese Knowledge"
+                    cards={
+                        [
+                            {
+                                title: "Amap",
+                                description: "Amap is one of China's most popular navigation apps, offering seamless navigation features. \n However, it only supports Chinese. If you can read or understand some Chinese, Amap is a good choice and is available on Android and iOS platforms.",
+                                img:img2
+                            },
+                            {
+                                title:"Apple map",
+                                subtitle: "Suitable for iPhone users",
+                                description: "Apple Maps is the preferred navigation app for iPhone users traveling in China. \nIt integrates local transportation and geographic data, providing navigation options for driving, walking, cycling, and public transit. \nUsers can enjoy real-time traffic updates and comprehensive route planning.",
+                                img:img3
+                            },
+                            {
+                                title: "Petal Maps",
+                                subtitle: "Suitable for Android users",
+                                description: "Due to restrictions on many Google services, including Google Maps, in China, Petal Maps is the recommended alternative.\n Although the installation process may be slightly complex, Petal Maps offers reliable navigation features such as real-time traffic updates and detailed maps, making it a practical tool for navigating Chinese cities.",
+                                img: img4
+                            }
+                        ]
+                    }
+                />
+                <StaticPortalImg
+                    img={img5} 
+                    id='bus-subway'
+                    title='Taking Buses and Subways'
+                    content="Major Chinese cities such as Beijing, Shanghai, and Chongqing have extensive subway systems that provide fast, convenient, and economical transportation options, with fares as low as 2 RMB. All subway stations have bilingual signs displaying station names and directions, facilitating navigation for non-Chinese speakers."
+                    textColor='#c09747'
+                    />
+
             </div>
             
             <div className='world-x'>
-                <h2 id='navigation-apps'>Using Navigation Apps - Suitable for users with basic Chinese knowledge</h2>
-                <h3>Amap</h3>
-                <img className="timg2" src={img2} alt="transport2" />
-                <div className='word-wrapper'>
-                    <p>Amap is one of China's most popular navigation apps, offering seamless navigation features. However, it only supports Chinese. If you can read or understand some Chinese, Amap is a good choice and is available on Android and iOS platforms.</p>
-                </div>
-                <h3>Apple Maps - Suitable for iPhone users</h3>
-                <img className="timg3" src={img3} alt="transport3" />
-                <div className='word-wrapper'>
-                    <p>Apple Maps is the preferred navigation app for iPhone users traveling in China. It integrates local transportation and geographic data, providing navigation options for driving, walking, cycling, and public transit. Users can enjoy real-time traffic updates and comprehensive route planning.</p>
-                </div>
-                <h3>Petal Maps - Suitable for Android users</h3>
-                <img className="timg4" src={img4} alt="transport4" />
-                <div className='word-wrapper'>
-                    <p>Due to restrictions on many Google services, including Google Maps, in China, Petal Maps is the recommended alternative. Although the installation process may be slightly complex, Petal Maps offers reliable navigation features such as real-time traffic updates and detailed maps, making it a practical tool for navigating Chinese cities.</p>
-                </div>
-                <h2 id='bus-subway'>Taking Buses and Subways</h2>
-                <div className='word-wrapper'>
-                    <p>Major Chinese cities such as Beijing, Shanghai, and Chongqing have extensive subway systems that provide fast, convenient, and economical transportation options, with fares as low as 2 RMB. All subway stations have bilingual signs displaying station names and directions, facilitating navigation for non-Chinese speakers.</p>
-                </div>
-                <img className="timg5" src={img5} alt="transport5" />
                 <div className='word-wrapper'>
                     <p>Local buses are the most economical transportation option in Chinese cities. However, since bus stop signs typically lack English translations, non-Chinese speakers may have difficulty determining when to disembark, making them less user-friendly.</p>
                 </div>
