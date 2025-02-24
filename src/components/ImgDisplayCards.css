@@ -1,0 +1,39 @@
+.img-display-cards {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px auto 0;
+    max-width: 70%;
+  }
+  
+  .img-display-card {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .img-display-card-content {
+    max-width: 80%;
+  }
+  
+  .img-display-card h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .img-display-card p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: black;
+    white-space: pre-line;
+  }
+  

@@ -3,10 +3,10 @@ import './StaticPortalImg.css';
 function StaticPortalImg(props) {
     return (
         <div id={props.id} className='static-portal'>
-            <img src={props.img}/>
+            <img src={props.img} alt="static-img"/>
             <div className='static-text-overlay' style={{color:props.textColor}}>
                 <h2>{props.title}</h2>
-                <p>{props.content}</p>
+                <p>{props.content.replace(/\\n/g, '\n')}</p>
             </div>
         </div>
     );
