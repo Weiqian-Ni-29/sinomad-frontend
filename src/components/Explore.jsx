@@ -5,6 +5,7 @@ import xujiahui_jingan_img from '../assets/imgs/trips/xjh/xjh9.jpg';
 import bund_img from '../assets/imgs/trips/bund/bund1.jpg';
 import jingze_img from '../assets/imgs/trips/jingze/jingze1.jpg';
 import xlb_img from '../assets/imgs/trips/xlb/xlb1.jpg';
+import dumpling_img from "../assets/imgs/trips/dumpling/dumpling1.jpg";
 function Explore() {
   const navigate = useNavigate();
   // 点击时执行的跳转函数
@@ -23,6 +24,10 @@ function Explore() {
   const handleClickXlb = (event) => {
     event.stopPropagation();
     navigate('/Xlb');
+  };
+  const handleClickDumpling = (event) => {
+    event.stopPropagation();
+    navigate('/Dumpling');
   };
   return (
     <section id="experience">
@@ -64,6 +69,17 @@ function Explore() {
             </div>
             <div className="card-description">
             <h4>A Photography Walk from Suzhou Creek to the Bund</h4>
+            </div>
+          </div>
+          <div className="explore-card" onClick={handleClickDumpling}>
+            <div className="image-container">
+              <img
+                src={dumpling_img}
+                alt="dumpling"
+              />
+            </div>
+            <div className="card-description">
+            <h4>Heritage Walk & Dumpling Workshop: Former French Concession Architecture & Culinary Craft</h4>
             </div>
           </div>
         </div>

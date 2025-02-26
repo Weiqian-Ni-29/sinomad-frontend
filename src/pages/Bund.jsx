@@ -13,16 +13,14 @@ import clockLogo from '../assets/imgs/common/clock.png';
 import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import BundTripOverview from "../components/BundTripOverview";
-import BundItinerary from "../components/BundItinerary";
 import Gallery from "../components/Gallery";
-import FAQBund from "../components/FAQBund";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8];
 
 function Bund(props) {
     return (
         <div className="Title">
-            <NavBarCustom title="A Photography Walk from Suzhou Creek to the Bund" />
+            <NavBarCustom title="A Cinematic Walk from Suzhou Creek to the Bund" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>
@@ -46,11 +44,6 @@ function Bund(props) {
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Divider style={{ width: '80%' }} />
             </div>
-            <BundItinerary/>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <Divider style={{ width: '80%' }} />
-            </div>
-            <FAQBund/>
             <Footer/>
         </div>
     );

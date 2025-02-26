@@ -1,5 +1,5 @@
 import './NavBar.css';
-import logo from '../assets/imgs/common/sinomad-logo.webp';
+import logo from '../assets/imgs/common/siiinomad-logo.jpg';
 import { Link } from 'react-router-dom';
 function NavBar() {
     return(

@@ -13,7 +13,7 @@ function TableOfContents({ sections }) {
             <>
               <div key={index} className="toc-section">
                 <div className='toc-inner-section'>
-                  <h3 className='dot-before'><a href={section.title.href}>{section.title.name}</a></h3>
+                  {section.title.name != null && <h3 className='dot-before'><a href={section.title.href}>{section.title.name}</a></h3>}
                   <ul>
                     {section.items.map((item, i) => (
                       <li className='dot-before' key={i}><a href={item.href}>{item.name}</a></li>
@@ -37,8 +37,8 @@ TableOfContents.propTypes = {
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        href: PropTypes.string.isRequired
+        name: PropTypes.string,
+        href: PropTypes.string
       }),
       items: PropTypes.arrayOf(
         PropTypes.shape({

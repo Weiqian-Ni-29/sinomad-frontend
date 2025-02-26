@@ -11,7 +11,7 @@ function StepByStepGuide( { title, subtitle, steps, imgs} ) {
                     <>                 
                         <h4>STEP {index + 1}:</h4>
                         <p>{step.title}</p>
-                        <p>- {step.description}</p>
+                        { step.description != null && <p>- {step.description.replace(/\\n/g, '\n')}</p> }
                     </>
                 ))}
             </div>

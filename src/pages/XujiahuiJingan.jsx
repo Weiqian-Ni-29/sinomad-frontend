@@ -15,15 +15,13 @@ import clockLogo from '../assets/imgs/common/clock.png';
 import TravelInfo from '../components/TravelInfo';
 import Divider from '@mui/material/Divider';
 import XjhTripOverview from "../components/XjhTripOverview";
-import XjhItinerary from "../components/XjhItinerary";
-import FAQXjh from "../components/FAQXjh";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 function XujiaHuiJingan(props) {
     return (
         <div className="Title">
-            <NavBarCustom title="A City Walk Through the Former French Concession" />
+            <NavBarCustom title="Strolling Through Shanghai Former French Concession" />
                 <div className="content-container">
                     <div className="img-slider">
                         <Gallery imgs={imgs}/>
@@ -47,11 +45,6 @@ function XujiaHuiJingan(props) {
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Divider style={{ width: '80%' }} />
                 </div>
-                <XjhItinerary/>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Divider style={{ width: '80%' }} />
-                </div>
-                <FAQXjh/>
             <Footer />
         </div>
     );

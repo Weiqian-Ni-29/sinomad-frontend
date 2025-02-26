@@ -106,7 +106,7 @@ function Footer() {
                         />
                     </a>
                     <a
-                        href="https://work.weixin.qq.com/kfid/xxxxxxxxx"
+                        href="https://work.weixin.qq.com/kfid/kfcda3df6d086b4c666"
                         target="_blank"
                         rel="noreferrer noopener"
                         title="wechat"

@@ -10,6 +10,7 @@ import AboutUs from './pages/AboutUs';
 import Bund from './pages/Bund';
 import Jingze from './pages/Jingze';
 import Xlb from './pages/Xlb';
+import Dumpling from './pages/Dumpling';
 import WikiPayment from './pages/wikis/Payment';
 import WikiTransport from './pages/wikis/Transport';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Bund" element={<Bund price='95' />} />
           <Route path="/Jingze" element={<Jingze price='220' />} />
           <Route path="/Xlb" element={<Xlb price='220' />} />
+          <Route path="/Dumpling" element={<Dumpling price='220' />} />
           <Route path="/TermsNConditions" element={<TermsNConditions/>}/>
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>

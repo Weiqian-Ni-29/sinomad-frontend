@@ -4,19 +4,26 @@ function BundTripOverview() {
     return(
         <div className='outer-container'>
             <div className='overview'>
-                <h2>Overview</h2>
-                <p>Join a small-group photography walk from Suzhou Creek to the Bund, capturing hidden gems and landmarks like the Sihang Warehouse while exploring Shanghai's rich history. End the journey with a traditional Shanghai hotpot.</p>
-                <h2>Meet your Guide</h2>
-                <p>Emma Carter is an experienced and passionate tour guide known for her engaging storytelling and deep knowledge of local history and culture. With over a decade of experience, she has led countless travelers through iconic landmarks and hidden gems, creating unforgettable experiences. Emma’s warm personality and ability to adapt to diverse groups make her tours both educational and entertaining. She takes pride in connecting with her guests, answering their questions, and tailoring each journey to their interests. Whether exploring bustling cities or tranquil countryside, Emma ensures every traveler feels immersed in the destination's unique charm and spirit.</p>
+                <h2>Intro</h2>
+                <p>Discover the historical architecture of Shanghai's Bund Origin, stroll along Suzhou Creek, and experience the century-old transformation of the city's modern-era culture.
+                </p>
+                <h2>Highlights</h2>
+                <p className='dot-before'><b>Century-Old Architecture: </b>10+ landmarks blending Neoclassical and Art Deco styles, reflecting Shanghai's colonial history</p>
+                <p className='dot-before'><b>East-Meets-West Legacy: </b>From barren land to a hub of Western settlers, discover the birthplace of modern Shanghai.</p>
+                <p className='dot-before'><b>Iconic Landmarks: </b>Broadway Bridge, Rowing Club, and Peace Hotel offer cinematic views of the Bund.</p>
+                <p className='dot-before'><b>Historical Insights: </b>Uncover urban evolution post-1843, from the Land Regulations to Western urban planning.</p>
                 <h2>Description</h2>
-                <p className="dot-before"><b>Intimate Photography Experience</b>: Limited to 6 participants for a personalized shooting experience.</p>
-                <p className="dot-before"><b>Day to Night Exploration</b>: Capture the essence of Shanghai from dawn to twilight, experiencing the fusion of history and modernity.</p>
-                <p className="dot-before"><b>Stunning Shoot Locations</b>: Discover off-the-beaten-path spots that are perfect for creating Instagram-worthy photos while learning the stories behind them.</p>
-                <p className="dot-before"><b>Inclusive Amenities</b>: Water and food included, with options to accommodate dietary preferences.</p>
-                <p className="dot-before"><b>Culinary Finale</b>: Conclude the day with a Shanghai-style hotpot .</p>
-                <p style={{lineHeight:'1.5em', fontSize: '1.05em'}}>Discover the magic of Shanghai's past and present on our exclusive 6-person photography walk from Suzhou Creek to the Bund. <br/>
-                With our professional local guides and photographers, let's capture the city's allure at its best, from daylights to nightscapes, guaranteeing Instagram-worthy photos. Along the way, stop and shoot at iconic landmarks such as the Sihang Warehouse and more, while listening to captivating stories of Shanghai's development through the ages.<br/>
-                    Your day will begin in the afernoon and will finish with a traditional hotpot as a perfect end to a day of urban exploration.As part of our inclusive package, we provide water and a meal tailored to your dietary preferences.</p>
+                <p>Starting from Tian Tong Road along the Suzhou River, heading towards the Bund via North Suzhou Road and ending at Nanjing East Road. This 2-kilometer route weaves through the core historical buildings of the Bund Origin. After Shanghai was opened as a treaty port in 1843, Western settlers transformed the wasteland known as "Li Family Village" into a bustling cultural and commercial hub. Iconic structures like the Embankment Apartment and the Broadway Building stand as testaments to Shanghai's journey towards internationalization in modern times. Stroll across Zhapu Road Bridge to take in the skyline of Lujiazui, and soak in the golden age of Art Deco at the Peace Hotel. This route offers a vivid snapshot of half of Shanghai's modern history.
+                </p>
+                <h2>Itinerary</h2>
+                <p>Suzhou Creek → Embankment Buidling → Zhapulu Bridge → Broadway Bridge → Bund Origin → BoC Building → Peace Hotel
+                </p>
+                <h2>Meet your guide</h2>
+                <p>Mr. Song is a national senior English tour guide with 30 years of working experience, as well as a veteran professional researcher and lecturer in Shanghai's modern history and culture.
+                </p>
+                <h2>What's included</h2>
+                <p className='dot-before'>Private guide </p>
+                <p className='dot-before'>Bottled water</p>
             </div>
         </div>
         

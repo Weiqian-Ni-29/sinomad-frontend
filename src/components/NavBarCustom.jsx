@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavBar.css';
-import logo from '../assets/imgs/common/sinomad-logo.webp';
+import logo from '../assets/imgs/common/siiinomad-logo.jpg';
 function NavBarCustom(props) {
     const navigate = useNavigate();
     // 点击时执行的跳转函数

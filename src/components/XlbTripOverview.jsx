@@ -4,19 +4,34 @@ function XlbTripOverview() {
     return(
         <div className='outer-container'>
             <div className='overview'>
-                <h2>Overview</h2>
-                <p>This cultural journey offers a unique opportunity to engage with the culinary and artistic traditions of Jiangnan. Experience the joy of making and tasting Xiaolongbao in a stunning Jiangnan garden setting, where every bite tells a story of heritage and craftsmanship. It's an experience crafted for the true food connoisseur.</p>
-                <h2>Meet your Chief</h2>
-                <p>Master Chen Yong is a celebrated chef known for his exceptional skill in crafting traditional Chinese soup dumplings, or xiao long bao. With over 30 years of experience, he meticulously folds each dumpling with precision, ensuring the perfect balance of delicate skin, flavorful filling, and savory broth. Master Chen’s dedication to quality and tradition has earned him widespread acclaim, as diners flock to taste his creations. His unique recipes, combining time-honored techniques with subtle innovations, elevate the humble dumpling to an art form. Through his craft, Master Chen shares the rich heritage of Chinese culinary excellence with the world.</p>
-                <h2>Description</h2>
-                <p className="dot-before"><b>Authentic Experience</b>: Roll, fill, and steam your own Xiaolongbao with hands-on - instruction from skilled chefs guidance.</p>
-                <p className="dot-before"><b>Cultural Exploration</b>: Learn about the rich history and cultural significance of Xiaolongbao within a traditional Chinese garden.</p>
-                <p className="dot-before"><b>Flavorful Feast</b>: Indulge in the exquisite taste of freshly steamed Xiaolongbao, a culinary delight of Jiangnan.</p>
-                <p className="dot-before"><b>Garden Tour</b>: Wander through the picturesque landscapes of the private Jiangnan Garden, a quintessential Jiangnan experience.</p>
-                <p className="dot-before"><b>Inclusive Amenities</b>: Private transportation, water and food included</p>
-                <p style={{lineHeight:'1.5em', fontSize: '1.05em'}}>Join us for an unforgettable cultural experience in a private Jiangnan garden in Jiading, where you will delve into the art of Xiaolongbao making. Under the guidance of expert chefs, you'll learn the history and techniques behind these iconic dim-sums, recognized as an national intangible cultural heritage. <br/>
-                    After crafting your own Xiaolongbao, savor the delicious flavors of your creation alongside the renowned Nanxiang Xiaolongbao. This immersive journey also includes a tour of the garden, allowing you to appreciate its serene beauty and cultural significance.
+                <h2>Intro</h2>
+                <p>This cultural journey combines hands-on Xiaolongbao crafting in a private Jiangnan garden,  with a nostalgic stroll through Nanxiang Old Town, offering a full-day immersion into Jiangnan's culinary and historical treasures.
                 </p>
+                <h2>Highlights</h2>
+                <p className='dot-before'><b>Authentic Experience: </b>Roll, fill, and steam your own Xiaolongbao under the guidance from the 7th generation-inheritor of Xiaolongbao making .</p>
+                <p className='dot-before'><b>Cultural Exploration: </b>Discover the history of Xiaolongbao in a private garden and explore Nanxiang's 1,500-year-old heritage.</p>
+                <p className='dot-before'><b>Dual Feast: </b>Taste both your homemade Xiaolongbao and authentic Nanxiang delicacies.</p>
+                <p className='dot-before'><b>Garden & Town Harmony: </b>Stroll through a serene Jiangnan garden and lively ancient streetscapes.</p>
+                <p className='dot-before'><b>Historic Gems: </b>Visit iconic landmarks like Guyi Garden, Twin Pagodas, and timeworn canals.</p>
+                <p className='dot-before'><b>Stress-Free Service: </b>Private transportation, water and food included, with options to accommodate dietary preferences.</p>
+                <h2>Description</h2>
+                <p>Begin your day crafting pillowy Xiaolongbao in a dreamy private Jiangnan garden, where chefs unveil the secrets of this delicacy of National Intangible Cultural Heritage. After savoring your creations and legendary Nanxiang Xiaolongbao, step into a living postcard at Nanxiang Old Town. Wander cobblestone lanes flanked by Ming-Qing architecture, admire the poetic Guyi Garden's lotus ponds, and trace history through the leaning Twin Pagodas. Sip local tea by ancient canals as street vendors'steam baskets scent the air—a perfect blend of culinary artistry and timeless charm.
+                </p>
+                <h2>Itinerary</h2>
+                <p>Fengde Garden (Xiaolongbao making) → Nanxiang Old Town-Guyi Garden → Twin Pagodas
+                </p>
+                <h2>Meet your instructor</h2>
+                <p>Chef Chen is the 7th generation inheritor of Nanxiang Xiaolongbao, a national intangible cultural heritage. In addition to her busy work schedule, she is dedicated to teaching the art of making Nanxiang Steamed Buns at local primary schools, actively promoting Chinese traditional culture.
+                </p>
+                <h2>What's included</h2>
+                <p className='dot-before'>Private guide</p>
+                <p className='dot-before'>Private instructor (7th generation inheritor of Xiaolongbao making)</p>
+                <p className='dot-before'>Private transportation</p>
+                <p className='dot-before'>Pickup and drop-off</p>
+                <p className='dot-before'>Bottled water</p>
+                <p className='dot-before'>Xiaolongbao making materials</p>
+                <p className='dot-before'>Admission to private Jiangnan Garden and Nanxiang ancient town</p>
+                <p className='dot-before'>Dinner (local cuisine)</p>
             </div>
         </div>
         
