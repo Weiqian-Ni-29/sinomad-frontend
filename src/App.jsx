@@ -13,6 +13,10 @@ import Xlb from './pages/Xlb';
 import Dumpling from './pages/Dumpling';
 import WikiPayment from './pages/wikis/Payment';
 import WikiTransport from './pages/wikis/Transport';
+import HotelAndTicketBooking from './pages/wikis/HotelAndTicketBooking';
+import InternetConnect from './pages/wikis/InternetConnect';
+import VisaFreeTravelGuide from './pages/wikis/VisaFreeTravelGuide';
+
 
 function App() {
   return (
@@ -31,6 +35,9 @@ function App() {
           <Route path='/AboutUs' element={<AboutUs/>}/>
           <Route path='/Wiki-Payment' element={<WikiPayment/>}/>
           <Route path='/Wiki-Transport' element={<WikiTransport/>}/>
+          <Route path='/Wiki-Hotel-And-Ticket-Booking' element={<HotelAndTicketBooking/>}/>
+          <Route path='/Wiki-Internet-Connectivity' element={<InternetConnect/>}/>
+          <Route path='/Wiki-VisaFree-TravelGuide' element={<VisaFreeTravelGuide/>}/>
         </Routes>
       </Router>
     </div>

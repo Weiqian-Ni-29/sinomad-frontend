@@ -15,7 +15,7 @@ function VerticalDisplayer( { id, containsImg, title, subtitle, cards } ) {
                             </div>}
                             <div className='v-card-content'>
                                 <h3>{card.title}</h3>
-                                <h6>{card.subtitle}</h6>
+                                <h6>{card.subtitle != null && card.subtitle.replace(/\\n/g, '\n') }</h6>
                                 <p>{card.description}</p>
                             </div>
                         </div>

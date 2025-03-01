@@ -10,7 +10,7 @@ function SimpleDesc( {width, paragraph} ) {
             marginTop: "0",
             marginBottom: "40px"
         }}>
-            <p>{paragraph}</p>
+            <p>{paragraph != null && paragraph.replace(/\\n/g, '\n')}</p>
         </div>
     );
 }

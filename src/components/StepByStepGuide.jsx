@@ -1,16 +1,15 @@
 import './StepByStepGuide.css';
 import PropTypes from 'prop-types';
 
-function StepByStepGuide( { title, subtitle, steps, imgs} ) {
+function StepByStepGuide( { id, title, subtitle, steps, imgs} ) {
     return (
-        <div className="step-by-step-guide">
+        <div id={id} className="step-by-step-guide">
             <h2>{title}</h2>
             <h3>{subtitle}</h3>
             <div className='steps-desc'>
                 {steps.map((step, index) => (
                     <>                 
-                        <h4>STEP {index + 1}:</h4>
-                        <p>{step.title}</p>
+                        <p><b>STEP {index + 1}: </b>{step.title}</p>
                         { step.description != null && <p>- {step.description.replace(/\\n/g, '\n')}</p> }
                     </>
                 ))}
