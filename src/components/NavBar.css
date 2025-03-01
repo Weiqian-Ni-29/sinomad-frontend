@@ -14,11 +14,12 @@ header {
 
 /* Logo 样式 */
 .logo {
-    position: absolute; /* 使 Logo 固定在左侧 */
+    position: absolute;
     left: 1em;
     display: flex;
     align-items: center;
     margin-left: 2em;
+    cursor: pointer;
 }
 
 .logo img {
@@ -51,6 +52,12 @@ nav a:hover {
     color: #000;
 }
 
+.nav-h2 {
+    margin: 0 auto; /* 自动外边距使其在可用空间居中 */
+    text-align: center;
+    flex-shrink: 0; /* 防止标题被压缩 */
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* 将布局方向改为垂直方向 */
@@ -73,8 +80,8 @@ nav a:hover {
     }
 
     h2 {
-        margin-top: 10px; /* 给标题添加上边距 */
-        text-align: center; /* 居中对齐 */
+        margin-top: 10px;
+        text-align: center;
     }
 
     nav {

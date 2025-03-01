@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './NavBar.css';
+import './NavBarCustom.css';
 import logo from '../assets/imgs/common/siiinomad-logo.jpg';
 function NavBarCustom(props) {
     const navigate = useNavigate();
@@ -15,12 +15,12 @@ function NavBarCustom(props) {
         window.scrollTo(0, 0);
     }, []);
     return(
-        <header>
-            <div className="logo" onClick={handleClick}>
+        <header className='navbar-custom'>
+            <div className="logo-custom" onClick={handleClick}>
                 <img src={logo} alt="Logo" />
                 <span>SiNomad</span>
             </div>
-            <h2>{props.title}</h2>
+            <h2 className='nav-h2-custom'>{props.title}</h2>
         </header>
     );
 }
