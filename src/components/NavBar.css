@@ -58,7 +58,7 @@ nav a:hover {
     flex-shrink: 0; /* 防止标题被压缩 */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
         flex-direction: column; /* 将布局方向改为垂直方向 */
         align-items: center; /* 垂直居中 */
