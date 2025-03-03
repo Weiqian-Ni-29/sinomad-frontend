@@ -68,7 +68,7 @@ function Explore() {
               />
             </div>
             <div className="card-description">
-            <h4>A Photography Walk from Suzhou Creek to the Bund</h4>
+            <h4>A Cinematic Walk from Suzhou Creek to the Bund</h4>
             </div>
           </div>
           <div className="explore-card" onClick={handleClickDumpling}>

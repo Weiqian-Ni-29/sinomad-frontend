@@ -30,8 +30,8 @@ function PortalImg() {
                             autoPlayDelay={5.0}
                         />
             <div className="text-overlay">
-                <h2>Immersive Cultural Experience in China</h2>
-                <p>Providing genuine encounters that transcend mere sightseeing</p>
+                <h2>Sinomad, See Real China</h2>
+                <p>Immersive Cultural Experience in China</p>
             </div>
         </div>
     );
