@@ -1,6 +1,10 @@
 import "./TravelGuide.css";
-import payment from "../assets/imgs/common/payment-logo.webp";
-import transport from "../assets/imgs/common/transportation-logo.webp";
+import payment from "../assets/imgs/common/payment-wiki.jpg";
+import transport from "../assets/imgs/common/transport-wiki.jpg";
+import booking from "../assets/imgs/common/booking-wiki.jpg";
+import network from "../assets/imgs/common/network-wiki.jpg";
+import visa from "../assets/imgs/common/visa-wiki.jpg";
+
 import { Link } from "react-router-dom";
 function TravelGuide() {
   return (
@@ -23,19 +27,19 @@ function TravelGuide() {
         </Link>
         <Link to="/Wiki-Hotel-And-Ticket-Booking" className="circle-link">
           <div className="circle">
-            <img src={transport} alt="Hotel-and-ticket-booking" />
+            <img src={booking} alt="Hotel-and-ticket-booking" />
           </div>
           <p>Hotel &<br/> Ticket Booking</p>
         </Link>
         <Link to="/Wiki-Internet-Connectivity" className="circle-link">
           <div className="circle">
-            <img src={transport} alt="Internet-Connectivity" />
+            <img src={network} alt="Internet-Connectivity" />
           </div>
           <p>Internet</p>
         </Link>
         <Link to="/Wiki-VisaFree-TravelGuide" className="circle-link">
           <div className="circle">
-            <img src={transport} alt="Wiki-VisaFree-TravelGuide" />
+            <img src={visa} alt="Wiki-VisaFree-TravelGuide" />
           </div>
           <p>Visa</p>
         </Link>

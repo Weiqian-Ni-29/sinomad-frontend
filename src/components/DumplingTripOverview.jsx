@@ -11,7 +11,7 @@ function DumplingTripOverview() {
                 </p>
                 <p className='dot-before'><b>Expert Narration: </b>Dive into hidden stories of landmarks like Magy Apartments and Willow Court with historical insights.</p>
                 <p className='dot-before'><b>Interactive Cooking: </b>Master authentic dumpling-making techniques under chef guidance, from dough-rolling to boiling.</p>
-                <p className='dot-before'><b>Edible Souvenir: </b>Enjoy your handmade dumplings and take home a recipe card </p>
+                <p className='dot-before'><b>Edible Souvenir: </b>Enjoy your handmade dumplings and take home a recipe card. </p>
                 <h2>Description</h2>
                 <p>This 4-hour experience begins at Changshu Road, guiding you through the Art Deco landmarks of former French Concession (Magy Apartments, Willow Court, Wukang Mansion) with storytelling about Shanghai's cosmopolitan past. The journey concludes at a century-old dumpling house on Middle Huaihai Road, where you'll craft dumplings from scratch under a master chef's instruction and savor your creations. Perfect for culture and food lovers!
                 </p>
