@@ -46,6 +46,7 @@
     font-size: 1em;
     padding-top: 0;
     margin-top: 0;
+    text-align: left;
 }
 
 /* Responsive styling for mobile */
@@ -74,6 +75,7 @@
     }
 
     .card-description h4 {
+        text-align: left;
         font-size: 0.8em;
         line-height: 1.2em;
     }
