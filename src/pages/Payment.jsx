@@ -102,7 +102,7 @@ function Payment() {
                     travel_date: selectedDate } });
               } else {
                 const errorData = await response.json();
-                alert(`Payment not successful: ${errorData.message}`);
+                alert(`Payment not successful: It seems somebody else has just booked the same service, result in not enough vacent tickets available. Please go back to the booking page and try again.`);
               }
             } catch (error) {
               console.error('Error while submitting the booking:', error);
