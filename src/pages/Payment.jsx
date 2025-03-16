@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { TextField, Button, Box } from '@mui/material';
 import NavBarCustom from '../components/NavBarCustom';
 import './Payment.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Divider from '@mui/material/Divider';
 import dayjs from 'dayjs';
@@ -38,7 +38,6 @@ function generateOrderId() {
 function Payment() {
     const location = useLocation();
     const { selectedNumber, price, selectedDate, route } = location.state || {};
-    const navigate = useNavigate();
 
     const [inputs, setInputs] = useState({
         name: '',
@@ -52,7 +51,6 @@ function Payment() {
         setInputs({ ...inputs, [name]: value });
     };
 
-    // triggers when payment is successful
     const handleSubmit = async (e) => {
         e.preventDefault();  // Prevent form submission by default
         if(!inputs.name || !inputs.email || !inputs.phone || !inputs.region || !selectedDate || !dayjs.isDayjs(selectedDate)) {
@@ -60,7 +58,7 @@ function Payment() {
             return;
         }
         if(!isValidRegion(inputs)) {
-            console.log('wow')
+            console.log('invalid region')
         }
 
         if (!validateEmail(inputs.email) || !validPhoneNumber(inputs.phone) || !isValidRegion(inputs.region)) {
@@ -68,46 +66,60 @@ function Payment() {
             return;
         }
 
-        // 提交表单数据
         const order_number = generateOrderId();
+        const order_info = JSON.stringify({
+            order_number: order_number,
+            name: inputs.name,
+            email: inputs.email,
+            phone: inputs.phone,
+            region_code: inputs.region.replace("+",""), 
+            amount_paid: selectedNumber * price,
+            travelers: selectedNumber,
+            travel_date: selectedDate,
+            route: route,
+        });
+
         try {
-            const response = await fetch(config.API_SERVER + 'submit-userinfo', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                order_number: order_number,
-                name: inputs.name,
-                email: inputs.email,
-                phone: inputs.phone,
-                region_code: inputs.region.replace("+",""), 
-                amount_paid: selectedNumber * price,
-                travelers: selectedNumber,
-                travel_date: selectedDate,
-                route: route,
-              }),
+            // 1. 提交用户信息(更新数据库)
+            const infoResponse = await fetch(config.API_SERVER + 'submit-userinfo', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: order_info,
             });
-      
-            if (response.ok) {
-                const data = await response.json();
-                console.log(`Server response: ${data.message}`);
-                navigate('/PaymentSuccess', { state: { 
-                    order_number: order_number, 
-                    name: inputs.name,
-                    email: inputs.email,
-                    phone: inputs.phone, 
-                    region_code: inputs.region.replace("+",""),
-                    travelers: selectedNumber,
-                    travel_date: selectedDate } });
-              } else {
-                const errorData = await response.json();
-                alert(`Payment not successful: It seems somebody else has just booked the same service, result in not enough vacent tickets available. Please go back to the booking page and try again.`);
-              }
-            } catch (error) {
-              console.error('Error while submitting the booking:', error);
-              alert("Something's wrong, please try again.");
-            }
+
+            if (!infoResponse.ok) throw new Error('User info submission failed');
+
+            // 2. 构建支付跳转URL
+            const params = {
+                order_number: order_number,
+                amount: selectedNumber * price,
+                subject: `${route} Tour Booking`,
+                order_info: order_info
+            };
+            // 判断当前设备是否为移动端
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const platform = isMobile ? 'mobile' : 'page';
+            console.log(platform);
+            
+            fetch(config.API_SERVER + `alipay/payment/${platform}`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(params)
+              })
+              .then(response => response.json())
+              .then(data => {
+                if (data.payment_url) {
+                  window.location.href = data.payment_url;
+                //   window.open(data.payment_url, '_blank');
+                }
+              })
+              .catch(error => console.error('Error:', error));
+        } catch (error) {
+            console.error('Payment flow error:', error);
+            alert(`Payment failed: ${error.message}`);
+        }
     }
 
     return(
@@ -156,37 +168,8 @@ function Payment() {
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
+                    <h2>Service: one day tour guide at {route}</h2>
                     <h2>The total charge for {selectedNumber} person is ${selectedNumber * price}</h2>
-                    {/* <h2>Please contact us via RedNote at the bottom of the screen to place the order</h2> */}
-                    {/* <h2>Choose your Payment method</h2>
-                    <Button
-                        variant="contained"
-                        style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
-                        onClick={handleSubmit}
-                    >
-                        Pay by credit card
-                    </Button>
-                    <Button
-                        variant="contained"
-                        style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
-                        onClick={handleSubmit}
-                    >
-                        Pay by paypal
-                    </Button>
-                    <Button
-                        variant="contained"
-                        style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
-                        onClick={handleSubmit}
-                    >
-                        Pay by Alipay
-                    </Button>
-                    <Button
-                        variant="contained"
-                        style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
-                        onClick={handleSubmit}
-                    >
-                        Pay by Wechat
-                    </Button> */}
                     <Button
                         variant="contained"
                         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}

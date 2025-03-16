@@ -24,11 +24,11 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/XujiaHuiJingan" element={<XujiaHuiJingan price='90' />} />
-          <Route path="/Bund" element={<Bund price='95' />} />
-          <Route path="/Jingze" element={<Jingze price='220' />} />
-          <Route path="/Xlb" element={<Xlb price='220' />} />
-          <Route path="/Dumpling" element={<Dumpling price='220' />} />
+          <Route path="/XujiaHuiJingan" element={<XujiaHuiJingan price='1' />} />
+          <Route path="/Bund" element={<Bund price='1' />} />
+          <Route path="/Jingze" element={<Jingze price='2' />} />
+          <Route path="/Xlb" element={<Xlb price='1' />} />
+          <Route path="/Dumpling" element={<Dumpling price='1' />} />
           <Route path="/TermsNConditions" element={<TermsNConditions/>}/>
           <Route path="/Payment" element={<Payment/>}/>
           <Route path="/PaymentSuccess" element={<PaymentSuccess/>}/>
