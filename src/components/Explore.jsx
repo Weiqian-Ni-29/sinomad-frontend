@@ -11,23 +11,23 @@ function Explore() {
   // 点击时执行的跳转函数
   const handleClickXjh = (event) => {
     event.stopPropagation();
-    navigate('/XujiahuiJingan');
+    navigate('/XujiahuiJingan/en');
   };
   const handleClickBund = (event) => {
     event.stopPropagation();
-    navigate('/Bund');
+    navigate('/Bund/en');
   };
   const handleClickJingze = (event) => {
     event.stopPropagation();
-    navigate('/Jingze');
+    navigate('/Jingze/en');
   };
   const handleClickXlb = (event) => {
     event.stopPropagation();
-    navigate('/Xlb');
+    navigate('/Xlb/en');
   };
   const handleClickDumpling = (event) => {
     event.stopPropagation();
-    navigate('/Dumpling');
+    navigate('/Dumpling/en');
   };
   return (
     <section id="experience">

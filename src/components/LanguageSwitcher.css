@@ -1,0 +1,28 @@
+/* LanguageSwitcher.module.css */
+.language-switcher {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Arial, sans-serif;
+}
+
+.language-option {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.language-option:hover {
+    color: #333;
+}
+
+.language-option.active {
+    font-weight: 700;
+    color: #8A2BE2; /* 紫色 */
+    pointer-events: none; /* 禁用当前语言的点击 */
+}
+
+.separator {
+    color: #ddd;
+}

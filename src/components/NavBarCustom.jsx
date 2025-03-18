@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavBarCustom.css';
 import logo from '../assets/imgs/common/siiinomad-logo.jpg';
+import LanguageSwitcher from './LanguageSwitcher';
 function NavBarCustom(props) {
     const navigate = useNavigate();
     // 点击时执行的跳转函数
@@ -21,6 +22,9 @@ function NavBarCustom(props) {
                 <span>SiNomad</span>
             </div>
             <h2 className='nav-h2-custom'>{props.title}</h2>
+            <div className='language-switcher-container-custom'>
+                <LanguageSwitcher/>
+            </div>
         </header>
     );
 }

@@ -92,3 +92,14 @@ nav a:hover {
         font-size: 1.1em;
     }
 }
+
+/* 新增语言切换器容器样式 */
+.language-switcher-container {
+    position: absolute;
+    right: 1em;
+    transform: translateY(90%); 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 2em;
+}
