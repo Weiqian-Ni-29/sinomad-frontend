@@ -23,7 +23,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 function PaperCutZH(props) {
     return (
         <div className="Title">
-            <NavBarCustomZH title="Snip, Savor, Stroll:  Tianzifang Paper-Cut & Culinary Odyssey" />
+            <NavBarCustomZH title="「剪影艺巷·舌尖上海」非遗匠心体验之旅" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>

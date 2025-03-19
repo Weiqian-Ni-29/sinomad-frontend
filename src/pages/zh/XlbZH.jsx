@@ -21,7 +21,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 function XlbZH(props) {
     return (
         <div className="Title">
-            <NavBarCustomZH title="Xiaolongbao Making in a Private Jiangnan Garden" />
+            <NavBarCustomZH title="在私家江南园林制作小笼包" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>

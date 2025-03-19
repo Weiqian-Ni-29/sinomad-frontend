@@ -20,7 +20,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8];
 function BundZH(props) {
     return (
         <div className="Title">
-            <NavBarCustomZH title="A Cinematic Walk from Suzhou Creek to the Bund" />
+            <NavBarCustomZH title="从苏州河到外滩的步行之旅" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>

@@ -21,7 +21,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 function XujiaHuiJingan(props) {
     return (
         <div className="Title">
-            <NavBarCustomZH title="Strolling Through Shanghai Former French Concession" />
+            <NavBarCustomZH title="漫步上海前法租界" />
                 <div className="content-container">
                     <div className="img-slider">
                         <Gallery imgs={imgs}/>

@@ -21,7 +21,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 function Dumpling(props) {
     return (
         <div className="Title">
-            <NavBarCustomZH title="Heritage Walk & Dumpling Workshop: Former French Concession Architecture & Culinary Craft" />
+            <NavBarCustomZH title="漫步历史韵味·手作沪上风味：法租界建筑探索与饺子工坊" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>
