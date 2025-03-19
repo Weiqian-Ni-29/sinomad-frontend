@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { TextField, Button, Box } from '@mui/material';
-import NavBarCustom from '../components/NavBarCustom';
+import NavBarCustom from '../components/en/NavBarCustom';
 import './Payment.css';
 // import { useNavigate } from 'react-router-dom';
-import Footer from '../components/Footer';
+import Footer from '../components/en/Footer';
 import Divider from '@mui/material/Divider';
 import dayjs from 'dayjs';
 import config from '../Constants';

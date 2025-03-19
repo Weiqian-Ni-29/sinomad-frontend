@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Footer from '../components/Footer';
-import NavBarCustom from '../components/NavBarCustom';
+import Footer from '../components/en/Footer';
+import NavBarCustom from '../components/en/NavBarCustom';
 import './PaymentSuccess.css';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';

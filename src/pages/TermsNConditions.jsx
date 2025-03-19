@@ -1,4 +1,4 @@
-import NavBarCustom from '../components/NavBarCustom';
+import NavBarCustom from '../components/en/NavBarCustom';
 import './TermsNConditions.css';
 import Divider from '@mui/material/Divider';
 function TermsNConditions() {

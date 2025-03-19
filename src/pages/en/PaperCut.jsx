@@ -1,0 +1,54 @@
+import NavBarCustom from "../../components/en/NavBarCustom";
+import Footer from "../../components/en/Footer";
+import '../styles/TripDetail.css';
+import img1 from '../../assets/imgs/trips/papercut/papercutting1.jpg';
+import img2 from '../../assets/imgs/trips/papercut/papercutting2.jpg';
+import img3 from '../../assets/imgs/trips/papercut/papercutting3.jpg';
+import img4 from '../../assets/imgs/trips/papercut/papercutting4.jpg';
+import img5 from '../../assets/imgs/trips/papercut/papercutting5.jpg';
+import img6 from '../../assets/imgs/trips/papercut/papercutting6.jpg';
+import img7 from '../../assets/imgs/trips/papercut/papercutting7.jpg';
+import img8 from '../../assets/imgs/trips/papercut/papercutting8.jpg';
+import img9 from '../../assets/imgs/trips/papercut/papercutting9.jpg';
+import img10 from '../../assets/imgs/trips/papercut/papercutting10.jpg';
+import img11 from '../../assets/imgs/trips/papercut/papercutting11.jpg';
+import clockLogo from '../../assets/imgs/common/clock.png';
+import TravelInfo from '../../components/TravelInfo';
+import Divider from '@mui/material/Divider';
+import PaperCutTripOverview from "../../components/en/PaperCutTripOverview";
+import Gallery from "../../components/Gallery";
+
+const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
+
+function PaperCut(props) {
+    return (
+        <div className="Title">
+            <NavBarCustom title="Snip, Savor, Stroll:  Tianzifang Paper-Cut & Culinary Odyssey" />
+            <div className="content-container">
+                <div className="img-slider">
+                    <Gallery imgs={imgs}/>
+                </div>
+                <div className="picker">
+                    <h3>From ${props.price} per person</h3>
+                    <h3>Select number of travellers and date of departure.</h3>
+                    <TravelInfo price={props.price} route="papercut"/>
+                    <div className="time-desc">
+                        <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
+                        <h3>5 hours (approx.)</h3>
+                    </div>
+                    <h3>Available in English</h3>
+                    <p>Free cancellation up to 3 days in advance</p>
+                </div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Divider style={{ width: '80%' }} />
+            </div>
+            <PaperCutTripOverview/>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Divider style={{ width: '80%' }} />
+            </div>
+            <Footer/>
+        </div>
+    );
+}
+export default PaperCut;
