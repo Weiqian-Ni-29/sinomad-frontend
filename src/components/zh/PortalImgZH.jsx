@@ -30,7 +30,7 @@ function PortalImgZH() {
                             autoPlayDelay={5.0}
                         />
             <div className="text-overlay">
-                <h2>Sinomad, 看真正的中国</h2>
+                <h2>SiNomad, 看真正的中国</h2>
                 <p>沉浸式的中国文化体验</p>
             </div>
         </div>

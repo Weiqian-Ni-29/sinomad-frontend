@@ -6,7 +6,7 @@ import MainZH from './pages/zh/MainZH'
 import XujiaHuiJingan from './pages/en/XujiahuiJingan';
 import XujiaHuiJinganZH from './pages/zh/XujiahuiJinganZH';
 import TermsNConditions from './pages/TermsNConditions';
-import Payment from './pages/Payment';
+import Payment from './pages/en/Payment';
 import PaymentSuccess from './pages/PaymentSuccess';
 import AboutUs from './pages/en/AboutUs';
 import AboutUsZH from './pages/zh/AboutUsZH';
@@ -26,13 +26,14 @@ import HotelAndTicketBooking from './pages/wikis/en/HotelAndTicketBooking';
 import InternetConnect from './pages/wikis/en/InternetConnect';
 import VisaFreeTravelGuide from './pages/wikis/en/VisaFreeTravelGuide';
 import { Navigate } from 'react-router-dom';
+import PaymentZH from './pages/zh/PaymentZH';
 
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/en" replace />} />
+          <Route path="/" element={<Navigate to="/zh" replace />} />
           <Route path="/en" element={<Main />} />
           <Route path="/zh" element={<MainZH />}/>
           <Route path="/XujiaHuiJingan/en" element={<XujiaHuiJingan price='1' />} />
@@ -49,6 +50,7 @@ function App() {
           <Route path="/PaperCut/zh" element={<PaperCutZH price='1' />} />
           <Route path="/TermsNConditions/en" element={<TermsNConditions/>}/>
           <Route path="/Payment/en" element={<Payment/>}/>
+          <Route path="/Payment/zh" element={<PaymentZH/>}/>
           <Route path="/PaymentSuccess/en" element={<PaymentSuccess/>}/>
           <Route path='/AboutUs/en' element={<AboutUs/>}/>
           <Route path='/AboutUs/zh' element={<AboutUsZH/>}/>

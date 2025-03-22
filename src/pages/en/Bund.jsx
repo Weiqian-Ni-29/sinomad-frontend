@@ -10,7 +10,7 @@ import img6 from '../../assets/imgs/trips/bund/bund6.jpg';
 import img7 from '../../assets/imgs/trips/bund/bund7.jpg';
 import img8 from '../../assets/imgs/trips/bund/bund8.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfo from '../../components/en/TravelInfo';
 import Divider from '@mui/material/Divider';
 import BundTripOverview from "../../components/en/BundTripOverview";
 import Gallery from "../../components/Gallery";

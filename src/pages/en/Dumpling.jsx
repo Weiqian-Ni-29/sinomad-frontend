@@ -11,7 +11,7 @@ import img7 from '../../assets/imgs/trips/dumpling/dumpling7.jpg';
 import img8 from '../../assets/imgs/trips/dumpling/dumpling8.jpg';
 import img9 from '../../assets/imgs/trips/dumpling/dumpling9.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfo from '../../components/en/TravelInfo';
 import Divider from '@mui/material/Divider';
 import DumplingTripOverview from "../../components/en/DumplingTripOverview";
 import Gallery from "../../components/Gallery";

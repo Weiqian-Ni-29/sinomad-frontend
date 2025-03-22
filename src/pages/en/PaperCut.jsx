@@ -13,7 +13,7 @@ import img9 from '../../assets/imgs/trips/papercut/papercutting9.jpg';
 import img10 from '../../assets/imgs/trips/papercut/papercutting10.jpg';
 import img11 from '../../assets/imgs/trips/papercut/papercutting11.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfo from '../../components/en/TravelInfo';
 import Divider from '@mui/material/Divider';
 import PaperCutTripOverview from "../../components/en/PaperCutTripOverview";
 import Gallery from "../../components/Gallery";

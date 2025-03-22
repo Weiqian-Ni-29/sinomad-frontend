@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ClientNumberPicker from './ClientNumberPicker';
-import Calendar from './Calendar';
+import ClientNumberPicker from '../ClientNumberPicker';
+import Calendar from '../Calendar';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-import config from '../Constants';
+import config from '../../Constants';
 
 function BookingForm({ price, route }) {
   const navigate = useNavigate();
@@ -14,19 +14,19 @@ function BookingForm({ price, route }) {
   // 日期和剩余人数检查通过后跳转到付款页面
   const handleJumpPaymentPage = (event) => {
     if (selectedDate === null || selectedNumber === null) {
-      alert('date or number of people not selected properly, please try again');
+      alert('请确认选择了正确的人数和时间');
       return;
     }
-    navigate('/Payment/en', { state: { selectedNumber, price, selectedDate, route } });
+    navigate('/Payment/zh', { state: { selectedNumber, price, selectedDate, route } });
   };
 
   const handleSubmit = async () => {
     if (!selectedDate) {
-      alert('Please choose a date before submission');
+      alert('请在提交之前选择一个时间');
       return;
     }
     if (!selectedNumber || selectedNumber <= 0) {
-      alert('Please select the number of travelers before submission');
+      alert('请在提交之前选择出发人数');
       return;
     }
 
@@ -48,7 +48,7 @@ function BookingForm({ price, route }) {
         console.log(data);
         handleJumpPaymentPage();
       } else {
-        alert('Booking submission failed, please try again');
+        alert('提交失败，请重试');
       }
     } catch (error) {
       console.error('Error while submitting the booking:', error);
@@ -75,7 +75,7 @@ function BookingForm({ price, route }) {
         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px' }}
         onClick={handleSubmit}
       >
-        Check Availability
+        前往预定
       </Button>
     </div>
   );

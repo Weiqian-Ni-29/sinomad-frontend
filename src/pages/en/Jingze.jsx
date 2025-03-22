@@ -15,7 +15,7 @@ import img10 from '../../assets/imgs/trips/jingze/jingze10.jpg';
 import img11 from '../../assets/imgs/trips/jingze/jingze11.jpg';
 import img12 from '../../assets/imgs/trips/jingze/jingze12.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfo from '../../components/en/TravelInfo';
 import Divider from '@mui/material/Divider';
 import JingzeTripOverview from "../../components/en/JingzeTripOverview";
 

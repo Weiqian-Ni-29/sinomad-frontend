@@ -13,7 +13,7 @@ import img10 from '../../assets/imgs/trips/jingze/jingze10.jpg';
 import img11 from '../../assets/imgs/trips/jingze/jingze11.jpg';
 import img12 from '../../assets/imgs/trips/jingze/jingze12.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfoZH from '../../components/zh/TravelInfoZH';
 import Divider from '@mui/material/Divider';
 import FooterZH from "../../components/zh/FooterZH";
 import NavBarCustomZH from "../../components/zh/NavBarCustomZH";
@@ -32,7 +32,7 @@ function Jingze(props) {
                 <div className="picker">
                     <h3>￥{props.price} / 每人</h3>
                     <h3>请选择出发日期和人数</h3>
-                    <TravelInfo price={props.price} route="jingze"/>
+                    <TravelInfoZH price={props.price} route="jingze"/>
                     <div className="time-desc-zh">
                         <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
                         <h3>行程大约5小时</h3>

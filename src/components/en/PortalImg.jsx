@@ -30,7 +30,7 @@ function PortalImg() {
                             autoPlayDelay={5.0}
                         />
             <div className="text-overlay">
-                <h2>Sinomad, See Real China</h2>
+                <h2>SiNomad, See Real China</h2>
                 <p>Immersive Cultural Experience in China</p>
             </div>
         </div>

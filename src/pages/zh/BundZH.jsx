@@ -8,7 +8,7 @@ import img6 from '../../assets/imgs/trips/bund/bund6.jpg';
 import img7 from '../../assets/imgs/trips/bund/bund7.jpg';
 import img8 from '../../assets/imgs/trips/bund/bund8.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfoZH from '../../components/zh/TravelInfoZH';
 import Divider from '@mui/material/Divider';
 import BundTripOverviewZH from "../../components/zh/BundTripOverviewZH";
 import Gallery from "../../components/Gallery";
@@ -28,7 +28,7 @@ function BundZH(props) {
                 <div className="picker">
                     <h3>￥{props.price} / 每人</h3>
                     <h3>请选择出发日期和人数</h3>
-                    <TravelInfo price={props.price} route="bund"/>
+                    <TravelInfoZH price={props.price} route="bund"/>
                     <div className="time-desc-zh">
                         <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
                         <h3>行程大约5小时</h3>

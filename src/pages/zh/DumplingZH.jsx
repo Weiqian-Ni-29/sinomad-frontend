@@ -9,7 +9,7 @@ import img7 from '../../assets/imgs/trips/dumpling/dumpling7.jpg';
 import img8 from '../../assets/imgs/trips/dumpling/dumpling8.jpg';
 import img9 from '../../assets/imgs/trips/dumpling/dumpling9.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
-import TravelInfo from '../../components/TravelInfo';
+import TravelInfoZH from '../../components/zh/TravelInfoZH';
 import Divider from '@mui/material/Divider';
 import Gallery from "../../components/Gallery";
 import FooterZH from "../../components/zh/FooterZH";
@@ -29,7 +29,7 @@ function Dumpling(props) {
                 <div className="picker">
                     <h3>￥{props.price} / 每人</h3>
                     <h3>请选择出发日期和人数</h3>
-                    <TravelInfo price={props.price} route="dumpling"/>
+                    <TravelInfoZH price={props.price} route="dumpling"/>
                     <div className="time-desc-zh">
                         <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
                         <h3>行程大约5小时</h3>
