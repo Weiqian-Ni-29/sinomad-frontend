@@ -123,22 +123,22 @@ function PaymentZH() {
 
     return(
         <div className='world'>
-            <NavBarCustomZH title='Payment'/>
+            <NavBarCustomZH title='付款'/>
             <div className='outer-container'>
                 <div className='Payment'>
-                    <h2>Please fill in your contact info</h2>
+                    <h2>请填写您的联系信息</h2>
                     <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '40%', margin: 'auto','@media (max-width: 768px)': {
                         width: '90%', // 手机端宽度设置为 90%
                         } }}>
                         <TextField
-                            label="Name"
+                            label="姓名"
                             variant="outlined"
                             name="name"
                             value={inputs.name}
                             onChange={handleChange}
                         />
                         <TextField
-                            label="Email"
+                            label="邮箱"
                             variant="outlined"
                             name="email"
                             type="email"
@@ -147,7 +147,7 @@ function PaymentZH() {
                         />
                         <div style={{ display: 'flex', gap: '10px' }}>
                             <TextField
-                                label="region"
+                                label="区号"
                                 variant="outlined"
                                 name="region"
                                 value={inputs.region}
@@ -155,7 +155,7 @@ function PaymentZH() {
                                 style={{width:'80px'}}
                             />
                             <TextField
-                                label="Phone"
+                                label="手机号"
                                 variant="outlined"
                                 name="phone"
                                 value={inputs.phone}
