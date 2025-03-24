@@ -52,7 +52,7 @@ function Explore() {
               <img src={xlb_img} onClick={handleClickXlb} alt="xlb" />
             </div>
             <div className="card-description">
-              <h4>Xiaolongbao Making in a Private Jiangnan Garden</h4>
+              <h4>Heritage & Craftsmanship: A Deep Dive into Nanxiang Xiaolongbao Culture</h4>
             </div>
           </div>
           <div

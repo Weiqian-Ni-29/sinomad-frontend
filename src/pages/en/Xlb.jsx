@@ -22,7 +22,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 function Xlb(props) {
     return (
         <div className="Title">
-            <NavBarCustom title="Xiaolongbao Making in a Private Jiangnan Garden" />
+            <NavBarCustom title="Heritage & Craftsmanship: A Deep Dive into Nanxiang Xiaolongbao Culture" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>

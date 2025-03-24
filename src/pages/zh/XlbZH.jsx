@@ -22,7 +22,7 @@ const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 function XlbZH(props) {
     return (
         <div className="Title">
-            <NavBarCustomZH title="在私家江南园林制作小笼包" />
+            <NavBarCustomZH title="非遗传承·匠心手作：南翔小笼文化深度体验之旅" />
             <div className="content-container">
                 <div className="img-slider">
                     <Gallery imgs={imgs}/>

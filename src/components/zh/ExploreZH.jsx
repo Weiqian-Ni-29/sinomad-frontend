@@ -52,7 +52,7 @@ function ExploreZH() {
               <img src={xlb_img} onClick={handleClickXlb} alt="xlb" />
             </div>
             <div className="card-description">
-              <h4>在私家江南园林制作小笼包</h4>
+              <h4>非遗传承·匠心手作：南翔小笼文化深度体验之旅</h4>
             </div>
           </div>
           <div
