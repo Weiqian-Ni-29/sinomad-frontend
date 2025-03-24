@@ -33,7 +33,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/zh" replace />} />
+          <Route path="/" element={<Navigate to="/en" replace />} />
           <Route path="/en" element={<Main />} />
           <Route path="/zh" element={<MainZH />}/>
           <Route path="/XujiaHuiJingan/en" element={<XujiaHuiJingan price='1' />} />

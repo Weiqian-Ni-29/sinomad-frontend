@@ -167,7 +167,6 @@ function PaymentZH() {
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
-                    <h2>服务：SiNomad 一日游服务</h2>
                     <h2>对于 {selectedNumber} 人的服务的总收费为： ${selectedNumber * price}</h2>
                     <Button
                         variant="contained"
