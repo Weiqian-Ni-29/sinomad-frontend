@@ -9,6 +9,7 @@ import img6 from '../../assets/imgs/trips/xlb/xlb6.jpg';
 import img7 from '../../assets/imgs/trips/xlb/xlb7.jpg';
 import img8 from '../../assets/imgs/trips/xlb/xlb8.jpg';
 import img9 from '../../assets/imgs/trips/xlb/xlb9.jpg';
+import img10 from '../../assets/imgs/trips/xlb/xlb10.jpg';
 import clockLogo from '../../assets/imgs/common/clock.png';
 import TravelInfoZH from '../../components/zh/TravelInfoZH';
 import Divider from '@mui/material/Divider';
@@ -16,7 +17,7 @@ import FooterZH from "../../components/zh/FooterZH";
 import NavBarCustomZH from "../../components/zh/NavBarCustomZH";
 import XlbTripOverviewZH from "../../components/zh/XlbTripOverviewZH";
 
-const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
+const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 function XlbZH(props) {
     return (
