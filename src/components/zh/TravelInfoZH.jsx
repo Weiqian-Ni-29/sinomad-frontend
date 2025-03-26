@@ -10,6 +10,7 @@ function BookingForm({ price, route }) {
   const [selectedNumber, setSelectedNumber] = useState('');
   const [selectedDate, setSelectedDate] = useState(null);
   const [currentSlot, setCurrentSlot] = useState(null);
+  const [startUpNum, setStartUpNum] = useState(null);
 
   // 日期和剩余人数检查通过后跳转到付款页面
   const handleJumpPaymentPage = (event) => {
@@ -62,6 +63,7 @@ function BookingForm({ price, route }) {
         selectedDate={selectedDate}
         setSelectedDate={setSelectedDate}
         setCurrentSlot={setCurrentSlot}
+        setStartUpNum={setStartUpNum}
         setSelectedNumber={setSelectedNumber}
         route={route}
       />
@@ -69,6 +71,7 @@ function BookingForm({ price, route }) {
         selectedNumber={selectedNumber}
         setSelectedNumber={setSelectedNumber}
         currentSlot={currentSlot}
+        startUpNum={startUpNum}
       />
       <Button
         variant="contained"

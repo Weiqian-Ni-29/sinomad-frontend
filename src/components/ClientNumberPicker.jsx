@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { TextField, Popover, Button, Box } from '@mui/material';
 
-function ClientNumberPicker({ selectedNumber, setSelectedNumber, currentSlot }) {
+function ClientNumberPicker({ selectedNumber, setSelectedNumber, currentSlot, startUpNum }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const inputRef = useRef(null);
 
@@ -42,7 +42,7 @@ function ClientNumberPicker({ selectedNumber, setSelectedNumber, currentSlot }) 
       >
         <Box p={2}>
           {currentSlot === null ? <h4>pick a time first</h4> :
-            Array.from({ length: currentSlot }, (_, index) => index + 1).map((number) => (
+            Array.from({ length: currentSlot - startUpNum + 1 }, (_, index) => startUpNum + index).map((number) => (
             <Button
               key={number}
               onClick={() => handleSelect(number)}

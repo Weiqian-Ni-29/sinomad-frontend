@@ -10,6 +10,7 @@ function BookingForm({ price, route }) {
   const [selectedNumber, setSelectedNumber] = useState('');
   const [selectedDate, setSelectedDate] = useState(null);
   const [currentSlot, setCurrentSlot] = useState(null);
+  const [startUpNum, setStartNum] = useState(null);
 
   // 日期和剩余人数检查通过后跳转到付款页面
   const handleJumpPaymentPage = (event) => {
@@ -63,12 +64,14 @@ function BookingForm({ price, route }) {
         setSelectedDate={setSelectedDate}
         setCurrentSlot={setCurrentSlot}
         setSelectedNumber={setSelectedNumber}
+        setStartUpNum={setStartNum}
         route={route}
       />
       <ClientNumberPicker
         selectedNumber={selectedNumber}
         setSelectedNumber={setSelectedNumber}
         currentSlot={currentSlot}
+        startUpNum={startUpNum}
       />
       <Button
         variant="contained"
