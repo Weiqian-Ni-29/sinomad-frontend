@@ -29,7 +29,7 @@ function PaperCut(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>From ${props.price} per person</h3>
+                    <h3>From ￥{props.price} per person</h3>
                     <h3>Select number of travellers and date of departure.</h3>
                     <TravelInfo price={props.price} route="papercut"/>
                     <div className="time-desc">
