@@ -153,7 +153,7 @@ function VisaFreeTravelGuide() {
                             },
                             {
                                 title: "",
-                                description: "If staying in a hotel, the hotel will handle the accommodation registration; \nif staying in a residence or accommodation other than a hotel, you or the person providing the accommodation must register with the local public security bureau's police station or foreigner service station within 24 hours of arrival."
+                                description: "If staying in a hotel, the hotel will handle the accommodation registration; \n\nIf staying in a residence or accommodation other than a hotel, you or the person providing the accommodation must register with the local public security bureau's police station or foreigner service station within 24 hours of arrival."
                             },
                             {
                                 title: "",

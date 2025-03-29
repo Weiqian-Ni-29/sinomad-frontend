@@ -8,7 +8,6 @@ import img1 from '../../../assets/imgs/wikis/transport/transport-wiki1.jpg';
 import img2 from '../../../assets/imgs/wikis/transport/transport-wiki2.png';
 import img3 from '../../../assets/imgs/wikis/transport/transport-wiki3.png';
 import img4 from '../../../assets/imgs/wikis/transport/transport-wiki4.png';
-import img5 from '../../../assets/imgs/wikis/transport/transport-wiki5.png';
 import img6 from '../../../assets/imgs/wikis/transport/transport-wiki6.png';
 import img7 from '../../../assets/imgs/wikis/transport/transport-wiki7.png';
 import img8 from '../../../assets/imgs/wikis/transport/transport-wiki8.png';
@@ -19,7 +18,6 @@ import img12 from '../../../assets/imgs/wikis/transport/transport-wiki12.png';
 import img13 from '../../../assets/imgs/wikis/transport/transport-wiki13.png';
 import img14 from '../../../assets/imgs/wikis/transport/transport-wiki14.png';
 import img15 from '../../../assets/imgs/wikis/transport/transport-wiki15.png';
-import img16 from '../../../assets/imgs/wikis/transport/transport-wiki16.png';
 import img17 from '../../../assets/imgs/wikis/transport/transport-wiki17.png';
 import img18 from '../../../assets/imgs/wikis/transport/transport-wiki18.png';
 import img19 from '../../../assets/imgs/wikis/transport/transport-wiki19.png';
@@ -28,6 +26,11 @@ import img21 from '../../../assets/imgs/wikis/transport/transport-wiki21.png';
 import img22 from '../../../assets/imgs/wikis/transport/transport-wiki22.png';
 import img23 from '../../../assets/imgs/wikis/transport/transport-wiki23.png';
 import img24 from '../../../assets/imgs/wikis/transport/transport-wiki24.png';
+import img25 from '../../../assets/imgs/wikis/transport/8-D.jpg';
+import img26 from '../../../assets/imgs/wikis/transport/12-D.jpg';
+import img27 from '../../../assets/imgs/wikis/transport/13-D.jpg';
+import img28 from '../../../assets/imgs/wikis/transport/14-D.jpg';
+import img29 from '../../../assets/imgs/wikis/transport/15-D.jpg';
 import StaticPortalImg from '../../../components/StaticPortalImg';
 import TableOfContents from '../../../components/TableOfContents';
 import VerticalDisplayer from '../../../components/VerticalDisplayer';
@@ -82,26 +85,26 @@ function Transport() {
                         [
                             {
                                 title: "Amap",
-                                description: "Amap is one of China's most popular navigation apps, offering seamless navigation features. \n However, it only supports Chinese. If you can read or understand some Chinese, Amap is a good choice and is available on Android and iOS platforms.",
+                                description: "Amap is one of China's most popular navigation apps, offering seamless navigation features. \n\n However, it only supports Chinese. If you can read or understand some Chinese, Amap is a good choice and is available on Android and iOS platforms.",
                                 img:img2
                             },
                             {
                                 title:"Apple map",
                                 subtitle: "Suitable for iPhone users",
-                                description: "Apple Maps is the preferred navigation app for iPhone users traveling in China. \nIt integrates local transportation and geographic data, providing navigation options for driving, walking, cycling, and public transit. \nUsers can enjoy real-time traffic updates and comprehensive route planning.",
+                                description: "Apple Maps is the preferred navigation app for iPhone users traveling in China. \n\nIt integrates local transportation and geographic data, providing navigation options for driving, walking, cycling, and public transit. \nUsers can enjoy real-time traffic updates and comprehensive route planning.",
                                 img:img3
                             },
                             {
                                 title: "Petal Maps",
                                 subtitle: "Suitable for Android users",
-                                description: "Due to restrictions on many Google services, including Google Maps, in China, Petal Maps is the recommended alternative.\n Although the installation process may be slightly complex, Petal Maps offers reliable navigation features such as real-time traffic updates and detailed maps, making it a practical tool for navigating Chinese cities.",
+                                description: "Due to restrictions on many Google services, including Google Maps, in China, Petal Maps is the recommended alternative.\n\n Although the installation process may be slightly complex, Petal Maps offers reliable navigation features such as real-time traffic updates and detailed maps, making it a practical tool for navigating Chinese cities.",
                                 img: img4
                             }
                         ]
                     }
                 />
                 <StaticPortalImg
-                    img={img5} 
+                    img={img25} 
                     id='bus-subway'
                     title='Taking Buses and Subways'
                     content="Major Chinese cities such as Beijing, Shanghai, and Chongqing have extensive subway systems that provide fast, convenient, and economical transportation options, with fares as low as 2 RMB. All subway stations have bilingual signs displaying station names and directions, facilitating navigation for non-Chinese speakers."
@@ -113,7 +116,7 @@ function Transport() {
                     cards={[
                         {
                             title: "Buses",
-                            description: "Local buses are the most economical transportation option in Chinese cities. \nHowever, since bus stop signs typically lack English translations, non-Chinese speakers may have difficulty determining when to disembark, making them less user-friendly.",
+                            description: "Local buses are the most economical transportation option in Chinese cities. \n\nHowever, since bus stop signs typically lack English translations, non-Chinese speakers may have difficulty determining when to disembark, making them less user-friendly.",
                             img: busImg
                         },
                         {
@@ -172,7 +175,7 @@ function Transport() {
                 />
 
                 <StaticPortalImg
-                    img={portalimg}
+                    img={img26}
                     id='taxis'
                     title='Taking Taxis'
                     content='In Chinese cities, using ride-hailing services like Didi is the most convenient and safe way to travel, similar to Uber, and can be accessed through Alipay and WeChat. Ride-hailing services are typically 20-30% cheaper than regular taxis. Licensed taxis are also a reliable option, albeit slightly more expensive. It is recommended to avoid unlicensed private cars, as they may be unreliable and unsafe.
@@ -219,7 +222,7 @@ function Transport() {
                 />
 
                 <StaticPortalImg
-                    img={img16}
+                    img={img27}
                     id='inter-city-travel'
                     title='Inter-city Travel'
                     content="For travel between multiple cities, utilizing China's extensive aviation and high-speed rail networks is the most comfortable, safe, and efficient way to travel. These transportation options ensure a smooth and enjoyable journey across the country."
@@ -227,7 +230,7 @@ function Transport() {
                 />
 
                 <StaticPortalImg
-                    img={portalimg}
+                    img={img28}
                     id='fly'
                     title='Flying'
                     content="For foreigners, the most effective way to purchase plane tickets in China is directly through the airlines' official websites. These websites offer multilingual support, which helps avoid common booking issues. Below are the official websites and customer service contact numbers for China's three major airlines.\n
@@ -239,7 +242,7 @@ function Transport() {
                 />
 
                 <StaticPortalImg
-                    img={portalimg}
+                    img={img29}
                     id='train'
                     title='Taking Trains'
                     content="China's vast territory is complemented by a highly developed high-speed rail network, making train travel one of the most effective ways to explore the country. Foreign travelers can book train tickets through the Trip.com App or the official Railway 12306 app. Below is a detailed guide on how to book train tickets using these platforms, designed to help you navigate China's extensive railway system with ease.

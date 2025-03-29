@@ -1,6 +1,5 @@
 import Footer from '../../../components/en/Footer';
 import NavBarCustom from '../../../components/en/NavBarCustom';
-import img1 from '../../../assets/imgs/wikis/payment/payment-wiki1.png';
 import img2 from '../../../assets/imgs/wikis/payment/payment-wiki2.png';
 import img3 from '../../../assets/imgs/wikis/payment/payment-wiki3.png';
 import img4 from '../../../assets/imgs/wikis/payment/payment-wiki4.png';
@@ -10,8 +9,11 @@ import img9 from '../../../assets/imgs/wikis/payment/payment-wiki9.png';
 import img10 from '../../../assets/imgs/wikis/payment/payment-wiki10.png';
 import img13 from '../../../assets/imgs/wikis/payment/payment-wiki45.png';
 import img14 from '../../../assets/imgs/wikis/payment/payment-wiki1112.png';
+import img15 from '../../../assets/imgs/wikis/payment/1-D.jpg';
+import img16 from '../../../assets/imgs/wikis/payment/2-D.jpg';
+import img17 from '../../../assets/imgs/wikis/payment/4-D.jpg';
+import img18 from '../../../assets/imgs/wikis/payment/5-D.jpg';
 import ToTopButton from '../../../components/ToTopButton';
-import portalimg from '../../../assets/imgs/wikis/transport/wiki-img-transport-op.jpg';
 import StaticPortalImg from '../../../components/StaticPortalImg';
 import '../styles/Wiki.css';
 import '../styles/Payment.css';
@@ -22,7 +24,7 @@ function Payment() {
         <div>
             <NavBarCustom title="Payment in China"/>
             <div className='world-x'>
-            <StaticPortalImg img={portalimg} 
+            <StaticPortalImg img={img15} 
                 title='2025 Comprehensive Payment Guide for China'
                 content="This guide provides you with key information for payment in China."
                 textColor='white'
@@ -38,7 +40,7 @@ function Payment() {
                     ]}
                 ]}
             />
-            <StaticPortalImg img={portalimg} 
+            <StaticPortalImg img={img16} 
                 id='mobile'
                 title='Mobile Payments: The Popular Choice'
                 content="You can enjoy convenient payments with just a mobile phone. Payment services such as Alipay and WeChat Pay are available. For better payment experience, no IDs are required for transactions under a certain amount. Give it a go!"
@@ -88,13 +90,13 @@ function Payment() {
                 }
                 imgs={[[{img:img7}, {img:img8}], [{img:img9}, {img:img10}],[{img: img14}]]}
             />
-            <StaticPortalImg img={img1} 
+            <StaticPortalImg img={img17} 
                 id='card'
                 title='Using Credit and Debit Cards'
                 content="Bank cards issued in your home country/region can be accepted if logos of UnionPay, Visa, Mastercard and other payment organizations are displayed at the checkout counter (see picture below). If not, please ask the cashier whether your bank card can be accepted. If you hold a UnionPay card, it can be accepted by all merchant POS terminals in China's mainland."
                 textColor='white'
             />
-            <StaticPortalImg img={img1} 
+            <StaticPortalImg img={img18} 
                 id='cash'
                 title='Cash as a Backup Option'
                 content="Although China is transitioning to a cashless economy, carrying cash remains a practical backup option. While technically accepted almost everywhere, cash is less frequently used in urban areas where mobile payments prevail. Relying on cash can be inconvenient and may cause delays if vendors prioritize mobile payments or have limited change. It’s advisable to keep a small amount of cash for emergencies or rural areas while primarily using mobile payment methods."

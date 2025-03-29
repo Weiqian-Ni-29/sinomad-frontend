@@ -36,18 +36,18 @@ function App() {
           <Route path="/" element={<Navigate to="/en" replace />} />
           <Route path="/en" element={<Main />} />
           <Route path="/zh" element={<MainZH />}/>
-          <Route path="/XujiaHuiJingan/en" element={<XujiaHuiJingan price='1' />} />
-          <Route path="/XujiaHuiJingan/zh" element={<XujiaHuiJinganZH price='1' />} />
-          <Route path="/Bund/en" element={<Bund price='1' />} />
-          <Route path="/Bund/zh" element={<BundZH price='1' />} />
-          <Route path="/Jingze/en" element={<Jingze price='2' />} />
-          <Route path="/Jingze/zh" element={<JingzeZH price='2' />} />
-          <Route path="/Xlb/en" element={<Xlb price='1' />} />
-          <Route path="/Xlb/zh" element={<XlbZH price='1' />} />
-          <Route path="/Dumpling/en" element={<Dumpling price='1' />} />
-          <Route path="/Dumpling/zh" element={<DumplingZH price='1' />} />
-          <Route path="/PaperCut/en" element={<PaperCut price='1' />} />
-          <Route path="/PaperCut/zh" element={<PaperCutZH price='1' />} />
+          <Route path="/XujiaHuiJingan/en" element={<XujiaHuiJingan price='509' />} />
+          <Route path="/XujiaHuiJingan/zh" element={<XujiaHuiJinganZH price='509' />} />
+          <Route path="/Bund/en" element={<Bund price='509' />} />
+          <Route path="/Bund/zh" element={<BundZH price='509' />} />
+          <Route path="/Jingze/en" element={<Jingze price='1149' />} />
+          <Route path="/Jingze/zh" element={<JingzeZH price='1149' />} />
+          <Route path="/Xlb/en" element={<Xlb price='1029' />} />
+          <Route path="/Xlb/zh" element={<XlbZH price='1029' />} />
+          <Route path="/Dumpling/en" element={<Dumpling price='699' />} />
+          <Route path="/Dumpling/zh" element={<DumplingZH price='699' />} />
+          <Route path="/PaperCut/en" element={<PaperCut price='909' />} />
+          <Route path="/PaperCut/zh" element={<PaperCutZH price='909' />} />
           <Route path="/TermsNConditions/en" element={<TermsNConditions/>}/>
           <Route path="/Payment/en" element={<Payment/>}/>
           <Route path="/Payment/zh" element={<PaymentZH/>}/>

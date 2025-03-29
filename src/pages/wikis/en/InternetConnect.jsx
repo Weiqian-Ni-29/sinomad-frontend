@@ -44,7 +44,7 @@ function InternetConnect() {
                             },
                             {
                                 title: "Disadvantages",
-                                description: "- Cost: International roaming can become expensive due to high data charges, with costs accumulating quickly.\n - Coverage Issues: While major cities offer strong network coverage, connections may be unstable in rural areas."
+                                description: "- Cost: International roaming can become expensive due to high data charges, with costs accumulating quickly.\n\n - Coverage Issues: While major cities offer strong network coverage, connections may be unstable in rural areas."
                             }
                         ]
                     }
@@ -63,11 +63,11 @@ function InternetConnect() {
                         [
                             {
                                 title: "Advantages",
-                                description: "- Convenience: Set up your eSIM at home and stay connected immediately upon arrival in China.\n- Access: Enjoy unrestricted access to foreign websites without the need for a VPN.\n- Cost: Generally more affordable than purchasing a short-term Chinese SIM card."
+                                description: "- Convenience: Set up your eSIM at home and stay connected immediately upon arrival in China.\n\n- Access: Enjoy unrestricted access to foreign websites without the need for a VPN.\n- Cost: Generally more affordable than purchasing a short-term Chinese SIM card."
                             },
                             {
                                 title: "Disadvantages",
-                                description: "- Limited Functionality: eSIMs typically only provide data services, meaning you cannot use phone or text functions.\n- Compatibility: Not all smartphones support eSIMs, especially older models, so check compatibility before purchasing."
+                                description: "- Limited Functionality: eSIMs typically only provide data services, meaning you cannot use phone or text functions.\n\n- Compatibility: Not all smartphones support eSIMs, especially older models, so check compatibility before purchasing."
                             }
                         ]
                     }
@@ -91,11 +91,11 @@ function InternetConnect() {
                             },
                             {
                                 title: "Advantages",
-                                description: "- Local Number: Obtain a Chinese phone number for making and receiving calls.\n- Instant Connectivity: Stay connected immediately upon arrival without searching for Wi-Fi."
+                                description: "- Local Number: Obtain a Chinese phone number for making and receiving calls.\n\n- Instant Connectivity: Stay connected immediately upon arrival without searching for Wi-Fi."
                             },
                             {
                                 title: "Disadvantages",
-                                description: "- Cost: Typically priced between ¥200-300, which may be higher than eSIM options.\n- Network Restrictions: Chinese SIM cards may have restrictions, such as limited access to foreign websites."
+                                description: "- Cost: Typically priced between ¥200-300, which may be higher than eSIM options.\n\n- Network Restrictions: Chinese SIM cards may have restrictions, such as limited access to foreign websites."
                             }
                         ]
                     }
@@ -111,15 +111,15 @@ function InternetConnect() {
                         [
                             {
                                 title: "International Roaming",
-                                description: "Best for short-term stays and travelers who do not plan to extensively use local internet services. \nThis option allows you to stay connected without changing SIM cards, but it is more expensive and may have coverage issues in rural areas."
+                                description: "Best for short-term stays and travelers who do not plan to extensively use local internet services. \n\nThis option allows you to stay connected without changing SIM cards, but it is more expensive and may have coverage issues in rural areas."
                             },
                             {
                                 title: "eSIM",
-                                description: "Ideal for those seeking a cost-effective and unrestricted internet access for longer stays. \nHowever, eSIMs typically only provide data services, limiting the use of local services that require phone or text functions."
+                                description: "Ideal for those seeking a cost-effective and unrestricted internet access for longer stays. \n\nHowever, eSIMs typically only provide data services, limiting the use of local services that require phone or text functions."
                             },
                             {
                                 title: "Local SIM Card",
-                                description: "Recommended if you prioritize the fastest and most stable connection and full access to local internet services.\n This option may have some restrictions on accessing foreign websites, but it offers a local phone number and comprehensive network access."
+                                description: "Recommended if you prioritize the fastest and most stable connection and full access to local internet services.\n\n This option may have some restrictions on accessing foreign websites, but it offers a local phone number and comprehensive network access."
                             }
                         ]
                     }

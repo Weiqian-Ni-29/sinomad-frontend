@@ -53,6 +53,7 @@
 }
 
 .v-card p {
+    line-height: 1.3em;
     white-space: pre-line;
     margin-top: 0;
 }

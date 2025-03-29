@@ -168,8 +168,7 @@ function Payment() {
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
-                    <h2>Service: one day tour guide at {route}</h2>
-                    <h2>The total charge for {selectedNumber} person is ${selectedNumber * price}</h2>
+                    <h2>The total charge for {selectedNumber} person is ￥{selectedNumber * price}</h2>
                     <Button
                         variant="contained"
                         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
