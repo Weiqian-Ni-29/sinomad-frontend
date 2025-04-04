@@ -84,13 +84,30 @@ nav a:hover {
         text-align: center;
     }
 
+    .language-switcher-container {
+        position: static;
+        display: flex !important;
+        transform: none;
+        width: 100%;
+        justify-content: center;
+        order: 99;
+        margin-top: 3em;
+        margin-right: 0 !important;
+        right:0 !important;
+    }
+
     nav {
-        gap: 2em;
+        flex-wrap: wrap; /* 允许换行 */
+        justify-content: center; /* 水平居中 */
+        gap: 1em 2em; /* 调整间距 */
+        position: relative; /* 为子元素定位提供上下文 */
+        padding-bottom: 15px; /* 底部留白 */
     }
 
     nav a {
         font-size: 1.1em;
     }
+
 }
 
 /* 新增语言切换器容器样式 */

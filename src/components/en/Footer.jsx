@@ -13,7 +13,7 @@ function Footer() {
     const navigate = useNavigate();
     const handleClickTermsNConditions = (event) => {
       event.stopPropagation();  // 阻止事件冒泡
-      navigate('/TermsNConditions'); // 跳转到 XujiahuiJingan 页面
+      navigate('/TermsNConditions/en'); // 跳转到 XujiahuiJingan 页面
     };
 
     return (

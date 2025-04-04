@@ -31,6 +31,10 @@
     padding: 1em;
 }
 
+.explore-h2 {
+    font-size: 2em;
+}
+
 .explore-card:hover {
     transform: scale(1.05);
 }
