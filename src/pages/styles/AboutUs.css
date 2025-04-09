@@ -33,3 +33,16 @@
     padding: 0;
     display: block;
 }
+
+@media (max-width: 1024px) {
+    .aboutus-intro {
+        position: relative;
+        display: flex;
+        flex-direction: column; /* 如果有多个子元素，可以设置垂直排列 */
+        background-color: bisque;
+        padding: 4em;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

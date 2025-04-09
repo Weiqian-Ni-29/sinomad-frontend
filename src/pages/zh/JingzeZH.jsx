@@ -30,7 +30,7 @@ function Jingze(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>￥{props.price} / 每人</h3>
+                    <h3>￥{props.price} / ${props.usprice} 每人</h3>
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="jingze"/>
                     <div className="time-desc-zh">
