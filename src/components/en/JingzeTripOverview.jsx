@@ -19,7 +19,7 @@ function JingzeTripOverview() {
                 <p>Discover the timeless allure of Jinze Ancient Town, a "First Bridge Town of Jiangnan" located in Shanghai's Qingpu District, with a history that extends over 1300 years to the Song Dynasty. This water town, with its labyrinth of canals and traditional dwellings, offers a quintessential Jiangnan experience. Jinze is home to 7 ancient bridges built during the Song, Yuan, Ming, and Qing dynasties, a testament to its status as a "Museum of Ancient Bridges" and a unique cultural landmark.                 </p>
                 <p>In this peaceful water town, free from crowds and shops, black roofs and white walls still keep their Southern Song Dynasty charm. Even famous ink painting masters love its timeless beauty. Join us to walk along its canals, learn painting from local artists, and discover the beauty of China's ancient art that's lasted 1,000 years!                </p>
                 <h2>Itinerary</h2>
-                <p>Jinze Ancient Town → Seven Ancient Bridges → Yihao Zen Temple → Master's Studio → tea ceremoney</p>
+                <p>Jinze Ancient Town → Seven Ancient Bridges → Yihao Zen Temple → Master's Studio → Tea ceremoney</p>
                 <h2>Meet your instructor</h2>
                 <p>Mr. Yang is a renowned calligrapher, painter, and collector in Shanghai. He chose to settle in Jinze Town because of its quaint and peaceful atmosphere. He has devoted a great deal of effort to the study of traditional Chinese figures and landscapes, and developed a solid foundation in traditional Chinese painting techniques.                </p>
                 <h2>What's included</h2>

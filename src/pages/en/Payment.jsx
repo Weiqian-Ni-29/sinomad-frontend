@@ -44,6 +44,7 @@ function Payment() {
         email: '',
         phone: '',
         region:'',
+        comment: '',
       });
 
     const handleChange = (e) => {
@@ -77,6 +78,7 @@ function Payment() {
             travelers: selectedNumber,
             travel_date: selectedDate,
             route: route,
+            comment: inputs.comment
         });
 
         try {
@@ -164,11 +166,18 @@ function Payment() {
                                 style={{flex: '1'}}
                             />
                         </div>
+                        <TextField
+                            label="Additional Comment"
+                            variant="outlined"
+                            name="comment"
+                            value={inputs.comment}
+                            onChange={handleChange}
+                        />
                         </Box>
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
-                    <h2>The total charge for {selectedNumber} person is ￥{selectedNumber * price}</h2>
+                    <h2>The total charge for {selectedNumber} person is CNY￥{selectedNumber * price}</h2>
                     <Button
                         variant="contained"
                         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}

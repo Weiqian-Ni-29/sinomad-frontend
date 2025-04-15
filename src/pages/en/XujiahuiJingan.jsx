@@ -27,12 +27,12 @@ function XujiaHuiJingan(props) {
                         <Gallery imgs={imgs}/>
                     </div>
                     <div className="picker">
-                        <h3>From ￥{props.price} / ${props.usprice} per person</h3>
+                        <h3>From CNY￥{props.price} / USD${props.usprice} per person</h3>
                         <h3>Select number of travellers and date of departure.</h3>
                         <TravelInfo price={props.price} route="xujiahui-jingan"/>
                         <div className="time-desc">
                             <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
-                            <h3>5 hours (approx.)</h3>
+                            <h3>2.5 hours (approx.)</h3>
                         </div>
                         <h3>Available in English</h3>
                         <p>Free cancellation up to 3 days in advance</p>

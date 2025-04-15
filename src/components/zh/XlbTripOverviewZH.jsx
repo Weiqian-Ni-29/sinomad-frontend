@@ -19,9 +19,6 @@ function XlbTripOverviewZH() {
                 <h2>活动行程</h2>
                 <p>丰德园（小笼包制作）→ 南翔古镇 → 古漪园 → 双塔
                 </p>
-                <h2>Meet your instructor</h2>
-                <p>Chef Chen is the 7th generation inheritor of Nanxiang Xiaolongbao, a national intangible cultural heritage. In addition to her busy work schedule, she is dedicated to teaching the art of making Nanxiang Steamed Buns at local primary schools, actively promoting Chinese traditional culture.
-                </p>
                 <h2>What's included</h2>
                 <p className='dot-before'>Private guide</p>
                 <p className='dot-before'>Private instructor</p>

@@ -30,12 +30,12 @@ function Jingze(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>￥{props.price} / ${props.usprice} 每人</h3>
+                    <h3>CNY￥{props.price} / USD${props.usprice} 每人</h3>
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="jingze"/>
                     <div className="time-desc-zh">
                         <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
-                        <h3>行程大约5小时</h3>
+                        <h3>行程大约8小时</h3>
                     </div>
                     <h3>可选择英文服务</h3>
                     <p>可提前3天免费取消</p>

@@ -24,8 +24,8 @@ function PaperCutTripOverviewZH() {
                 <p className='dot-before'>Private guide </p>
                 <p className='dot-before'>Paper cutting instructor</p>
                 <p className='dot-before'>Bottled water</p>
-                <p className='dot-before'>Bottled water</p>
-                <p className='dot-before'>Bottled water</p>
+                <p className='dot-before'>Paper cutting materials</p>
+                <p className='dot-before'>Dinner (local cuisine)</p>
             </div>
         </div>
         

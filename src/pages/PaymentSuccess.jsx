@@ -45,7 +45,7 @@ function PaymentSuccess() {
                     </div>
                     <p>If you have any inquiries, please do not hesitate to contact us <br/>via any of our social media platforms available at the bottom of this page.</p>
                 </div>
-                <div>
+                {/* <div>
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginBottom:'20px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
@@ -60,7 +60,7 @@ function PaymentSuccess() {
                     >
                         Questionnare
                     </Button>
-                </div>
+                </div> */}
             </div>
             <Footer/>
         </div>
