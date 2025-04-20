@@ -32,7 +32,7 @@ import PaymentZH from './pages/zh/PaymentZH';
 const cityWalkPrice = [649, 649, 428, 428, 404, 404, 404, 367];
 const dumplingPrice = [796, 796, 673, 673, 673, 612];
 const paperCutPrice = [1102, 1102, 979, 979, 979, 918];
-const jingzePrice = [2506, 2506, 1628, 1628, 1628, 1444];
+const jingzePrice = [2056, 2056, 1628, 1628, 1628, 1444];
 const xlbPrice = [796, 796, 673, 673, 673, 612];  // to be updated
 
 
