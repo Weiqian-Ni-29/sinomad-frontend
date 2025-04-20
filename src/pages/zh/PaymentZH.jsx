@@ -36,7 +36,7 @@ function generateOrderId() {
   
 function PaymentZH() {
     const location = useLocation();
-    const { selectedNumber, price, selectedDate, route } = location.state || {};
+    const { selectedNumber, submitPrice, selectedDate, route } = location.state || {};
 
     const [inputs, setInputs] = useState({
         name: '',
@@ -73,7 +73,7 @@ function PaymentZH() {
             email: inputs.email,
             phone: inputs.phone,
             region_code: inputs.region.replace("+",""), 
-            amount_paid: selectedNumber * price,
+            amount_paid: submitPrice,
             travelers: selectedNumber,
             travel_date: selectedDate,
             route: route,
@@ -93,7 +93,7 @@ function PaymentZH() {
             // 2. 构建支付跳转URL
             const params = {
                 order_number: order_number,
-                amount: selectedNumber * price,
+                amount: submitPrice,
                 subject: `${route} Tour Booking`,
                 order_info: order_info
             };
@@ -176,7 +176,7 @@ function PaymentZH() {
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
-                    <h2>对于 {selectedNumber} 人的服务的总收费为： CNY￥{selectedNumber * price}</h2>
+                    <h2>对于 {selectedNumber} 人的服务的总收费为： CNY￥{submitPrice}</h2>
                     <Button
                         variant="contained"
                         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}
