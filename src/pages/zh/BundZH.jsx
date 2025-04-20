@@ -18,6 +18,8 @@ import NavBarCustomZH from "../../components/zh/NavBarCustomZH";
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8];
 
 function BundZH(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustomZH title="从苏州河到外滩的步行之旅" />
@@ -26,7 +28,7 @@ function BundZH(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>CNY￥{props.price} / USD${props.usprice} 每人</h3>
+                    <h3>CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} 每人起</h3>
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="bund"/>
                     <div className="time-desc-zh">

@@ -37,7 +37,7 @@ function generateOrderId() {
   
 function Payment() {
     const location = useLocation();
-    const { selectedNumber, price, selectedDate, route } = location.state || {};
+    const { selectedNumber, submitPrice, selectedDate, route } = location.state || {};
 
     const [inputs, setInputs] = useState({
         name: '',
@@ -74,7 +74,7 @@ function Payment() {
             email: inputs.email,
             phone: inputs.phone,
             region_code: inputs.region.replace("+",""), 
-            amount_paid: selectedNumber * price,
+            amount_paid: selectedNumber * submitPrice,
             travelers: selectedNumber,
             travel_date: selectedDate,
             route: route,
@@ -94,7 +94,7 @@ function Payment() {
             // 2. 构建支付跳转URL
             const params = {
                 order_number: order_number,
-                amount: selectedNumber * price,
+                amount: selectedNumber * submitPrice,
                 subject: `${route} Tour Booking`,
                 order_info: order_info
             };
@@ -150,12 +150,12 @@ function Payment() {
                         />
                         <div style={{ display: 'flex', gap: '10px' }}>
                             <TextField
-                                label="region"
+                                label="area code"
                                 variant="outlined"
                                 name="region"
                                 value={inputs.region}
                                 onChange={handleChange}
-                                style={{width:'80px'}}
+                                style={{width:'100px'}}
                             />
                             <TextField
                                 label="Phone"
@@ -177,7 +177,7 @@ function Payment() {
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                         <Divider style={{ width: '80%' }} />
                     </div>
-                    <h2>The total charge for {selectedNumber} person is CNY￥{selectedNumber * price}</h2>
+                    <h2>The total charge for {selectedNumber} person is CNY￥{selectedNumber * submitPrice}</h2>
                     <Button
                         variant="contained"
                         style={{ backgroundColor: 'bisque', color: 'black', marginTop: '20px', marginLeft: '50px', marginRight: '50px' }}

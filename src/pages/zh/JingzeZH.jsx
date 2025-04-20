@@ -21,7 +21,9 @@ import JingzeTripOverviewZH from "../../components/zh/JingzeTripOverviewZH";
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
 
-function Jingze(props) {
+function JingzeZH(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustomZH title="江南水乡国画大师亲授体验" />
@@ -30,7 +32,7 @@ function Jingze(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>CNY￥{props.price} / USD${props.usprice} 每人</h3>
+                    <h3>CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} 每人起</h3>
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="jingze"/>
                     <div className="time-desc-zh">
@@ -52,4 +54,4 @@ function Jingze(props) {
         </div>
     );
 }
-export default Jingze;
+export default JingzeZH;

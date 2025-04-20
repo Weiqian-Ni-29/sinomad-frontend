@@ -18,7 +18,9 @@ import DumplingTripOverviewZH from '../../components/zh/DumplingTripOverviewZH';
 
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
-function Dumpling(props) {
+function DumplingZH(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustomZH title="漫步历史韵味·手作沪上风味：法租界建筑探索与饺子工坊" />
@@ -27,7 +29,7 @@ function Dumpling(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>CNY￥{props.price} / USD${props.usprice} 每人</h3>
+                    <h3>CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} 每人起</h3>
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="dumpling"/>
                     <div className="time-desc-zh">
@@ -49,4 +51,4 @@ function Dumpling(props) {
         </div>
     );
 }
-export default Dumpling;
+export default DumplingZH;

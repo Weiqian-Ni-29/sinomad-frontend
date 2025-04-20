@@ -29,6 +29,13 @@ import VisaFreeTravelGuide from './pages/wikis/en/VisaFreeTravelGuide';
 import { Navigate } from 'react-router-dom';
 import PaymentZH from './pages/zh/PaymentZH';
 
+const cityWalkPrice = [649, 649, 428, 428, 404, 404, 404, 367];
+const dumplingPrice = [796, 796, 673, 673, 673, 612];
+const paperCutPrice = [1102, 1102, 979, 979, 979, 918];
+const jingzePrice = [2506, 2506, 1628, 1628, 1628, 1444];
+const xlbPrice = [796, 796, 673, 673, 673, 612];  // to be updated
+
+
 function App() {
   const [rate, setRate] = useState(null);
 
@@ -53,18 +60,18 @@ function App() {
           <Route path="/" element={<Navigate to="/en" replace />} />
           <Route path="/en" element={<Main />} />
           <Route path="/zh" element={<MainZH />}/>
-          <Route path="/XujiaHuiJingan/en" element={<XujiaHuiJingan price={509} usprice={(509 / rate).toFixed(2)} />} />
-          <Route path="/XujiaHuiJingan/zh" element={<XujiaHuiJinganZH price={509} usprice={(509 / rate).toFixed(2)}/>} />
-          <Route path="/Bund/en" element={<Bund price={509} usprice={(509 / rate).toFixed(2)}/>} />
-          <Route path="/Bund/zh" element={<BundZH price={509} usprice={(509 / rate).toFixed(2)}/>} />
-          <Route path="/Jingze/en" element={<Jingze price={1149} usprice={(1149 / rate).toFixed(2)}/>} />
-          <Route path="/Jingze/zh" element={<JingzeZH price={1149} usprice={(1149 / rate).toFixed(2)}/>} />
-          <Route path="/Xlb/en" element={<Xlb price={1029} usprice={(1029 / rate).toFixed(2)}/>} />
-          <Route path="/Xlb/zh" element={<XlbZH price={1029} usprice={(1029 / rate).toFixed(2)}/>} />
-          <Route path="/Dumpling/en" element={<Dumpling price={699} usprice={(699 / rate).toFixed(2)}/>} />
-          <Route path="/Dumpling/zh" element={<DumplingZH price={699} usprice={(699 / rate).toFixed(2)}/>} />
-          <Route path="/PaperCut/en" element={<PaperCut price={909} usprice={(909 / rate).toFixed(2)}/>} />
-          <Route path="/PaperCut/zh" element={<PaperCutZH price={909} usprice={(909 / rate).toFixed(2)}/>} />
+          <Route path="/XujiaHuiJingan/en" element={<XujiaHuiJingan price={cityWalkPrice} rate={rate} />} />
+          <Route path="/XujiaHuiJingan/zh" element={<XujiaHuiJinganZH price={cityWalkPrice} rate={rate}/>} />
+          <Route path="/Bund/en" element={<Bund price={cityWalkPrice} rate={rate}/>} />
+          <Route path="/Bund/zh" element={<BundZH price={cityWalkPrice} rate={rate}/>} />
+          <Route path="/Jingze/en" element={<Jingze price={jingzePrice} rate={rate}/>} />
+          <Route path="/Jingze/zh" element={<JingzeZH price={jingzePrice} rate={rate}/>} />
+          <Route path="/Xlb/en" element={<Xlb price={xlbPrice} rate={rate}/>} />
+          <Route path="/Xlb/zh" element={<XlbZH price={xlbPrice} rate={rate}/>} />
+          <Route path="/Dumpling/en" element={<Dumpling price={dumplingPrice} rate={rate}/>} />
+          <Route path="/Dumpling/zh" element={<DumplingZH price={dumplingPrice} rate={rate}/>} />
+          <Route path="/PaperCut/en" element={<PaperCut price={paperCutPrice} rate={rate}/>} />
+          <Route path="/PaperCut/zh" element={<PaperCutZH price={paperCutPrice} rate={rate}/>} />
           <Route path="/TermsNConditions/en" element={<TermsNConditions/>}/>
           <Route path="/Payment/en" element={<Payment/>}/>
           <Route path="/Payment/zh" element={<PaymentZH/>}/>

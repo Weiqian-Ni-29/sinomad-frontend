@@ -18,7 +18,8 @@ function BookingForm({ price, route }) {
       alert('请确认选择了正确的人数和时间');
       return;
     }
-    navigate('/Payment/zh', { state: { selectedNumber, price, selectedDate, route } });
+    const submitPrice = price[price.length - currentSlot];
+    navigate('/Payment/en', { state: { selectedNumber, submitPrice, selectedDate, route } });
   };
 
   const handleSubmit = async () => {

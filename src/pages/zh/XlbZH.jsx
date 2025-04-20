@@ -20,6 +20,8 @@ import XlbTripOverviewZH from "../../components/zh/XlbTripOverviewZH";
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 function XlbZH(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustomZH title="非遗传承·匠心手作：南翔小笼文化深度体验之旅" />
@@ -28,7 +30,7 @@ function XlbZH(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>CNY￥{props.price} / USD${props.usprice} 每人</h3>
+                    <h3>CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} 每人起</h3>
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="xlb"/>
                     <div className="time-desc-zh">

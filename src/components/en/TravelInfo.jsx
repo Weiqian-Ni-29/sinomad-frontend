@@ -18,7 +18,8 @@ function BookingForm({ price, route }) {
       alert('date or number of people not selected properly, please try again');
       return;
     }
-    navigate('/Payment/en', { state: { selectedNumber, price, selectedDate, route } });
+    const submitPrice = price[price.length - currentSlot];
+    navigate('/Payment/en', { state: { selectedNumber, submitPrice, selectedDate, route } });
   };
 
   const handleSubmit = async () => {

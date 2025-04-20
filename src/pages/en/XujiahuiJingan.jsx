@@ -19,6 +19,8 @@ import XjhTripOverview from "../../components/en/XjhTripOverview";
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 function XujiaHuiJingan(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustom title="Strolling Through Shanghai Former French Concession" />
@@ -27,9 +29,9 @@ function XujiaHuiJingan(props) {
                         <Gallery imgs={imgs}/>
                     </div>
                     <div className="picker">
-                        <h3>From CNY￥{props.price} / USD${props.usprice} per person</h3>
+                        <h3>From CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} per person</h3>
                         <h3>Select number of travellers and date of departure.</h3>
-                        <TravelInfo price={props.price} route="xujiahui-jingan"/>
+                        <TravelInfo price={price} route="xujiahui-jingan"/>
                         <div className="time-desc">
                             <img src={clockLogo} alt="clockLogo" style={{ width: '1.8em', marginRight: '0.5em' }} />
                             <h3>2.5 hours (approx.)</h3>

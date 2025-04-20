@@ -18,6 +18,8 @@ import Gallery from "../../components/Gallery";
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8];
 
 function Bund(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustom title="A Cinematic Walk from Suzhou Creek to the Bund" />
@@ -26,7 +28,7 @@ function Bund(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>From CNY￥{props.price} / USD${props.usprice} per person</h3>
+                    <h3>From CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} per person</h3>
                     <h3>Select number of travellers and date of departure.</h3>
                     <TravelInfo price={props.price} route="bund"/>
                     <div className="time-desc">

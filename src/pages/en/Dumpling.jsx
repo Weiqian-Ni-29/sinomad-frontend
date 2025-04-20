@@ -19,6 +19,8 @@ import Gallery from "../../components/Gallery";
 const imgs=[img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 function Dumpling(props) {
+    const price = props.price;
+    const rate = props.rate;
     return (
         <div className="Title">
             <NavBarCustom title="Heritage Walk & Dumpling Workshop: Former French Concession Architecture & Culinary Craft" />
@@ -27,7 +29,7 @@ function Dumpling(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>From CNY￥{props.price} / USD${props.usprice} per person</h3>
+                    <h3>From CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} per person</h3>
                     <h3>Select number of travellers and date of departure.</h3>
                     <TravelInfo price={props.price} route="dumpling"/>
                     <div className="time-desc">
