@@ -29,11 +29,17 @@ import VisaFreeTravelGuide from './pages/wikis/en/VisaFreeTravelGuide';
 import { Navigate } from 'react-router-dom';
 import PaymentZH from './pages/zh/PaymentZH';
 
-const cityWalkPrice = [649, 649, 428, 428, 404, 404, 404, 367];
-const dumplingPrice = [796, 796, 673, 673, 673, 612];
-const paperCutPrice = [1102, 1102, 979, 979, 979, 918];
-const jingzePrice = [2056, 2056, 1628, 1628, 1628, 1444];
-const xlbPrice = [796, 796, 673, 673, 673, 612];  // to be updated
+// const cityWalkPrice = [649, 649, 428, 428, 404, 404, 404, 367, 367, 367, 367, 367, 367, 367, 367];
+// const dumplingPrice = [796, 796, 673, 673, 673, 612];
+// const paperCutPrice = [1102, 1102, 979, 979, 979, 918];
+// const jingzePrice = [2056, 2056, 1628, 1628, 1628, 1444];
+// const xlbPrice = [1591, 1591, 1071, 1071, 1071, 918, 918, 918];
+
+const cityWalkPrice = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01];
+const dumplingPrice = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01];
+const paperCutPrice = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01];
+const jingzePrice = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01];
+const xlbPrice = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01];
 
 
 function App() {

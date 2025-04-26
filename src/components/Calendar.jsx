@@ -48,7 +48,7 @@ function Calendar({ selectedDate, setSelectedDate, setCurrentSlot, setStartUpNum
     {/* {currentSlot === null ? <></> : <h3>Vacanies {currentSlot}</h3>} */}
       <div style={{paddingBottom: '20px', maxWidth: '400px', margin: '0 auto' }}>
         <DatePicker
-          label="Sinomad Trip"
+          label="date"
           value={selectedDate}
           onChange={handleDateChange}
           shouldDisableDate={(date) => !isDateAvailable(date)}

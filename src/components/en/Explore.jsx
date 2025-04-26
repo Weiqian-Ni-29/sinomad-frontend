@@ -37,7 +37,7 @@ function Explore() {
   return (
     <section id="experience">
       <div>
-        <h2 className="explore-h2">Experience</h2>
+        <h2 className="explore-h2">Choose Your Experience</h2>
         <div className="explore-cards">
           <div className="explore-card">
             <div className="image-container">
