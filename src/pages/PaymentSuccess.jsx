@@ -33,7 +33,7 @@ function PaymentSuccess() {
             <div className='payment-success'>
                 <div className='confirmation'>
                     <h2>Thanks for choosing SiNomad!</h2>
-                    <p>Congratulations, Your trip is set! A confirmation email will be sent to your mailbox shortly.</p>
+                    <p>Congratulations, Your trip is set!</p>
                     <h3>Order detail</h3>
                     <div className='bookinginfo'>
                         <p>order_number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{orderInfo.order_number}</p>

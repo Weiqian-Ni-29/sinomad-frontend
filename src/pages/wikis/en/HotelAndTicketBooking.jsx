@@ -1,7 +1,9 @@
 import Footer from '../../../components/en/Footer';
 import NavBarCustom from '../../../components/en/NavBarCustom';
 import StaticPortalImg from '../../../components/StaticPortalImg';
-import portalimg from '../../../assets/imgs/wikis/transport/wiki-img-transport-op.jpg';
+import portalimg from '../../../assets/imgs/wikis/hotel-n-ticket-booking/portal.png';
+import portalimg1 from '../../../assets/imgs/wikis/hotel-n-ticket-booking/portal1.png';
+import portalimg2 from '../../../assets/imgs/wikis/hotel-n-ticket-booking/portal2.png';
 import '../styles/Wiki.css';
 import TableOfContents from '../../../components/TableOfContents';
 import StepByStepGuide from '../../../components/StepByStepGuide';
@@ -36,7 +38,7 @@ function HotelAndTicketBooking() {
                         ]}
                     ]}
                 />
-                <StaticPortalImg img={portalimg} 
+                <StaticPortalImg img={portalimg1} 
                     id='hotel'
                     title='How to Book Hotels'
                     content="Using the Trip.com App to book hotels in China is especially advantageous for international travelers. The app not only simplifies the booking process but also helps you identify hotels that are eligible to host foreign guests, which is a necessary condition in China. The 'Hotel Policy' section of Trip.com clearly indicates whether a hotel can accommodate international travelers. If additional confirmation is needed, you can contact their customer service at any time. This ensures a smooth and worry-free booking process. For a step-by-step guide on how to use this app, please continue reading."
@@ -65,7 +67,7 @@ function HotelAndTicketBooking() {
                     imgs={[[{img: img1}, {img: img2}], [{img: img3}, {img: img4}]]}
                 />
                 <StaticPortalImg
-                    img={portalimg}
+                    img={portalimg2}
                     id='ticket'
                     title="How to Book Attraction Tickets"
                     content="Booking attraction tickets in China using the Trip.com App is fast and convenient, allowing you to book tickets in advance, which is especially helpful for popular attractions with daily limits. For a step-by-step guide on how to use the app, please continue reading."

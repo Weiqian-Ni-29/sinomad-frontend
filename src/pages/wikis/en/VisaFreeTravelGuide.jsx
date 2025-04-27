@@ -1,7 +1,10 @@
 import Footer from '../../../components/en/Footer';
 import NavBarCustom from '../../../components/en/NavBarCustom';
 import StaticPortalImg from '../../../components/StaticPortalImg';
-import portalimg from '../../../assets/imgs/wikis/transport/wiki-img-transport-op.jpg';
+import portalimg from '../../../assets/imgs/wikis/visa/portal.png';
+import portalimg1 from '../../../assets/imgs/wikis/visa/portal1.png';
+import portalimg2 from '../../../assets/imgs/wikis/visa/portal2.png';
+import portalimg3 from '../../../assets/imgs/wikis/visa/portal3.png';
 import '../styles/Wiki.css';
 import TableOfContents from '../../../components/TableOfContents';
 import StepByStepGuide from '../../../components/StepByStepGuide';
@@ -41,7 +44,7 @@ function VisaFreeTravelGuide() {
                     ]}
                 />
                 <StaticPortalImg
-                    img={portalimg}
+                    img={portalimg1}
                     id="visa-policy"
                     title= "China's Visa-Free Policy"
                     content="China's visa-free policy allows travelers from specific countries to enter China without a visa for a short period. These policies aim to simplify the entry process for tourists, business visitors, and others, promoting more travel and cooperation."
@@ -99,7 +102,7 @@ function VisaFreeTravelGuide() {
                 />
                 <StaticPortalImg
                     id='transit-policy'
-                    img={portalimg}
+                    img={portalimg2}
                     title="China's Transit Visa-Free Policy"
                     content="China offers a visa-free transit policy for qualified travelers from specific countries, allowing a stay of up to 240 hours (10 days) while en route to a third country or region. With the expansion of the visa-free policy, travelers can now enter through 60 open ports in 24 provinces, providing a great opportunity for short-term visitors to explore China without a visa."
                     textColor="white"
@@ -111,7 +114,7 @@ function VisaFreeTravelGuide() {
                 />
                 <StaticPortalImg
                     id='documents'
-                    img={portalimg}
+                    img={portalimg3}
                     title="Documents Required for Transit"
                     content="- A valid passport issued by one of the 54 eligible countries.\n - A visa for the third country or region.\n - A confirmed onward ticket with date and seat information for travel to the third country or region within the specified time."
                     textColor="white"

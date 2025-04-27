@@ -1,7 +1,9 @@
 import Footer from '../../../components/en/Footer';
 import NavBarCustom from '../../../components/en/NavBarCustom';
 import StaticPortalImg from '../../../components/StaticPortalImg';
-import portalimg from '../../../assets/imgs/wikis/transport/wiki-img-transport-op.jpg';
+import portalimg from '../../../assets/imgs/wikis/network/portal.png';
+import portalimg1 from '../../../assets/imgs/wikis/network/portal1.png';
+import portalimg2 from '../../../assets/imgs/wikis/network/portal2.png';
 import '../styles/Wiki.css';
 import TableOfContents from '../../../components/TableOfContents';
 import VerticalDisplayer from '../../../components/VerticalDisplayer';
@@ -50,7 +52,7 @@ function InternetConnect() {
                     }
                 />
                 <StaticPortalImg
-                    img={portalimg}
+                    img={portalimg1}
                     id="sim"
                     title="How to Get an eSIM in China"
                     content="Using an eSIM in China is a hassle-free way to connect without a physical SIM card. The setup is very simple and can be completed before your trip.\nGetting an eSIM is straightforward; you can complete the process online through reliable providers such as Nomad, Airalo, and Simoptions. These providers offer a variety of eSIM plans to suit different data needs and durations."
@@ -73,7 +75,7 @@ function InternetConnect() {
                     }
                 />
                 <StaticPortalImg
-                    img={portalimg}
+                    img={portalimg2}
                     id="purchase-sim"
                     title="Purchasing a Local SIM Card in China"
                     content="Buying a local SIM card in China is one of the simplest ways to stay connected. It provides mobile data and a local phone number, which is crucial for making and receiving calls."
