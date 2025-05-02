@@ -36,7 +36,7 @@ function Bund(props) {
                         <h3>2.5 hours (approx.)</h3>
                     </div>
                     <h3>Available in English</h3>
-                    <p>Free cancellation up to 3 days in advance</p>
+                    <p className="small-trip-info-font">The final booking deadline for this itinerary is 12:00 PM(GMT + 8) on the day prior to departure.</p>
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>

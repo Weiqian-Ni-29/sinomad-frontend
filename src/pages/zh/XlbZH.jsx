@@ -30,7 +30,7 @@ function XlbZH(props) {
                     <Gallery imgs={imgs}/>
                 </div>
                 <div className="picker">
-                    <h3>CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} 每人起</h3>
+                    <h3>CNY￥{price[price.length - 1]} / USD${(price[price.length - 1] / rate).toFixed(2)} 每人起</h3>                    
                     <h3>请选择出发日期和人数</h3>
                     <TravelInfoZH price={props.price} route="xlb"/>
                     <div className="time-desc-zh">
@@ -38,7 +38,8 @@ function XlbZH(props) {
                         <h3>行程大约8小时</h3>
                     </div>
                     <h3>可选择英文服务</h3>
-                    <p>可提前3天免费取消</p>
+                    <p className="small-trip-info-font">该行程的最晚预定时间为出发前一天的北京时间中午12:00之前</p>
+                    <p className="small-trip-info-font">该线路的排期在每周的周二和周四.</p>
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>

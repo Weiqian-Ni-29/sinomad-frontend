@@ -1,12 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Footer from '../components/en/Footer';
-import NavBarCustom from '../components/en/NavBarCustom';
-import './PaymentSuccess.css';
-import Divider from '@mui/material/Divider';
-import Button from '@mui/material/Button';
-import config from '../Constants';
+import Footer from '../../components/en/Footer';
+import NavBarCustom from '../../components/en/NavBarCustom';
+import '../styles/PaymentSuccess.css';
+import config from '../../Constants';
 
 function PaymentSuccess() {
     const [searchParams] = useSearchParams();
@@ -33,7 +31,7 @@ function PaymentSuccess() {
             <div className='payment-success'>
                 <div className='confirmation'>
                     <h2>Thanks for choosing SiNomad!</h2>
-                    <p>Congratulations, Your trip is set!</p>
+                    <p>We guarantee to confirm your itinerary and send a confirmation email by 18:00 (GMT+8) on the next business day following payment processing.</p>
                     <h3>Order detail</h3>
                     <div className='bookinginfo'>
                         <p>order_number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{orderInfo.order_number}</p>

@@ -190,7 +190,11 @@ function Payment() {
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                 <Divider style={{ width: '80%' }} />
             </div>
-            <h3>Notice: Free cancellation up to 3 days in advance(A full refund in 7 working days)</h3>
+            <div className='Payment'>
+                <h3>
+                    Notice: For phone payments, note that some browsers may not auto-redirect to the confirmation page. Your payment is securely recorded, and we will follow up within 24 hours. Contact us via WeChat, WhatsApp, or email for immediate support.
+                </h3>
+            </div>
             <Footer/>
         </div>
     );

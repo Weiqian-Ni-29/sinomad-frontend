@@ -189,7 +189,11 @@ function PaymentZH() {
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                 <Divider style={{ width: '80%' }} />
             </div>
-            <h3>可提前3天免费取消</h3>
+            <div className='Payment'>
+                <h3>
+                通过手机完成支付时，部分浏览器可能无法自动跳转至确认页面。您的支付信息已安全记录，我们将在24小时内主动联系您。如需立即协助，请通过微信、WhatsApp或电子邮件联系我们。
+                </h3>
+            </div>
             <Footer/>
         </div>
     );

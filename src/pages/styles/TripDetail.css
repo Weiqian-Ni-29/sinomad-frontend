@@ -39,6 +39,10 @@
   margin-left: 65px;
 }
 
+.small-trip-info-font {
+  font-size: 0.8em;
+}
+
 @media (max-width: 768px) {
   .content-container {
     display: flex;
