@@ -150,7 +150,7 @@ function Payment() {
                         />
                         <div style={{ display: 'flex', gap: '10px' }}>
                             <TextField
-                                label="area code"
+                                label="Area Code"
                                 variant="outlined"
                                 name="region"
                                 value={inputs.region}
@@ -192,7 +192,7 @@ function Payment() {
             </div>
             <div className='Payment'>
                 <h3>
-                    Notice: For phone payments, note that some browsers may not auto-redirect to the confirmation page. Your payment is securely recorded, and we will follow up within 24 hours. Contact us via WeChat, WhatsApp, or email for immediate support.
+                    Notice: When using phone payments, note that some browsers may not auto-redirect to the confirmation page. However, your payment is already securely recorded, and we will follow up within 24 hours. Should you have any question, don’t hesitate to contact us via Wechat, WhatsApp, or email for immediate support.
                 </h3>
             </div>
             <Footer/>

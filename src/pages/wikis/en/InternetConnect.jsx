@@ -102,8 +102,6 @@ function InternetConnect() {
                         ]
                     }
                 />
-                <h3>Below are the main plans offered by Chinese operators, with details subject to change and should be confirmed at the time of purchase.</h3>
-                <p>place holder for excel image</p>
                 <VerticalDisplayer
                     containsImg={false}
                     title="Our Recommendations"
