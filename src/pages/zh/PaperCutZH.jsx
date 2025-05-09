@@ -40,7 +40,7 @@ function PaperCutZH(props) {
                     </div>
                     <h3>可选择英文服务</h3>
                     <p className="small-trip-info-font">该行程的最晚预定时间为出发前一天的北京时间中午12:00之前</p>
-                    <p className="small-trip-info-font">该线路的排期在每周的周二和周四.</p>
+                    <p className="small-trip-info-font">该线路的排期在每周的周二，周四和周六.</p>
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
