@@ -13,7 +13,7 @@ function AboutUs() {
               WHO ARE WE?
             </h3>
             <p>
-              Hi there! Welcome to SiNomad, a spirited young soul nurtured by an experienced Chinese travel agency. <br/>
+              Hi there! Welcome to SiNomad, a spirited young soul nurtured by an experienced Chinese travel agency (Shanghai Junyuan Cultural Communcation Co., Ltd). <br/>
               Our team is a powerhouse of talent, with members who are not only top graduates from QS top 50 universities but also seasoned professionals with global exposure. Our travels have taken us across different continents and into the heart of dozens of countries, granting us a deep understanding of both Eastern and Western cultures. This unique perspective allows us to create truly immersive and enriching travel experiences for you.
             </p>
             <h3>WAHT MAKES OUR APPROACH TO TRAVEL UNIQUE?</h3>
