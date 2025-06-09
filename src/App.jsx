@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import ReactGA from "react-ga4";
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './pages/en/Main'
@@ -44,6 +45,10 @@ const xlbPrice = [1591, 1591, 1071, 1071, 1071, 918, 918, 918];
 
 function App() {
   const [rate, setRate] = useState(null);
+  useEffect(() => {
+    ReactGA.initialize("G-TX6E551FTX");
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "App.jsx" });
+  }, []);
 
   useEffect(() => {
     const fetchRate = async () => {
